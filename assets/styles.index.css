@@ -1,4 +1,8 @@
 /*TESTE*/
+* {
+    margin: 0;
+}
+
 #container {
     display: inline-block;
     position: relative;
@@ -22,3 +26,8 @@
     font-size: 40px;
     color: rgb(245, 36, 36);
   }
+  
+#container img {
+    width: 100%;
+    height: 600px;
+}
