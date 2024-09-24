@@ -84,7 +84,7 @@ li a:hover {
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(to Left, rgba(0, 0, 0, 0.848), rgba(0, 0, 0, 0.634)), url('../media/img/Background-sobre.jpeg');
+    background-image: linear-gradient(to Left, rgba(0, 0, 0, 0.848), rgba(0, 0, 0, 0.634)), url('../imagens/Background-sobre.jpeg');
     background-size:cover;
     background-position: bottom center;
     display: flex; 
