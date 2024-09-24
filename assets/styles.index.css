@@ -142,7 +142,63 @@ h1 span{
 
 }
 
+/*Menu pages*/
 
+.menu-pages{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.menu {
+  background-color:var(--bg-color);
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+
+.menu ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--bg-color);
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.botao-sobre {
+  background-color: red;
+  color: var(--bg-color);
+}
+
+.botao {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.botao:hover {
+  background-color: #ddd;
+}
+
+.content {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.red-text {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
 
 
 
