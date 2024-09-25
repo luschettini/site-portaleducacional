@@ -1,75 +1,88 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="PT-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Sobre Nós</title>
     <link rel="stylesheet" href="assets/styles.index.css">
+    <title>Portal Educacional</title>
+
+    <!--Link para pacote de icons e fonts-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+
 </head>
+
 <body>
 
-<!--cabeçalho -->
-
-    <header>
-        <div class="logo">
-            <img src="imagens/logoSESI.png" alt="Logo SESI">
-            <img src="imagens/logoSENAI.png" alt="Logo SENAI">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre-nós</a></li>
-                <li><a href="#">Cadastre-se</a></li>
-            </ul>
+    <header class="header-sobre">
+        <nav class="logo-nav">
+            <img src="imagens/logo-sesi-senai.png" alt="SESI SENAI Logo" class="logo-img">
         </nav>
+
+            <nav class="vertical-line"></nav>
+
+
+                <nav class="nav-bar">
+
+                    <ul>
+                        <li> <a href="index.html">HOME</a></li>
+                        <li> <a href="sobrenos.html">SOBRE NÓS</a></li>
+                        <li> <a href="contato.html">CADASTRE-SE<a>
+                        <li>
+                    </ul>
+                            <nav class="menu-icon "><i class='bx bx-menu bx-md' style='color:#ffffff'  ></i></nav>
+
+                </nav>
     </header>
-<!-- Banner Principal -->
-<section class="banner">
-    <div class="banner-text">
-        <h1>SUA APROVAÇÃO COMEÇA AQUI!</h1>
-        <button>Se Inscreva Já!</button>
-        <p>Transforme seu potencial em resultados com o SESI SENAI junto a você no vestibular.</p>
-        
-    </div>
-    <div class="banner-image">
-        <img src="graduates.jpg" alt="Graduados">
-    </div>
-</section>
+    
+            <section class = "banner-site">
+                
+                <div class="banner-text">
+            <h1> SUA <br> <span> APROVAÇÃO </span> <br> COMEÇA AQUI </h1> 
+            
 
-<!-- Banner Principal -->
-<section class="banner">
-    <div class="banner-text">
-        <figure id="container">
-            <img src="./imagens/graduados.png" />  
-            SUA<br>
-                <section class="aprovação">
-                    <p class="color #ffff">SUA</p>
-                    <p style="color: rgb(216, 17, 17);">APROVAÇÃO</p>
-                    <p class="color #ffff">COMEÇA AQUI!</p>
+                <p> O Lorem Ipsum é um texto modelo da indústria tipográfica e de <br> impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado<br> por estas indústrias desde o ano de 1500, quando uma misturou <br> os caracteres de um texto para criar um espécime de livro. Este <br> texto não só sobreviveu 5 séculos. </p>
+                <a href="contato.html" class="btn"> SE INSCREVA JÁ!</a>
+                
+                <img src="imagens/alunos-sobre.png" alt="Alunos se formando" class="alunos-sobre" />
+                
+            </div>
+
+            </section>
+
+            <section class="menu-pages">
+
+                <ul>
+                    <li><a href="#" class="botao-sobre">SOBRE</a></li>
+                    <li><a href="#" class="botao">MATÉRIAS</a></li>
+                    <li><a href="#" class="botao">ESTÁGIOS</a></li>
+                    <li><a href="#" class="botao">SIMULADOS</a></li>
+                    <li><a href="#" class="botao">NOTÍCIAS</a></li>
+                    <li><a href="#" class="botao">DICAS</a></li>
+                    <li><a href="#" class="botao">VÍDEO-AULAS</a></li>
+                </ul>
+
+            </section>
+    <footer>
+        <section class="socialmedia">
+            <a href="boxicons.com/?query=facebook"><i class='bx bxl-facebook-square' style='color:#181818'></i></a>
+        </section>
+
+                <article class="addresses">
                     <section>
-                        <h1 style="font-size: 10px;">O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas </h1>
+                        <h3>EDIFÍCIO REDE SENAI</h3>
+                        <P>R. Artur Fernandes Querido, 55 - Vila Santo Antonio, Valinhos - SP, 13270-530</P>
                     </section>
-          </figure>
-        <button>Se Inscreva Já!</button>
-        <p>Transforme seu potencial em resultados com o SESI SENAI junto a você no vestibular.</p>
-    </div>
-</section>
 
-    <nav class="menu">
-    <ul>
-        <li><a href="#" class="botao-sobre">SOBRE</a></li>
-        <li><a href="#" class="botao">MATÉRIAS</a></li>
-        <li><a href="#" class="botao">ESTÁGIOS</a></li>
-        <li><a href="#" class="botao">SIMULADOS</a></li>
-        <li><a href="#" class="botao">NOTÍCIAS</a></li>
-        <li><a href="#" class="botao">DICAS</a></li>
-        <li><a href="#" class="botao">VÍDEO-AULAS</a></li>
-    </ul>
-</nav>
+                    <section><h3>EDIFÍCIO REDE SENAI VALINHOS</h3>
+                        <p>Rod. Flávio de Carvalho, 2787 - Jardim São Paulo, Valinhos - SP, 13274-450</p>
+                    </section>
 
-<section class="content">
-    <p><strong>Transforme seu <span class="red-text">potencial</span> em <span class="red-text">resultados</span> com o SESI SENAI junto a você no vestibular.</strong></p>
-</section>
+                </article>
+    </footer>
+
 </body>
+
 </html>
 
