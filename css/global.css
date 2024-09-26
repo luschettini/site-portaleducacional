@@ -143,7 +143,6 @@ h1 span{
 }
 
 /* Barrinha vermelha */
-
 .division-sobre{
     align-items: center;
     width: auto;
@@ -154,6 +153,11 @@ h1 span{
 } 
 
 /*Menu pages*/
+.menu-pages, .container{
+    display: flex;
+    justify-content: space-between ;
+    align-items: flex-start;
+}
 
 .menu-pages{
   margin: 0;
