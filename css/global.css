@@ -154,7 +154,6 @@ h1 span{
 
 /*Menu pages*/
 .menu-pages, .container{
-    display: flex;
     justify-content: space-between ;
     align-items: flex-start;
 }
@@ -282,3 +281,104 @@ footer {
   margin-left: 10px;
   margin-right: 10px;
 }
+
+/*teste barrinha*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  background-color: rgb(255, 255, 255);
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+
+.menu ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000000;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.botao-sobre {
+  background-color: red;
+  color: white;
+}
+
+.botao {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.botao:hover {
+  background-color: #ddd;
+}
+
+.content {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.red-text {
+  color: red;
+  font-weight: bold;
+}
+
+.content h2 {
+    color: #D81F26;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+.content {
+    margin-top: 20px;
+    text-align: center;
+}
+.content {
+    padding: 50px;
+    text-align: center;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+body {
+    line-height: 1.6;
+}
+:root {
+    --bg-color: #FFFF;
+    --secondary-color: #E30613;
+    --h1-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1rem;
+}
+
+/*teste*/
