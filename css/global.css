@@ -66,6 +66,8 @@ li a:hover {
     color:rgba(233, 233, 233, 0.733);
     transition: .3s ease-in-out;
 }
+
+/*Linha Vertical Header*/
 .vertical-line {
     width: 2.2px;
     height: 50px;
@@ -79,7 +81,6 @@ li a:hover {
 }
 
 /*Banner Sobre*/
-
 .banner-site{
     position: relative;
     height: 100vh;
