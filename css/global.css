@@ -142,6 +142,17 @@ h1 span{
 
 }
 
+/* Barrinha vermelha */
+
+.division-sobre{
+    align-items: center;
+    width: auto;
+    height: 20px;
+    left: 930px;
+    top: 73px;
+    background-color: #a12720; 
+} 
+
 /*Menu pages*/
 
 .menu-pages{
@@ -201,9 +212,7 @@ body {
 }
 
 
-
-/*luiza*/
-
+/* Footer */
 
 footer {
   background-color: #a12720; 
