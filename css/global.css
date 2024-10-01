@@ -290,6 +290,7 @@ footer {
 }
 
 .menu {
+  margin-top: 15px;
   background-color: rgb(255, 255, 255);
   padding: 10px 0;
   display: flex;
@@ -325,10 +326,36 @@ footer {
   background-color: #ddd;
 }
 
+
+/*Divisão para o conteúdo - Barra */
+
+.division-content{
+    margin: 0 auto;
+    margin-top: 39px;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 4px;
+    top: 73px;
+    background-color: #a12720; 
+}
 .content {
   margin-top: 20px;
   text-align: center;
 }
+
+
+.division-slogan{
+  margin-top: 39px;
+  align-items: flex-start;
+  justify-content: center;
+  width: 500px;
+  height: 4px;
+  top: 73px;
+  background-color: #a12720; 
+}
+
+/* Frase SESI SENAI - Vermelho & Preto*/
 
 .red-text {
   color: red;
@@ -340,6 +367,7 @@ footer {
     font-size: 2rem;
     margin-bottom: 20px;
 }
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -348,7 +376,8 @@ footer {
     text-decoration: none;
 }
 
-h2 {
+.content h2 {
+  justify-content: flex-start;
     display: block;
     font-size: 1.5em;
     margin-block-start: 0.83em;
