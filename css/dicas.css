@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.montserrat{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+  }
+  
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --bg-color: #FFFF;
+    --secondary-color: #E30613;
+
+
+    /*Tipografia*/
+    --h1-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1rem;
+
+    }
+
+header{
+    display: flex;
+    background-color: var(--secondary-color);
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1rem;
+    font-family:"Montserrat", sans-serif;
+    height: 100px;
+}
+
+ul{
+    display: flex;
+    gap: 15rem;
+}
+.logo-sesi-img{
+    width: 100px;
+    height: 100px;
+}
+
+.logo-img{
+    width: 400px;
+}
+
+.nav-bar{
+    margin-left: 200px;
+    flex-direction: row;
+    display: flex;
+    gap: 8rem;
+    font-weight: bold; 
+}
+
+li a {
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    color: var(--bg-color);
+}
+
+li a:hover {
+    color:rgba(233, 233, 233, 0.733);
+    transition: .3s ease-in-out;
+}
+
+/*Linha Vertical Header*/
+.vertical-line {
+    width: 2.2px;
+    height: 50px;
+    background-color: white;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.bx bx-menu{
+    width: 100px;
+}
+
+/*Banner Sobre*/
+.banner-site{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to Left, rgba(0, 0, 0, 0.848), rgba(0, 0, 0, 0.634)), url('../media/img/fundo-dicas2.jpg');
+    background-size:cover;
+    background-position: bottom center;
+    display: flex; 
+    align-items: center;
+    justify-content: flex-start; 
+  filter: brightness(70%);
+}
+
+.banner-site h1{
+    flex-direction: column;
+    font-size: var(--h1-font);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    color: var(--bg-color);
+    line-height: 1.2;
+    margin-bottom: 15px;  
+    margin-left: 80px; 
+}
+
+h1 span{
+    color:var(--secondary-color)
+}
+
+.banner-site p{
+    font-family:"Montserrat", sans-serif ;
+    font-size: var(--p-font);
+    font-weight: 450;
+    line-height: 30px;
+    color: var(--bg-color);
+    margin-bottom: 30px;
+    margin-left: 80px;
+}
+
+.btn{
+    display:inline-block;
+    font-family:"Montserrat", sans-serif;
+    font-size: var(--p-font);
+    padding: 10px 45px;
+    background:var(--secondary-color);
+    font-size: 15px;
+    font-weight: 750;
+    line-height: 30px;
+    color:#ffff;
+    border-radius: 40px;
+    transition: all .50s ease;
+    cursor: pointer;
+    margin-left: 80px;
+}
+
+.alunos-sobre{
+    position: absolute;
+    width: 850px;
+    height: 850px;
+    left: 930px;
+    top: 73px;
+
+}
+
+/* Barrinha vermelha */
+.division-sobre{
+    align-items: center;
+    width: auto;
+    height: 20px;
+    left: 930px;
+    top: 73px;
+    background-color: #a12720; 
+} 
+
+/*Menu pages*/
+.menu-pages, .container{
+    justify-content: space-between ;
+    align-items: flex-start;
+}
+
+.menu-pages{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.menu {
+  background-color:var(--bg-color);
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+
+.menu ul li a {
+  font-weight: bold;
+}
+
+.botao-sobre {
+  background-color: red;
+  color: var(--bg-color);
+}
+
+.botao {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.botao:hover {
+  background-color: #ddd;
+}
+
+.content {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.red-text {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+
+/* Footer */
+footer {
+  background-color: #a12720; 
+  padding: 0; 
+  margin: 0; 
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative; 
+}
+
+.social-media-container {
+  background-color: #D71920; 
+  padding: 10px; 
+  border-radius: 5px;
+  margin-bottom: -5px; 
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  background-color: #D71920;
+  padding: 10px;
+  border-radius: 5px;
+  width: calc(100% + 20px);
+  margin: 0 -10px;     box-sizing: border-box; 
+}
+
+.social-icon {
+  width: 50px; 
+  height: 50px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: contain; 
+}
+.addresses {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; 
+  padding: 20px 0; 
+}
+
+.address {
+  flex: 1;
+  max-width: 300px; 
+  text-align: center;
+  padding: 10px; 
+}
+
+.divider {
+  width: 2px;
+  height: 60px;
+  background-color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/*teste barrinha*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  margin-top: 15px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  gap: 3rem;
+}
+
+.menu ul li a {
+  display: inline-block;
+  padding: 8px 60px;
+  text-decoration: none;
+  color: #000000;
+  border-radius: 20px;
+}
+
+.botao-sobre {
+  background-color:  #a12720;
+  color: white;
+  font-weight: 100;
+}
+
+.botao {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.botao:hover {
+  background-color: #ddd;
+}
+
+
+/*Divisão para o conteúdo - Barra */
+
+.division-content{
+    margin: 0 auto;
+    margin-top: 39px;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 4px;
+    top: 73px;
+    background-color: #a12720; 
+}
+.content {
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+.division-slogan{
+  margin-top: 39px;
+  align-items: flex-start;
+  justify-content: center;
+  width: 500px;
+  height: 4px;
+  top: 73px;
+  background-color: #a12720; 
+}
+
+/* Frase SESI SENAI - Vermelho & Preto*/
+
+.red-text {
+  color: red;
+  font-weight: bold;
+}
+
+.content h2 {
+    color: #D81F26;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.content h2 {
+  justify-content: flex-start;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+.content {
+    margin-top: 20px;
+    text-align: center;
+}
+.content {
+    padding: 50px;
+    text-align: center;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+body {
+    line-height: 1.6;
+}
+:root {
+    --bg-color: #FFFF;
+    --secondary-color: #E30613;
+    --h1-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1rem;
+}
+
+/*teste*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.navbar {
+  background-color: #c10b0b;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo img {
+  width: 120px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.nav-tabs button {
+  margin: 0 5px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #d3d3d3;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-tabs button:hover {
+  background-color: #c10b0b;
+  color: white;
+}
+
+.content {
+  padding: 20px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.tip {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tip img {
+  width: 80px;
+  margin-right: 20px;
+}
+
+.tip .text h3 {
+  margin-bottom: 10px;
+  color: #c10b0b;
+}
+
+.tip .text p {
+  color: #333;
+}
