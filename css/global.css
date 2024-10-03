@@ -8,17 +8,6 @@
   }
   
 
-:root{
-    --bg-color: #FFFF;
-    --secondary-color: #E30613;
-
-
-    /*Tipografia*/
-    --h1-font: 6rem;
-    --h2-font: 3rem;
-    --p-font: 1rem;
-
-    }
 
 header{
     display: flex;
@@ -54,7 +43,6 @@ ul{
 li a {
     cursor: pointer;
     transition: .3s ease-in-out;
-    color: var(--bg-color);
 }
 
 li a:hover {
@@ -161,9 +149,6 @@ h1 span{
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-}
 
 .menu {
   background-color:var(--bg-color);
@@ -182,10 +167,6 @@ body {
   font-weight: bold;
 }
 
-.botao-sobre {
-  background-color: red;
-  color: var(--bg-color);
-}
 
 .botao {
   background-color: #f2f2f2;
@@ -196,10 +177,6 @@ body {
   background-color: #ddd;
 }
 
-.content {
-  margin-top: 20px;
-  text-align: center;
-}
 
 .red-text {
   color: var(--secondary-color);
@@ -273,12 +250,7 @@ footer {
   margin-right: 10px;
 }
 
-/*teste barrinha*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 .menu {
   margin-top: 15px;
@@ -303,19 +275,14 @@ footer {
 }
 
 .botao-sobre {
-  background-color:  #a12720;
-  color: white;
-  font-weight: 100;
+  background-color:  #f2f2f2;
 }
 
-.botao {
-  background-color: #f2f2f2;
-  color: black;
-}
 
 .botao:hover {
   background-color: #ddd;
 }
+
 
 
 /*Divisão para o conteúdo - Barra */
@@ -329,11 +296,6 @@ footer {
     top: 73px;
     background-color: #a12720; 
 }
-.content {
-  margin-top: 20px;
-  text-align: center;
-}
-
 
 .division-slogan{
   margin-top: 39px;
@@ -359,11 +321,7 @@ footer {
 }
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
     list-style: none;
-    text-decoration: none;
 }
 
 .content h2 {
@@ -379,14 +337,9 @@ footer {
 }
 .content {
     margin-top: 20px;
-    text-align: center;
 }
 .content {
     padding: 50px;
-    text-align: center;
-}
-body {
-    font-family: Arial, sans-serif;
 }
 body {
     line-height: 1.6;
@@ -402,7 +355,6 @@ body {
 /*teste*/
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   text-align: center;
 }
@@ -489,13 +441,14 @@ body {
 }
 
 .tip img {
-  width: 80px;
+  width: 100px;
   margin-right: 20px;
 }
 
 .tip .text h3 {
   margin-bottom: 10px;
   color: #c10b0b;
+  text-align: center;
 }
 
 .tip .text p {
@@ -506,6 +459,7 @@ h2{
   background-color: #ffffff;
 }
 
-h3 {
+
+#text {
   text-align: center;
 }
