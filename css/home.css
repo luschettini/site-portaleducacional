@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.montserrat{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+  }
+  
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --bg-color: #FFFF;
+    --secondary-color: #E30613;
+
+
+    /*Tipografia*/
+    --h1-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1rem;
+
+    }
+
+header{
+    display: flex;
+    background-color: var(--secondary-color);
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1rem;
+    font-family:"Montserrat", sans-serif;
+    height: 100px;
+}
+
+ul{
+    display: flex;
+    gap: 15rem;
+}
+.logo-sesi-img{
+    width: 100px;
+    height: 100px;
+}
+
+.logo-img{
+    width: 400px;
+}
+
+.nav-bar{
+    margin-left: 200px;
+    flex-direction: row;
+    display: flex;
+    gap: 8rem;
+    font-weight: bold; 
+}
+
+li a {
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    color: var(--bg-color);
+}
+
+li a:hover {
+    color:rgba(233, 233, 233, 0.733);
+    transition: .3s ease-in-out;
+}
+
+/*Linha Vertical Header*/
+.vertical-line {
+    width: 2.2px;
+    height: 50px;
+    background-color: white;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.bx bx-menu{
+    width: 100px;
+}
+ 
+  .banner {
+      padding: 0;
+      width: 100%;
+      height: 600px;
+      filter: brightness(0.9);
+      
+    
+    }
+    
+    .text-overlay {
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+      color: white;
+    }
+    
+    .banner-titulo {
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 800;
+      font-style: normal;
+      margin-bottom: 100px;
+      
+    }
+  
+  .container {
+    display: flex;
+    justify-content: space-between; /* Garante que os elementos se alinhem com o espaço correto */
+    align-items: flex-start;
+  }
+  
+  .main-new {
+    width: 60%; /* Define 60% da largura para a div de texto */
+    margin-right: 20px;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 10px #ffffff;
+  }
+  
+  .instituicoes {
+    width: 100%; /* A seção 'Conheça nossas instituições' ocupa 100% da largura */
+    margin: 20px 0;
+  }
+  
+  .section-title {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    margin-top: 25px;
+  }
+  
+  .instituicoes-title{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    margin-top: -15px;
+  }
+  
+  .section-text{
+    margin-bottom: 15px;
+    color: black;
+    line-height: 1.0;
+    font-size: larger;
+    max-width: 70%;
+  }
+  
+  .sidebar {
+    width: 40%; /* Define 40% da largura para o carrossel */
+    height: 430px;
+    background-color: #FFFF;
+    padding: 20px;
+    box-shadow: 0 2px 4px #E30613;
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+  .linha {
+    width: 200px;
+    border-bottom: 5px solid #9A1915;
+    margin-bottom: 10px;
+  }
+  
+  
+  
+  /* Estilo para as imagens do carrossel */
+  .carousel-inner img {
+    width: 100%; /* Faz as imagens ocuparem toda a largura do carrossel */
+    height: 250px; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+  }
+  
+  /* Estilo das legendas do carrossel */
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para as legendas */
+    padding: 10px; /* Adiciona um pouco de espaçamento */
+    border-radius: 5px; /* Arredonda os cantos das legendas */
+  }
+  
+  /* Estilo dos botões de controle do carrossel */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco para os ícones */
+    border-radius: 50%; /* Torna os ícones circulares */
+  }
+  
+  /* Estilo adicional para o texto das legendas */
+  .carousel-caption h5 {
+    font-size: 1.5rem; /* Aumenta o tamanho do título */
+    font-weight: bold; /* Torna o título em negrito */
+  }
+  
+  .carousel-caption p {
+    font-size: 1rem; /* Tamanho da fonte dos parágrafos */
+  }
