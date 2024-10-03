@@ -1,5 +1,3 @@
-@import url(./home.css);
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .montserrat{
@@ -7,6 +5,13 @@
     font-optical-sizing: auto;
   }
   
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
 
 :root{
     --bg-color: #FFFF;
@@ -80,7 +85,7 @@ li a:hover {
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(to Left, rgba(0, 0, 0, 0.848), rgba(0, 0, 0, 0.634)), url('../media/img/Background-sobre.jpeg');
+    background-image: linear-gradient(to Left, rgba(0, 0, 0, 0.848), rgba(0, 0, 0, 0.634)), url('../media/img/fundo-dicas2.jpg');
     background-size:cover;
     background-position: bottom center;
     display: flex; 
@@ -322,6 +327,7 @@ footer {
 
 .division-content{
     margin: 0 auto;
+    margin-top: 39px;
     align-items: center;
     justify-content: center;
     width: 500px;
@@ -500,12 +506,4 @@ body {
 
 .tip .text p {
   color: #333;
-}
-
-h2{
-  background-color: #ffffff;
-}
-
-h3 {
-  text-align: center;
 }
