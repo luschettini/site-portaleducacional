@@ -13,73 +13,77 @@
     text-decoration: none;
 }
 
-:root{
+/* Definição de rotas padrão */
+
+.root{
     --bg-color: #FFFF;
     --secondary-color: #E30613;
+    --third-color:  #a12720;
+
 
 
     /*Tipografia*/
+    --font-text: "Montserrat", sans-serif;
     --h1-font: 6rem;
     --h2-font: 3rem;
     --p-font: 1rem;
+}
 
-    }
+/* Header */
 
-header{
+.container_header{
+    background-color: #E30613;
+    height: 7rem;
+    width: 100%;
     display: flex;
-    background-color: var(--secondary-color);
-    align-items: center;
-    justify-content: space-around;
-    font-size: 1rem;
-    font-family:"Montserrat", sans-serif;
-    height: 100px;
-}
-
-ul{
-    display: flex;
-    gap: 15rem;
-}
-.logo-sesi-img{
-    width: 100px;
-    height: 100px;
-}
-
-.logo-img{
-    width: 400px;
-}
-
-.nav-bar{
-    margin-left: 200px;
     flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem;
+}
+
+.img_header{
+    width: 30%;
+    height: 100%;
     display: flex;
-    gap: 8rem;
-    font-weight: bold; 
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.img_header img{
+    width: 100%;
+    height: 58%;
 }
 
-li a {
-    cursor: pointer;
-    transition: .3s ease-in-out;
-    color: var(--bg-color);
-}
-
-li a:hover {
-    color:rgba(233, 233, 233, 0.733);
-    transition: .3s ease-in-out;
-}
-
-/*Linha Vertical Header*/
-.vertical-line {
-    width: 2.2px;
-    height: 50px;
+.division_header{
     background-color: white;
-    margin-left: 15px;
-    margin-right: 10px;
+    width: 0.2%;
+    height: 53%;
+    display: flex;
 }
 
-.bx bx-menu{
-    width: 100px;
+.nav_header{
+    display: flex;
+    flex-direction: row;
+    gap : 10%;
+    width: 65%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    list-style: none;
 }
- 
+
+.nav_header a{
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-size: var(--p-font);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
   .banner {
       padding: 0;
       width: 100%;
@@ -105,8 +109,8 @@ li a:hover {
       font-optical-sizing: auto;
       font-weight: 800;
       font-style: normal;
-      margin-bottom: 100px;
-      
+      margin-bottom: 20%;
+      margim-left: 50%;
     }
   
   .container {
@@ -165,8 +169,6 @@ li a:hover {
     border-bottom: 5px solid #9A1915;
     margin-bottom: 10px;
   }
-  
-  
   
   /* Estilo para as imagens do carrossel */
   .carousel-inner img {
