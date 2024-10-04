@@ -198,3 +198,35 @@
   .carousel-caption p {
     font-size: 1rem; /* Tamanho da fonte dos parágrafos */
   }
+
+  .duvida {
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #9a1915;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+
+
+}
+
+division-content {
+    align-items: center;
+    width: auto;
+    height: 20px;
+    left: 930px;
+    top: 73px;
+    background-color: #c70000;
+}
+h1 {
+    color: #fff;
+}
+
+p {
+    color: #fff;
+}
+
+
