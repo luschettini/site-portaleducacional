@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/home.css" />
+
+    <!-- links slides -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <title>Portal</title>
+
+    <!--Link para pacote de icons e fonts-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container_header">
+            <div class="img_header">
+                <img src="./media/img/logo-sesi-senai.png" alt="">
+            </div>
+            <div class="division_header">
+            </div>
+            <div class="nav_header">
+                <li> <a href="index.html">HOME</a></li>
+                <li> <a href="./pages/sobrenos.html">SOBRE NÓS</a></li>
+                <li> <a href="./pages/contato.html">CADASTRE-SE<a></li>
+            </div>
+            <div class="icon_menu">
+                <i class='bx bx-menu bx-md' style='color:#ffffff'></i>
+            </div>
+        </div>
+
+    </header>
+
+
+
+    <section class="banner">
+        <div class="text-overlay">
+            <h1 class="banner-titulo">Portal Educacional - <br>
+                noticias, dicas e estudos</h1>
+        </div>
+        <img class="banner" src="./media/img/home-carrossel.png" alt="Banner Home">
+    </section>
+
+
+    <main class="container">
+        <article class="main-new">
+            <h1 class="section-title"> Sobre o site</h1>
+            <div class="linha"></div>
+            <p class="section-text">
+                Uma plataforma digital que oferece conteúdos e recursos de aprendizagem para estudantes e professores,
+                com materiais como vídeos e provas para treino. Voltado para diferentes níveis de ensino, promove o
+                aprendizado colaborativo e contínuo, tornando o ensino mais acessível e eficaz. <br> Com seções
+                dedicadas a diferentes matérias garantindo que todos tenham acesso a informações relevantes e
+                atualizadas.
+            </p>
+        </article>
+
+        <aside class="sidebar">
+            <section class="instituicoes"></section>
+            <h1 class="instituicoes-title">Conheça nossas instituições</h1>
+            <div class="linha"></div>
+            </section>
+            <section class="escolas">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <!-- Botões de navegação dos slides -->
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <img src="./media/img/vista-externa-senai.webp" class="d-block w-100"
+                                alt="Vista externa do instituto Senai Valinhos">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>SENAI Valinhos</h5>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <img src="./media/img/vista-externa-sesi.jpg" class="d-block w-100"
+                                alt="Vista externa do instituto Sesi Valinhos">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>SESI Valinhos</h5>
+                            </div>
+                        </div>
+
+                        <!-- Controles do carrossel -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+            </section>
+        </aside>
+        </div>
+    </main>
+
+    <!-- Seção de perguntas -->
+
+
+    <h2 class="titulo-secao">Tire suas Dúvidas! </h2>
+    <div class="division-content"></div>
+    
+    <section id="duvidas" class="duvidas">
+            <form action="#" method="POST"></form>
+            
+            <select id="materia" name="materia">
+                <option value="">Escolha a matéria ou conteúdo</option>
+                <option value="historia">História</option>
+                <option value="geografia">Geografia</option>
+                <option value="matematica">Matemática</option>
+                <option value="portugues">Português</option>
+                <option value="biologia">Biologia</option>
+                <option value="fisica">Física</option>
+                <option value="quimica">Química</option>
+                <option value="ingles">Inglês</option>
+                <option value="filosofia">Filosofia</option>
+                <option value="sociologia">Sociologia</option>
+                <option value="ed. fisica e artes">Ed. física e artes</option>
+        </select>
+    </form>
+      <h1 class="titulo-secao">Faça sua pergunta!</h1>
+            <p> Para conseguir uma boa resposta, seja o mais objetivo possível e respeite os Direitos Humanos.</p>
+    </section>
+        <div class="pergunta">
+            <textarea id="pergunta" name="pergunta" placeholder="Digite sua pergunta aqui..." required></textarea>
+            </form>
+        </div>
+    <div class="botao">
+        <button type="submit" class="form-button">Enviar</button>
+    </div>
+
+    <section class="news-section">
+        <h2>Principais notícias</h2>
+        <div class="news-container">
+            <div class="news-box">
+
+                <img src="img/noticia-1.png" alt="Notícia 1">
+            </div>
+            <div class="news-box">
+                <img src="imagem2.jpg" alt="Notícia 2">
+            </div>
+            <div class="news-box">
+                <img src="imagem3.jpg" alt="Notícia 3">
+            </div>
+            <div class="news-box">
+                <img src="imagem4.jpg" alt="Notícia 4">
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
