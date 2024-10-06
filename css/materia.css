@@ -99,21 +99,6 @@
   filter: brightness(70%);
 }
 
-.banner-site h1{
-    flex-direction: column;
-    font-size: var(--h1-font);
-    font-family: "Montserrat", sans-serif;
-    font-weight: 900;
-    color: var(--bg-color);
-    line-height: 1.2;
-    margin-bottom: 15px;  
-    margin-left: 80px; 
-}
-
-h1 span{
-    color:var(--secondary-color)
-}
-
 .banner-site p{
     font-family:"Montserrat", sans-serif ;
     font-size: var(--p-font);
@@ -138,4 +123,63 @@ h1 span{
     transition: all .50s ease;
     cursor: pointer;
     margin-left: 80px;
+}
+
+/* Estilos do Menu */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.menu {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Remove as margens e espaçamentos desnecessários */
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    margin: 0; /* Remover qualquer margem ao redor da lista */
+    padding: 0; /* Remover qualquer padding ao redor da lista */
+}
+
+/* Ajuste para os itens do menu */
+.menu ul li {
+    margin: 0; /* Garantir que os itens não tenham margem */
+    padding: 0;
+}
+
+/* Garantir que os links dentro dos itens também estejam bem ajustados */
+.menu ul li a {
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    display: inline-block; /* Garantir que o link ocupe o espaço do botão */
+}
+
+.menu ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Garantir que não há um item adicional "fantasma" */
+.botao-sobre {
+    background-color: #a12720;
+    color: #fff;
+}
+
+
+/* Division Content */
+.division-content {
+    flex: 1;
+    margin-left: 20px;
 }
