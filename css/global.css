@@ -3,6 +3,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* *{
+  text-align: justify;
+} */
 /* Estilo para telas pequenas, como smartphones */
 @media (max-width: 600px) {
   body {
