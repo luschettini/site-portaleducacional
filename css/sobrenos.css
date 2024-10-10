@@ -82,3 +82,99 @@
     font-weight: 800;
     
 }
+
+/* Sobre Nós */
+
+.container_banner{
+    background-color: var(--bg-color);
+    height: 50rem;
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.3rem;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to Left, rgba(0, 0, 0, 0.848), rgba(0, 0, 0, 0.634)), url('../media/img/Background-sobre.jpeg');
+    background-size:cover;
+    background-position: bottom center;
+}
+
+/* Conteúdo do Banner */
+.banner_content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7%;
+}
+.banner_content h1{
+    justify-content: justify;
+    font-size: 5.1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    color: #FFFF;
+    line-height: 1.2;
+}
+
+.banner_title h1 span{
+    color: #E30613;
+}
+
+
+/* Conteúdo do Banner */
+
+.banner_text{
+    width: 78%;
+    height: 100%;
+    display: flex;
+
+}
+.banner_text p{
+    font-family:"Montserrat", sans-serif ;
+    font-size:1rem;
+    font-weight: 450;
+    color: #FFFF;
+    margin-top: 3%;
+}
+
+/* Botão se inscrever */
+.banner_btn{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 5%;
+    margin-top: 3%;
+}
+
+.banner_btn a{
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-size: var(--p-font);
+    text-transform: uppercase;
+    font-weight: 800;
+    background-color: #E30613;
+    border-radius: 0.5rem;
+    color: #ffff;
+}
+
+/* Imagem do Banner */
+
+.banner_image{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: -1rem;
+}
+
+.alunos-sobre img{
+    width: 100%;
+    height: 100%;
+}
