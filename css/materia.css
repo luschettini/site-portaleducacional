@@ -183,3 +183,39 @@
     flex: 1;
     margin-left: 20px;
 }
+
+.dicas {
+    padding: 20px;
+    text-align: center;
+}
+
+.dicas h2 {
+    font-size: 20px;
+    margin-right: 10px;
+    text-align: left;
+}
+
+.dicas hr {
+    flex-grow: 1;
+    border: none;
+    height: 3px;
+    background-color: #800000; 
+    width: 250px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.grid-item {
+    background-color: #d9d9d9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100px;
+    text-align: center;
+    font-size: 16px;
+}
