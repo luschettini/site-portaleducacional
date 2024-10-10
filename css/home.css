@@ -119,22 +119,22 @@
   
   .main-new {
     width: 60%; /* Define 60% da largura para a div de texto */
-    margin-right: 20px;
-    border: 1px solid #ffffff;
-    box-shadow: 0 0 10px #ffffff;
+    margin-right: 8%;
+    border: 1% solid #ffffff;
+    box-shadow: 0 0 5% #ffffff;
   }
-  
-  .instituicoes {
-    width: 100%; 
-    margin: 20px 0;
-  }
-  
+
   .section-title {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
-    margin-top: 25px;
+    margin-top: 5%;
+  }
+  
+  .instituicoes {
+    width: 100%; 
+    margin-right: 7%;
   }
   
   .instituicoes-title{
@@ -142,11 +142,11 @@
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
-    margin-top: -15px;
+    margin-top: -1%;
   }
   
   .section-text{
-    margin-bottom: 15px;
+    margin-bottom: 20%;
     color: black;
     line-height: 1.0;
     font-size: larger;
@@ -155,31 +155,31 @@
   
   .sidebar {
     width: 40%; 
-    height: 430px;
+    height: 40%;
     background-color: #FFFF;
-    padding: 20px;
-    box-shadow: 0 2px 4px #E30613;
-    margin-top: 20px;
-    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 0.1rem 1rem #E30613;
+    margin-top: 3%;
+    border-radius: 1rem;
   }
   .linha {
-    width: 200px;
-    border-bottom: 5px solid #9A1915;
-    margin-bottom: 10px;
+    width: 30%;
+    border-bottom: 0.4rem solid #9A1915;
+    margin-bottom: 5%;
   }
   
   /* Estilo para as imagens do carrossel */
   .carousel-inner img {
     width: 100%; /* Faz as imagens ocuparem toda a largura do carrossel */
-    height: 250px; /* Mantém a proporção da imagem */
-    border-radius: 10px; /* Adiciona bordas arredondadas */
+    height: 15rem; /* Mantém a proporção da imagem */
+    border-radius: 1rem; /* Adiciona bordas arredondadas */
   }
   
   
   .carousel-caption {
     background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para as legendas */
-    padding: 10px; /* Adiciona um pouco de espaçamento */
-    border-radius: 5px; /* Arredonda os cantos das legendas */
+    padding: 1rem; /* Adiciona um pouco de espaçamento */
+    border-radius: 1rem; /* Arredonda os cantos das legendas */
   }
   
 
