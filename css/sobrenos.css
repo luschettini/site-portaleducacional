@@ -297,3 +297,51 @@
 
 
 /* Division content */
+
+/* Division content */
+
+.division-phrase{
+    height: 4px;
+    background-color: #b61818;
+    width: 75%;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.content_text{
+    width: 80%;
+    height: 100%;
+
+}
+
+.content_text p{
+    font-family:"Montserrat", sans-serif ;
+    margin-right: auto;
+    font-size:1.2rem;
+    font-weight: 450;
+    color: #000000;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: justify;
+    text-align: justify;
+}
+
+/* Imagem do Banner */
+
+.content_img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+}
+
+.content_img img{
+    border-radius: 2rem;
+    width: 70%;
+}
+
