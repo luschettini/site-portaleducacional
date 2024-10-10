@@ -215,14 +215,6 @@
 
 }
 
-.titulo-secao {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-  margin-top: 25px;
-  }
-
 division-content {
     align-items: center;
     width: auto;
@@ -232,9 +224,27 @@ division-content {
     background-color: #c70000;
 }
 
+.section-title1 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  margin-top: 25px;
+}
+
+.section-title2 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  color: #fff5f5;
+  
+  margin-top: 25px;
+}
+
 p {
     color: #fff;
 }
+
 .pergunta {
     max-width: 1200px;
     align-items: center;
@@ -296,7 +306,7 @@ textarea {
 
     }
 
-button {
+button1 {
     width: 1200px;
     padding: 10px;
     font-size: 25px;
