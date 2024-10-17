@@ -92,6 +92,7 @@
   filter: brightness(0.9);
 }
 
+
 .text-overlay {
   position: absolute;
   width: 50%;
@@ -103,6 +104,7 @@
   color: white;
 }
 
+
 .banner-titulo {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -111,113 +113,96 @@
   margin-bottom: 8%;
   margin-left: 20%;
 }
+  
+  .container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+  }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  /* Garante que os elementos se alinhem com o espaço correto */
-  align-items: flex-start;
-}
+ .main-new {
+    width: 60%; /* Define 60% da largura para a div de texto */
+    margin-right: 8%;
+    border: 1% solid #ffffff;
+    box-shadow: 0 0 5% #ffffff;
+  }
+  
+  .instituicoes {
+    width: 100%; 
+    margin-right: 7%;
+  }
+  
 
-.main-new {
-  width: 60%;
-  /* Define 60% da largura para a div de texto */
-  margin-right: 20px;
-  border: 1px solid #ffffff;
-  box-shadow: 0 0 10px #ffffff;
-}
+  .section-title {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    margin-top: 5%;
+  }
 
-.instituicoes {
-  width: 100%;
-  /* A seção 'Conheça nossas instituições' ocupa 100% da largura */
-  margin: 20px 0;
-}
-
-.section-title {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-  margin-top: 25px;
-}
-
-.instituicoes-title {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-  margin-top: -15px;
-}
-
-.section-text {
-  margin-bottom: 15px;
-  color: black;
-  line-height: 1.0;
-  font-size: larger;
-  max-width: 70%;
-}
-
-.sidebar {
-  width: 40%;
-  /* Define 40% da largura para o carrossel */
-  height: 430px;
-  background-color: #FFFF;
-  padding: 20px;
-  box-shadow: 0 2px 4px #E30613;
-  margin-top: 20px;
-  border-radius: 20px;
-}
-
-.linha {
-  width: 200px;
-  border-bottom: 5px solid #9A1915;
-  margin-bottom: 10px;
-}
-
-/* Estilo para as imagens do carrossel */
-.carousel-inner img {
-  width: 100%;
-  /* Faz as imagens ocuparem toda a largura do carrossel */
-  height: 250px;
-  /* Mantém a proporção da imagem */
-  border-radius: 10px;
-  /* Adiciona bordas arredondadas */
-}
-
-/* Estilo das legendas do carrossel */
-.carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5);
-  /* Fundo semi-transparente para as legendas */
-  padding: 10px;
-  /* Adiciona um pouco de espaçamento */
-  border-radius: 5px;
-  /* Arredonda os cantos das legendas */
-}
-
-/* Estilo dos botões de controle do carrossel */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgba(255, 255, 255, 0.8);
-  /* Fundo branco para os ícones */
-  border-radius: 50%;
-  /* Torna os ícones circulares */
-}
-
-/* Estilo adicional para o texto das legendas */
-.carousel-caption h5 {
-  font-size: 1.5rem;
-  /* Aumenta o tamanho do título */
-  font-weight: bold;
-  /* Torna o título em negrito */
-}
-
-.carousel-caption p {
-  font-size: 1rem;
-  /* Tamanho da fonte dos parágrafos */
-}
+  .instituicoes-title{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    margin-top: -1%;
+  }
 
 
+  .section-text{
+    margin-bottom: 20%;
+    color: black;
+    line-height: 1.0;
+    font-size: larger;
+    max-width: 70%;
+  }
+  
+  .sidebar {
+    width: 40%; 
+    height: 40%;
+    background-color: #FFFF;
+    padding: 2rem;
+    box-shadow: 0 0.1rem 1rem #E30613;
+    margin-top: 3%;
+    border-radius: 1rem;
+  }
 
+
+  .linha {
+    width: 30%;
+    border-bottom: 0.4rem solid #9A1915;
+    margin-bottom: 5%;
+  }
+
+  /* Estilo para as imagens do carrossel */
+  .carousel-inner img {
+    width: 100%; /* Faz as imagens ocuparem toda a largura do carrossel */
+    height: 15rem; /* Mantém a proporção da imagem */
+    border-radius: 1rem; /* Adiciona bordas arredondadas */
+  }
+
+ 
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para as legendas */
+    padding: 1rem; /* Adiciona um pouco de espaçamento */
+    border-radius: 1rem; /* Arredonda os cantos das legendas */
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco para os ícones */
+    border-radius: 50%; /* Torna os ícones circulares */
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.5rem; /* Aumenta o tamanho do título */
+    font-weight: bold; /* Torna o título em negrito */
+  }
+
+  .carousel-caption p {
+    font-size: 1rem; /* Tamanho da fonte dos parágrafos */
+  }
 
 .duvidas {
   max-width: 1200px;
