@@ -256,7 +256,7 @@ h2 {
 
 hr {
     width: 800px;
-    border: 2px solid #8B0000; /* cor da linha */
+    border: 2px solid #8B0000; 
     margin: 10px auto;
 }
 
@@ -264,11 +264,11 @@ hr {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Espaço entre os itens */
+    gap: 20px; 
 }
 
 .image-grid div {
-    background-color: #d3d3d3; /* Cor de fundo similar à imagem */
+    background-color: #d3d3d3; 
     width: 150px;
     height: 150px;
     display: flex;
