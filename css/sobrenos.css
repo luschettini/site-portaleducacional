@@ -622,10 +622,12 @@ footer {
   .addresses {
     display: flex;
     justify-content: space-around;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px; 
     padding: 20px 0; 
+    background-color: #b61818;
   }
   
   .address {
