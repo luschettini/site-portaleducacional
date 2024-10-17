@@ -113,7 +113,7 @@
   
   .container {
     display: flex;
-    justify-content: space-between; /* Garante que os elementos se alinhem com o espaço correto */
+    justify-content: space-between; 
     align-items: flex-start;
   }
   
@@ -125,7 +125,7 @@
   }
   
   .instituicoes {
-    width: 100%; /* A seção 'Conheça nossas instituições' ocupa 100% da largura */
+    width: 100%; 
     margin: 20px 0;
   }
   
@@ -154,7 +154,7 @@
   }
   
   .sidebar {
-    width: 40%; /* Define 40% da largura para o carrossel */
+    width: 40%; 
     height: 430px;
     background-color: #FFFF;
     padding: 20px;
@@ -175,21 +175,21 @@
     border-radius: 10px; /* Adiciona bordas arredondadas */
   }
   
-  /* Estilo das legendas do carrossel */
+  
   .carousel-caption {
     background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para as legendas */
     padding: 10px; /* Adiciona um pouco de espaçamento */
     border-radius: 5px; /* Arredonda os cantos das legendas */
   }
   
-  /* Estilo dos botões de controle do carrossel */
+
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     background-color: rgba(255, 255, 255, 0.8); /* Fundo branco para os ícones */
     border-radius: 50%; /* Torna os ícones circulares */
   }
   
-  /* Estilo adicional para o texto das legendas */
+
   .carousel-caption h5 {
     font-size: 1.5rem; /* Aumenta o tamanho do título */
     font-weight: bold; /* Torna o título em negrito */
