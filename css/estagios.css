@@ -202,8 +202,10 @@
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    padding: 1.5%;
+    /* padding: 1.5%; */
     align-items: center;
+    gap: 10px;
+    
 }
 
 .nav-content ul li a {
@@ -219,17 +221,14 @@
     background-color: #D9D9D9;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
+
+
 }
 
 /* Botão */
 .nav-content ul li a.botao-sobre {
     background-color: #b61818;
     color: #fff;
-}
-
-.nav-content ul li a:hover {
-    background-color: #868686;
-    color: #000000;
 }
 
 
@@ -366,4 +365,10 @@ footer {
 
 .banner_title{
     text-align: left;
+}
+
+.nav-bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
