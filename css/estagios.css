@@ -372,3 +372,7 @@ footer {
     flex-direction: row;
     align-items: center;
 }
+
+.container_content {
+    text-align: center;
+}
