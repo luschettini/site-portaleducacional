@@ -183,3 +183,40 @@
     flex: 1;
     margin-left: 20px;
 }
+
+h2 {
+    font-weight: bold;
+}
+
+hr {
+    width: 800px;
+    border: 2px solid #8B0000; /* cor da linha */
+    margin: 10px auto;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os itens */
+}
+
+.image-grid div {
+    background-color: #d3d3d3; /* Cor de fundo similar à imagem */
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-class {
+    width: 60px;
+    height: 60px;
+}
+
+p {
+    margin-top: 10px;
+    font-weight: bold;
+}
