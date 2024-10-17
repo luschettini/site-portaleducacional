@@ -256,26 +256,43 @@ h2 {
 
 hr {
     width: 800px;
-    border: 2px solid #8B0000; 
+    border: 2px solid #8B0000; /* cor da linha */
     margin: 10px auto;
 }
 
-.image-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; 
+.image-grid div {
+  background-color: rgb(211, 211, 211);
+  width: 12rem;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.image-grid div {
-    background-color: #d3d3d3; 
-    width: 150px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/* Layout grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
+  
+  .div1 { grid-area: 1 / 1 / 2 / 2; }
+  .div2 { grid-area: 1 / 2 / 2 / 3; }
+  .div3 { grid-area: 1 / 3 / 2 / 4; }
+  .div4 { grid-area: 1 / 4 / 2 / 5; }
+  .div5 { grid-area: 2 / 1 / 3 / 2; }
+  .div6 { grid-area: 2 / 2 / 3 / 3; }
+  .div7 { grid-area: 2 / 3 / 3 / 4; }
+  .div8 { grid-area: 2 / 4 / 3 / 5; }
+  .div9 { grid-area: 3 / 1 / 4 / 2; }
+  .div10 { grid-area: 3 / 2 / 4 / 3; }
+  .div11 { grid-area: 3 / 3 / 4 / 4; }
+  .div12 { grid-area: 3 / 4 / 4 / 5; }
 
 .img-class {
     width: 60px;
@@ -285,4 +302,68 @@ hr {
 p {
     margin-top: 10px;
     font-weight: bold;
+}
+
+.div-grid-section{
+  display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer {
+  background-color: #a12720;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+
+  .social-media-container {
+    background-color: #D71920;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: -5px;
+  }
+  .social-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-icon img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+  }
+
+  .addresses {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .address {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .divider {
+    width: 2px;
+    height: 60px;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
