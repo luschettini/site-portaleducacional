@@ -319,7 +319,7 @@ textarea {
 }
 
 button1 {
-  width: 1200px;
+   width: 1200px;
   padding: 10px;
   font-size: 25px;
   background-color: #9a1915;
@@ -330,7 +330,6 @@ button1 {
   align-self: center;
   text-align: center;
   font-weight: bold;
-
 }
 
 button:hover {
@@ -436,6 +435,7 @@ footer {
   .social-icon img {
     width: 100%;
     height: 100%;
+
     object-fit: contain;
   }
 
@@ -464,3 +464,4 @@ footer {
   }
 
 }
+
