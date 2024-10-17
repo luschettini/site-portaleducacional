@@ -20,15 +20,39 @@
             </div>
             <div class="division_header">
             </div>
-            <div class="nav_header">
+            <nav>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li> <a href="../index.html">HOME</a></li>
+                    <li><a href="./pages/sobrenos.html">SOBRE NÓS</a></li>
+                    <li><a href="./pages/contato.html">CADASTRE-SE</a></li>
+                    <li><a href="./disciplinas.html">MATÉRIAS</a></li>
+                    <li><a href="./estagios.html">ESTÁGIOS</a></li>
+                    <li><a href="./simulado.html">SIMULADO</a></li>
+                    <li><a href="./noticias.html">NOTÍCIAS</a></li>
+                    <li><a href="./dicas.html">DICAS</a></li>
+                    <li><a href="./video-aula.html">VÍDEO-AULAS</a></li>
+                </ul>
+                <ul>
                 <li> <a href="../index.html">HOME</a></li>
-                <li> <a href="./pages/sobrenos.html">SOBRE NÓS</a></li>
-                <li> <a href="./pages/contato.html">CADASTRE-SE<a></li>
-            </div>
-            <div class="icon_menu">
-                <i class='bx bx-menu bx-md' style='color:#ffffff'></i>
-            </div>
+                <li><a href="./pages/sobrenos.html">SOBRE NÓS</a></li>
+                <li><a href="./pages/contato.html">CADASTRE-SE<a></li>
+                    <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>  
+                </ul>
+            </nav>
         </div>
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'flex'
+            }
+    
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'none'
+            }
+        </script>
+
     
        </header>
     
@@ -47,7 +71,7 @@
         
             </section>
 
-            <section class="container">
+            <!-- <section class="container">
                 <nav class="menu">
                         <li><a href="#" class="botao-sobre">SOBRE</a></li>
                         <li><a href="#" class="botao">MATÉRIAS</a></li>
@@ -58,7 +82,7 @@
                         <li><a href="#" class="botao">VÍDEO-AULAS</a></li>
                 </nav>
                 <div class="division-content"></div>
-            </section>
+            </section> -->
 
             <section class="materia-container">
                 <article class="materia-start">

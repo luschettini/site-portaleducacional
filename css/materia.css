@@ -13,6 +13,12 @@
     text-decoration: none;
 }
 
+
+body{
+    min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
+}
+
 /* Definição de rotas padrão */
 
 .root{
@@ -63,25 +69,55 @@
     display: flex;
 }
 
-.nav_header{
-    display: flex;
-    flex-direction: row;
-    gap : 10%;
-    width: 65%;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    height: 80%;
+
+nav ul{
+    width: 100%;
     list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.nav_header a{
-    font-family: "Montserrat", sans-serif;
+nav li{
+    height: 50px;
+
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
     text-decoration: none;
-    font-size: var(--p-font);
+    display: flex;
+    align-items: center;
     color: white;
-    text-transform: uppercase;
-    font-weight: 800;
+}
+
+nav a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar{
+    position:fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0px 10px rgba(53, 53, 53, 0.9);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+sidebar a{
+    width: 100%;
 }
 
 /*Banner Sobre*/
