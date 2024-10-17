@@ -6,6 +6,7 @@
 /* *{
   text-align: justify;
 } */
+ 
 /* Estilo para telas pequenas, como smartphones */
 @media (max-width: 600px) {
   body {
@@ -503,6 +504,7 @@ body {
 
 .tip {
   display: flex;
+  
   margin-bottom: 20px;
   padding: 10px;
   background-color: #f4f4f4;
