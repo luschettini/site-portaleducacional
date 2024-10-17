@@ -1,0 +1,307 @@
+/* Importação de fontes  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.montserrat{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+  }
+
+  /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definição de rotas padrão */
+
+.root{
+    --bg-color: #FFFF;
+    --secondary-color: #E30613;
+    --third-color:  #a12720;
+
+    --font-text: "Montserrat", sans-serif;
+    --h1-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1rem;
+}
+
+/* Header */
+
+.container_header{
+    background-color: #E30613;
+    height: 7rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem;
+}
+
+.img_header{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.img_header img{
+    width: 75%;
+    height: 60%;
+}
+
+.division_header{
+    background-color: white;
+    width: 0.2%;
+    height: 53%;
+    display: flex;  
+}
+
+.nav_header{
+    display: flex;
+    flex-direction: row;
+    gap : 10%;
+    width: 60%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    list-style: none;
+}
+
+.nav_header a{
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-size: var(--p-font);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    
+}
+ 
+
+/* Sobre Nós */
+
+.container_banner{
+    background-color: var(--bg-color);
+    height: 40rem;
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.3rem;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to Left, rgba(0, 0, 0, 0.848), rgba(0, 0, 0, 0.634)), url('../media/img/Purple\ 3D\ Happy\ Halloween\ Greeting\ Twitter\ Banner.png');
+    background-size:cover;
+    background-position: bottom center;
+}
+
+/* Slider */
+
+.banner_slider{
+    margin: 0 auto;
+    width: 100%;
+    height: 40rem;
+    overflow: hidden;
+}
+
+.slides{
+    width: 100%;
+    height: 40rem;
+    display: flex;
+}
+
+.slides imput{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+}
+
+.slide img{
+    width: 100%;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 3px solid #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .slide-first{
+    margin-left: 0;
+
+}
+
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+.navigation-auto div{
+    border: 2px solid #2f8057;
+    padding: 5px;
+    border-radius: 10px;
+    cursor:pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #ffffff;
+
+}
+
+
+/* Seção SESI SENAI */
+
+.container_content{
+    width: 100%;
+    height: 34em;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.3rem;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-left: 3%;
+}
+
+
+.content_phrase{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.content_phrase h2{
+    margin-top: 11%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #000000;
+    line-height: 1.2;
+}
+
+.content_phrase h2 span{
+    color: #b61818;
+}
+
+
+
+
+/* Division content */
+
+.division-phrase{
+    height: 4px;
+    background-color: #b61818;
+    width: 40%;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.content_text{
+    width: 80%;
+    height: 100%;
+
+}
+
+.content_text p{
+    font-family:"Montserrat", sans-serif ;
+    margin-right: auto;
+    font-size:1.2rem;
+    font-weight: 450;
+    color: #000000;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: justify;
+    text-align: justify;
+}
+
+/* Imagem do Banner */
+
+.content_img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+}
+
+.content_img img{
+    border-radius: 2rem;
+    width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

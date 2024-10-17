@@ -370,6 +370,7 @@
     align-items: center;
     margin-left: 3%;
     justify-content: flex-start;
+    margin-bottom: 3%;
 }
 
 .info_title h2{
@@ -398,7 +399,7 @@
 .info_card{
     background-color: #e5e5e5;
     width: 100%;
-    height: 40%;
+    height: 49%;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
@@ -412,7 +413,7 @@
     width: 100%;
     height: 100%;
     display: flex;
-    gap: 5%;
+    gap: 3%;
     flex-direction: column;
     align-content: center;
     justify-content: center;
@@ -577,7 +578,8 @@
     height: 100%;
 }
 
-* Footer */
+/* Footer */
+
 footer {
     background-color: #a12720; 
     padding: 0; 
