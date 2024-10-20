@@ -87,7 +87,7 @@
 
 .container_banner{
     background-color: var(--bg-color);
-    height: 40rem;
+    height: 45rem;
     width: 100%;
     display: flex;
     gap: 0.5rem;
@@ -96,7 +96,7 @@
     align-content: center;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to Left, rgba(0, 0, 0, 0.848), rgba(0, 0, 0, 0.634)), url('../media/img/Purple\ 3D\ Happy\ Halloween\ Greeting\ Twitter\ Banner.png');
+    background-image: url('../media/img/Banner-simulado.png');
     background-size:cover;
     background-position: bottom center;
 }
@@ -133,9 +133,9 @@
     display: flex;
     flex-direction: row;
     align-content: center;
-    justify-content: center;
     align-items: center;
-    margin-top: 3%;
+    margin-top: 2%;
+    margin-bottom: 1%;
 }
 
 .content_phrase h2{
@@ -167,12 +167,12 @@
 .content_text{
     width: 80%;
     height: 100%;
+    margin-top: 3%;
 
 }
 
 .content_text p{
     font-family:"Montserrat", sans-serif ;
-    margin-right: auto;
     font-size:1.2rem;
     font-weight: 450;
     color: #000000;
@@ -181,6 +181,24 @@
     flex-direction: row;
     justify-content: justify;
     text-align: justify;
+}
+
+.banner_btn{
+    margin-top: 2%;
+    width: 90%;
+    height: 15%;
+    display: flex;
+}
+
+.banner_btn a{
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-size: var(--p-font);
+    text-transform: uppercase;
+    font-weight: 800;
+    background-color: #E30613;
+    border-radius: 0.5rem;
+    color: #ffff;   
 }
 
 /* Imagem do Banner */
@@ -200,6 +218,7 @@
     border-radius: 2rem;
     width: 70%;
 }
+
 
 
 
