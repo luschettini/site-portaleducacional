@@ -25,20 +25,18 @@
     --p-font: 1rem;
 }
 
+
 /* Header */
 
-.container_header {
+.container_header{
     background-color: #E30613;
     height: 7rem;
-    width: 100%;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 0.5rem;
     padding: 0.3rem;
 }
 
-.img_header {
+.img_header{
     width: 30%;
     height: 100%;
     display: flex;
@@ -47,23 +45,22 @@
     justify-content: center;
     align-items: center;
 }
-
-.img_header img {
+.img_header img{
     width: 75%;
     height: 60%;
 }
 
-.division_header {
+.division_header{
     background-color: white;
     width: 0.2%;
     height: 53%;
-    display: flex;
+    display: flex;  
 }
 
-.nav_header {
+.nav_header{
     display: flex;
     flex-direction: row;
-    gap: 10%;
+    gap : 10%;
     width: 60%;
     align-content: center;
     justify-content: center;
@@ -72,17 +69,19 @@
     list-style: none;
 }
 
-.nav_header a {
+.nav_header a{
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
     font-size: var(--p-font);
     color: white;
     text-transform: uppercase;
     font-weight: 800;
-
+    
 }
 
-.container_banner {
+/* Sobre Nós */
+
+.container_banner{
     background-color: var(--bg-color);
     height: 50rem;
     width: 100%;
@@ -93,49 +92,44 @@
     align-content: center;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to Left, rgba(0, 0, 0, 0.848), rgba(0, 0, 0, 0.634)), url('../media/Background-sobre.jpeg');
-    background-size: cover;
+    background-image: linear-gradient(to Left, rgba(0, 0, 0, 0.848), rgba(0, 0, 0, 0.634)), url('../media/img/fundo-dicas2.jpg');
+    background-size:cover;
     background-position: bottom center;
 }
 
 /* Conteúdo do Banner */
-.banner_content {
+.banner_content{
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
     margin-left: 7%;
+    margin-top: 20%;
 }
-
-.banner_content h1 {
-    justify-content: justify;
+.banner_content h1{
     font-size: 5.1rem;
-    font-family: "Montserrat", sans-serif;
+    justify-content: flex-start;
     font-weight: 900;
     color: #FFFF;
     line-height: 1.2;
 }
 
-.banner_title h1 span {
+.banner_title h1 span{
     color: #E30613;
 }
 
 
 /* Conteúdo do Banner */
 
-.banner_text {
+.banner_text{
     width: 78%;
     height: 100%;
     display: flex;
 
 }
-
-.banner_text p {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
+.banner_text p{
+    font-size:1rem;
     font-weight: 450;
     color: #FFFF;
     margin-top: 3%;
@@ -243,20 +237,27 @@ footer {
 }
 
 
-/*"header"*/
-.menu ul li a {
-    display: inline-block;
-    padding: 8px 60px;
-    text-decoration: none;
-    color: #000000;
-    border-radius: 20px;
+/* Dicas Section */
+.container_content {
+    padding: 2rem;
 }
 
-.botao-sobre {
-    background-color: #f2f2f2;
+.tip {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.tip img {
+    width: 80px;
+    margin-right: 1rem;
+}
 
-.botao:hover {
-    background-color: #ddd;
+.text {
+    flex: 1;
+    font-family: Arial, Helvetica, sans-serif;
 }
