@@ -102,6 +102,7 @@
 
 /* Estilização da div principal da página */
 .container {
+    
     max-width: 80%;
     margin: 0 auto;
     background-color: #fefefe;
@@ -111,23 +112,74 @@
 }
 
 /* Estilização do título */
-h1 {
+.question h1 {
+    font-family:"Montserrat", (sans-serif);
     text-align: center;
-    color: #333;
+    color: #1d1c1c;
+    margin: 2% 2% 5% 2% ;
 }
+
+.question p{
+    font-family:"Montserrat", (sans-serif);
+    font-size: 1rem;
+    text-align: justify;
+    color: #1c1c1c;
+    margin: 0% 5% 1% 2%;
+}
+
+
 
 /* Estilização das questões */
 .question {
+    font-family: "Montserrat", sans-serif;
     margin-bottom: 2rem;
+}
+
+/* Estilização do enunciado */
+
+.question-content h2 {
+    font-family:"Montserrat", (sans-serif);
+    font-style: italic;
+    font-size: 1.4rem;
+    text-align: flex-start;
+    color: #141414;
+    margin: 0% 0% 2% 2%;
+}
+
+.question-content p {
+    font-family:"Montserrat", (sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: justify;
+    color: #000000;
+    margin: 0% 5% 1% 2%;
+}
+
+.question-content h5 {
+    font-family:"Montserrat", (sans-serif);
+    font-size: 0.8rem;
+    text-align: justify;
+    color: #000000;
+    margin: 0% 5% 1% 2%;
+}
+
+.question-instruction p{
+    font-family:"Montserrat", (sans-serif);
+    font-size: 1rem;
+    text-align: justify;
+    color: #792121;
+    margin: 0% 5% 1% 2%;
 }
 
 /* Estilização de cada opção de resposta */
 .option {
-    margin-bottom: 1rem; 
+    margin: 2% 5% 1% 2%;
+   
 }
 
 /* Estilização do botão de envio */
 button {
+    font-family: "Montserrat", sans-serif;
     display: block;
     width: 100%;
     padding: 1rem;
@@ -145,6 +197,7 @@ button:hover {
 
 /* Estilização para o contorno de resposta correta */
 label.correct {
+    font-family: "Montserrat", sans-serif;
     border: 0.125rem solid green; 
     padding: 0.3125rem; 
     border-radius: 0.3125rem; 
@@ -153,6 +206,7 @@ label.correct {
 
 /* Estilização para o contorno de resposta incorreta */
 label.incorrect {
+     font-family: "Montserrat", sans-serif;
     border: 0.125rem solid red; 
     padding: 0.3125rem; 
     border-radius: 0.3125rem;
@@ -161,6 +215,7 @@ label.incorrect {
 
 /* Estilização para a justificativa e gabarito */
 .justificativa, .gabarito {
+    font-family: "Montserrat", sans-serif;
     margin-top: 1rem; 
     font-size: 0.875rem; 
     color: #333;
