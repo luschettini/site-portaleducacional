@@ -111,12 +111,20 @@
     box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
 }
 
+.container h1{
+    font-family:"Montserrat", (sans-serif);
+    font-size:2rem;
+    text-align: center;
+    color: #1d1c1c;
+    margin: 6% 2% 2% 2% ;
+}
+
 /* Estilização do título */
 .question h1 {
     font-family:"Montserrat", (sans-serif);
     text-align: center;
     color: #1d1c1c;
-    margin: 2% 2% 5% 2% ;
+    margin: 6% 2% 2% 2% ;
 }
 
 .question p{
