@@ -25,16 +25,14 @@
     --p-font: 1rem;
 }
 
+
 /* Header */
 
 .container_header {
     background-color: #E30613;
     height: 7rem;
-    width: 100%;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 0.5rem;
     padding: 0.3rem;
 }
 
@@ -82,6 +80,8 @@
 
 }
 
+/* Sobre Nós */
+
 .container_banner {
     background-color: var(--bg-color);
     height: 50rem;
@@ -93,7 +93,7 @@
     align-content: center;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to Left, rgba(0, 0, 0, 0.848), rgba(0, 0, 0, 0.634)), url('../media/Background-sobre.jpeg');
+    background-image: linear-gradient(to Left, rgba(0, 0, 0, 0.848), rgba(0, 0, 0, 0.634)), url('../media/img/fundo-dicas2.jpg');
     background-size: cover;
     background-position: bottom center;
 }
@@ -104,16 +104,14 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
     margin-left: 7%;
+    margin-top: 20%;
 }
 
 .banner_content h1 {
-    justify-content: justify;
     font-size: 5.1rem;
-    font-family: "Montserrat", sans-serif;
+    justify-content: flex-start;
     font-weight: 900;
     color: #FFFF;
     line-height: 1.2;
@@ -134,7 +132,6 @@
 }
 
 .banner_text p {
-    font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     font-weight: 450;
     color: #FFFF;
@@ -242,21 +239,26 @@ footer {
     gap: 3rem;
 }
 
-
-/*"header"*/
-.menu ul li a {
-    display: inline-block;
-    padding: 8px 60px;
-    text-decoration: none;
-    color: #000000;
-    border-radius: 20px;
+.container_content {
+    padding: 2rem;
 }
 
-.botao-sobre {
-    background-color: #f2f2f2;
+.tip {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.tip img {
+    width: 150px;
+    margin-right: 1rem;
+}
 
-.botao:hover {
-    background-color: #ddd;
+.text {
+    flex: 1;
+    font-family: Arial, Helvetica, sans-serif;
 }
