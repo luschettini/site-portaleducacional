@@ -48,6 +48,8 @@
     justify-content: center;
     align-items: center;
 }
+
+
 .img_header img{
     width: 75%;
     height: 60%;
@@ -138,6 +140,7 @@
     font-weight: 450;
     color: #FFFF;
     margin-top: 3%;
+    align-items: center;
 }
 
 /* Botão se inscrever */
@@ -266,6 +269,7 @@
     margin-right: auto;
     font-size:1.2rem;
     text-align: center;
+    align-items: center;
     font-weight: 450;
     color: #000000;
     margin-top: 3%;
