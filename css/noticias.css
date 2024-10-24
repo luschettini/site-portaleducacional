@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(228, 129, 0);
 }
 
 /* Definição de rotas padrão */
