@@ -127,12 +127,20 @@
     margin: 6% 2% 2% 2% ;
 }
 
+/* .question-text{
+    width: 60ch; Ajuste conforme necessário 
+   margin: 0 auto; 
+}  */
+
 .question p{
     font-family:"Montserrat", (sans-serif);
     font-size: 1rem;
     text-align: justify;
     color: #1c1c1c;
     margin: 0% 5% 1% 2%;
+    /* hyphens: auto; */
+    /* word-spacing: 0.1em; /* Ajuste conforme necessário  */
+    /* text-align-last: /*left; ou right, center  */ 
 }
 
 
@@ -177,6 +185,13 @@
     text-align: justify;
     color: #792121;
     margin: 0% 5% 1% 2%;
+}
+
+.question-img{
+    width: 50%;
+    height: auto;
+    margin: auto;
+    justify-content: center;
 }
 
 /* Estilização de cada opção de resposta */
