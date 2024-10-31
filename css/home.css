@@ -102,7 +102,7 @@ nav a:hover{
   margin-right: auto;
 } */
 
-.sidebar{
+.menuSidebar{
   position: fixed;
   top: 0;
   right: 0;
@@ -118,11 +118,11 @@ nav a:hover{
   justify-content: flex-start;
 }
 
-.sidebar li{
+.menuSidebar li{
   width: 100%;
 }
 
-sidebar a{
+.menuSidebar a{
   width: 100%;
 }
 
@@ -133,7 +133,7 @@ sidebar a{
 }
 
 @media(max-width: 400px){
-  .sidebar{
+  .menuSidebar{
       width: 100%;
   }
 }
