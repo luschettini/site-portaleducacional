@@ -273,4 +273,5 @@ a{
 h2 {
     text-align: center;
     flex-direction: row;
+    font-size: 2em;
 }
