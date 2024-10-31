@@ -242,6 +242,7 @@ footer {
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;   
 }
 
 .tip img {
@@ -267,6 +268,10 @@ a{
     color: white;
     text-decoration: none;
     text-align: center;
+}
+
+p{
+    margin-top: 1rem;
 }
 
 h2{
