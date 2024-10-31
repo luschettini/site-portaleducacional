@@ -83,7 +83,6 @@
 }
  
 
-/* Sobre Nós */
 
 .container_banner{
     background-color: var(--bg-color);
@@ -102,7 +101,7 @@
 }
 
 
-/* Seção SESI SENAI */
+
 
 .container_content{
     width: 100%;
@@ -232,6 +231,145 @@
     border-radius: 2rem;
     width: 70%;
 }
+
+/* seção do gráfico de anúncios */
+
+.content-container{
+    display: flex;
+    width: 100%;
+    height: 20vh;
+}
+
+.container-box{
+    margin: 3rem 1rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.box_phrase{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.box_phrase h4{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #000000;
+    line-height: 1.2;
+}
+
+.roll-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.box_phrase p{
+    font-family:"Montserrat", sans-serif ;
+    font-size:1rem;
+    font-weight: 600;
+    color: #000000;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: justify;
+    text-align: justify;
+}
+
+.box-time-line{
+    width: 100%;
+    display: flex;
+}
+
+.box{
+    width: 100%;  
+}
+
+.box-first-line{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.box-number{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.box-number h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    color: #ebebeb;
+    line-height: 1.2;
+    background-color: #E30613;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 45px;
+}
+
+.box-division{
+    height: 2%;
+    background-color: #E30613;
+    width: 32%;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-left: 2%;
+}
+
+.box-time-line{ 
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+
+}
+
+.box-second-line{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.title{
+    margin-bottom: 2%;
+    word-spacing: 0.1em;
+    text-align: justify;
+    font-size: 1.3rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}       
+
+.text{    
+    word-spacing: 0.1em;
+    text-align: justify;
+    font-size: 1rem;
+    font-family: 500;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+
+
 
 
 
