@@ -171,6 +171,12 @@
 
 }
 
+.container_content{
+    width: 100%;
+    height: 50vh;
+    background-color: #ebebeb;
+}
+
 .content_text p{
     font-family:"Montserrat", sans-serif ;
     font-size:1.2rem;
@@ -226,6 +232,8 @@
     border-radius: 2rem;
     width: 70%;
 }
+
+
 
 
 
