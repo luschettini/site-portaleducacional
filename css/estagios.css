@@ -199,39 +199,58 @@
     display: flex;
 }
 
+
 /* Barra de Navegação */
+
+.nav-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 1.5%;
+}
 
 .nav-content ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style-type: none;
-    /* padding: 1.5%; */
-    align-items: center;
-    gap: 10px;
+    gap: 1rem;
     
+    /* padding: 1.5%; */
+    /* align-items: center; */
 }
 
 .nav-content ul li a {
-    width: 11rem;
+    width: 15rem;
     height: 3rem;
     font-family:"Montserrat", sans-serif ;
-    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    /* display: inline-block; */
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
     padding: 13% 40%;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1.3rem;
+    font-weight: 800;
     color: black;
     border-radius: 30px;
     background-color: #D9D9D9;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
-
-
 }
 
 /* Botão */
 .nav-content ul li a.botao-sobre {
     background-color: #b61818;
     color: #fff;
+}
+
+.nav-content ul li a:hover {
+    background-color: #868686;
+    color: #000000;
 }
 
 
@@ -246,7 +265,6 @@
     border-radius: 10px;
     margin-bottom: 1.5%;
 }
-
 /* Division content */
 
 .division-phrase{
@@ -257,26 +275,50 @@
     border-radius: 10px;
 }
 
+h2 {
+    font-family:"Montserrat", sans-serif ;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
 .content_text{
     width: 80%;
     height: 100%;
-    text-align: center;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 20px;
+}
+
+.content_title{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 20px;
+}
+
+.content_title p{
+    font-family:"Montserrat", sans-serif ;
+    font-size:1.8rem;
+    font-weight: 650;
+    color: #000000;
+    margin-bottom: 0.4rem;
+    text-align: justify;
+    font-style: uppercase;
 
 }
 
+
 .content_text p{
     font-family:"Montserrat", sans-serif ;
-    margin-right: auto;
     font-size:1.2rem;
     text-align: center;
-    align-items: center;
     font-weight: 450;
     color: #000000;
-    margin-top: 3%;
-    display: flex;
-    flex-direction: row;
-    justify-content: justify;
+    margin-bottom: 3rem;
     text-align: justify;
+    margin-bottom: 3rem;
+    line-height: 1.6rem;
 }
 
 /* Imagem do Banner */

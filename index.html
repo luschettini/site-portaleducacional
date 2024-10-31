@@ -29,14 +29,39 @@
             </div>
             <div class="division_header">
             </div>
-            <div class="nav_header">
-                <li> <a href="index.html">HOME</a></li>
-                <li> <a href="./pages/sobrenos.html">SOBRE NÓS</a></li>
-                <li> <a href="./pages/contato.html">CADASTRE-SE<a></li>
-            </div>
-            <div class="icon_menu">
-                <i class='bx bx-menu bx-md' style='color:#ffffff'></i>
-            </div>
+            <nav>
+                <ul class="menuSidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li> <a href="index.html">HOME</a></li>
+                    <li><a href="./pages/sobrenos.html">SOBRE NÓS</a></li>
+                    <li><a href="./pages/contato.html">CADASTRE-SE</a></li>
+                    <li><a href="./disciplinas.html">MATÉRIAS</a></li>
+                    <li><a href="./estagios.html">ESTÁGIOS</a></li>
+                    <li><a href="./simulado.html">SIMULADO</a></li>
+                    <li><a href="./noticias.html">NOTÍCIAS</a></li>
+                    <li><a href="./dicas.html">DICAS</a></li>
+                    <li><a href="./video-aula.html">VÍDEO-AULAS</a></li>
+                </ul> 
+                    <!-- para adicionar um item somente no menu, alterar somente a ul class sidebar -->
+                </ul>
+                <ul class="header-nav">
+                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="./pages/sobrenos.html">Sobre nós</a></li>
+                    <li class="hideOnMobile"><a href="./pages/sobrenos.html">Cadastre-se</a></li>
+                    <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </nav>
+            <script>
+                function showSidebar(){
+                    const menuSidebar = document.querySelector('.menuSidebar');
+                    menuSidebar.style.display = 'flex'
+                }
+        
+                function hideSidebar(){
+                    const menuSidebar = document.querySelector('.menuSidebar');
+                    menuSidebar.style.display = 'none'
+                }
+            </script>
         </div>
 
     </header>
