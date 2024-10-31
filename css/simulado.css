@@ -1,0 +1,256 @@
+/* Importação de fontes  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.montserrat{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+  }
+
+  /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definição de rotas padrão */
+
+.root{
+    --bg-color: #FFFF;
+    --secondary-color: #E30613;
+    --third-color:  #a12720;
+
+    --font-text: "Montserrat", sans-serif;
+    --h1-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1rem;
+}
+
+/* Header */
+
+.container_header{
+    background-color: #E30613;
+    height: 7rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem;
+}
+
+.img_header{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.img_header img{
+    width: 75%;
+    height: 60%;
+}
+
+.division_header{
+    background-color: white;
+    width: 0.2%;
+    height: 53%;
+    display: flex;  
+}
+
+.nav_header{
+    display: flex;
+    flex-direction: row;
+    gap : 10%;
+    width: 60%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    list-style: none;
+}
+
+.nav_header a{
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-size: var(--p-font);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    
+}
+ 
+
+/* Sobre Nós */
+
+.container_banner{
+    background-color: var(--bg-color);
+    height: 45rem;
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.3rem;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../media/img/Banner-simulado.png');
+    background-size:cover;
+    background-position: bottom center;
+}
+
+
+/* Seção SESI SENAI */
+
+.container_content{
+    width: 100%;
+    height: 34em;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.3rem;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-left: 3%;
+}
+
+
+.content_phrase{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.content_phrase h2{
+    margin-top: 11%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #000000;
+    line-height: 1.2;
+}
+
+.content_phrase h2 span{
+    color: #b61818;
+}
+
+
+
+
+/* Division content */
+
+.division-phrase{
+    height: 4px;
+    background-color: #b61818;
+    width: 40%;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.content_text{
+    width: 80%;
+    height: 100%;
+    margin-top: 3%;
+
+}
+
+.container_content{
+    width: 100%;
+    height: 50vh;
+    background-color: #ebebeb;
+}
+
+.content_text p{
+    font-family:"Montserrat", sans-serif ;
+    font-size:1.2rem;
+    font-weight: 450;
+    color: #000000;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: justify;
+    text-align: justify;
+}
+
+.banner_btn{
+    margin-top: 2%;
+    width: 90%;
+    height: 15%;
+    display: flex;
+}
+
+.banner_btn a{
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-size: var(--p-font);
+    text-transform: uppercase;
+    font-weight: 800;
+    border-radius: 1.5rem;
+    color: #ffff;   
+}
+
+.btn{
+    background-color: #E30613;
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Imagem do Banner */
+
+.content_img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+}
+
+.content_img img{
+    border-radius: 2rem;
+    width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
