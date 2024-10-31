@@ -196,9 +196,17 @@
     font-size: var(--p-font);
     text-transform: uppercase;
     font-weight: 800;
-    background-color: #E30613;
-    border-radius: 0.5rem;
+    border-radius: 1.5rem;
     color: #ffff;   
+}
+
+.btn{
+    background-color: #E30613;
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Imagem do Banner */
