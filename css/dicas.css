@@ -51,13 +51,14 @@
 }
 
 /* Botão */
-.nav-content ul li a.botao-sobre {
+.nav-content ul li a .botao-dicas {
     background-color: #b61818;
     color: #fff;
 }
 
+/*passar o mouse sobre o botão*/
 .nav-content ul li a:hover {
-    background-color: #868686;
+    background-color: #b61818;
     color: #000000;
 }
 
@@ -261,13 +262,6 @@ footer {
     width: 100%;
     height: 5%;
     margin-top: 3%;
-}
-
-a{
-    color: white;
-    text-decoration: none;
-    text-align: center;
-
 }
 
 h2 {
