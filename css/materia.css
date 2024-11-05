@@ -64,27 +64,79 @@
     display: flex;
 }
 
-.nav_header {
-    display: flex;
-    flex-direction: row;
-    gap: 10%;
-    width: 65%;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    height: 80%;
+.header-nav{
     list-style: none;
+    display: flex;
+    margin-left: 15rem;
 }
 
-.nav_header a {
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+
+}
+
+nav a{
     font-family: "Montserrat", sans-serif;
+    font-size: larger;
+    height: 100%;
+    padding: 0 30px;
     text-decoration: none;
-    font-size: var(--p-font);
+    display: flex;
+    align-items: center;
     color: white;
-    text-transform: uppercase;
-    font-weight: 800;
+  }
+
+nav a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* nav li:first-child{
+    margin-right: auto;
+} */
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0px 10px rgba(53, 53, 53, 0.9);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+sidebar a{
+    width: 100%;
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+}
+
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
 /*Banner Sobre*/
 .banner-site {
     position: relative;
@@ -102,18 +154,11 @@
 
 .banner-text {
     font-family: "Montserrat", sans-serif;
-    font-size: var(--p-font);
+    color: white;
+    font-size: var(--h1-font);
     font-weight: 400;
     line-height: 2rem;
     margin-left: 20rem;
-}
-
-.banner-text h1 {
-    font-color: var(--bg-color);
-}
-
-.banner-text h1 span {
-    color: var(--secondary-color);
 }
 
 .btn {
@@ -355,9 +400,53 @@ p {
 }
 
 footer {
+<<<<<<< HEAD
+  background-color: #a12720;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+
+  .social-media-container {
+    background-color: #D71920;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: -5px;
+  }
+  .social-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-icon img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+  }
+
+  .addresses {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .address {
+    flex: 1;
+    max-width: 300px;
+=======
     background-color: #a12720;
     padding: 0;
     margin: 0;
+>>>>>>> 0910194c90666ec3c044e3abc1e3266089346cec
     text-align: center;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
