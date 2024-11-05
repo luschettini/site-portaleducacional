@@ -15,21 +15,25 @@
 
 /* Definição de rotas padrão */
 
-.root{
+:root{
     --bg-color: #FFFF;
     --secondary-color: #E30613;
     --third-color:  #a12720;
-
     --font-text: "Montserrat", sans-serif;
     --h1-font: 6rem;
     --h2-font: 3rem;
     --p-font: 1rem;
 }
 
+.montserrat {
+    font-family: var(--font-text);
+    font-optical-sizing: auto;
+}
+
 /* Header */
 
 .container_header{
-    background-color: #E30613;
+    background-color:  var(--secondary-color);
     height: 7rem;
     width: 100%;
     display: flex;
@@ -50,11 +54,11 @@
 }
 .img_header img{
     width: 75%;
-    height: 60%;
+    height: auto;
 }
 
 .division_header{
-    background-color: white;
+    background-color: var(--bg-color);
     width: 0.2%;
     height: 53%;
     display: flex;  
@@ -76,55 +80,40 @@
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
     font-size: var(--p-font);
-    color: white;
+    color: var(--bg-color);
     text-transform: uppercase;
     font-weight: 800;
     
 }
  
-
-
 .container_banner{
-    background-color: var(--bg-color);
     height: 45rem;
-    width: 100%;
     display: flex;
-    gap: 0.5rem;
     padding: 0.3rem;
-    flex-direction: row;
-    align-content: center;
     justify-content: center;
     align-items: center;
     background-image: url('../media/img/Banner-simulado.png');
     background-size:cover;
-    background-position: bottom center;
+    background-position: center;
 }
-
-
-
 
 .container_content{
     width: 100%;
-    height: 34em;
     display: flex;
-    gap: 0.5rem;
-    padding: 0.3rem;
-    flex-direction: row;
-    align-content: center;
     justify-content: center;
     align-items: center;
+    height: 59vh;
+    background-color: #ebebeb;
+    
 }
 
 .content_box{
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
     margin-left: 3%;
 }
-
 
 .content_phrase{
     width: 100%;
@@ -150,9 +139,6 @@
     color: #b61818;
 }
 
-
-
-
 /* Division content */
 
 .division-phrase{
@@ -170,18 +156,12 @@
 
 }
 
-.container_content{
-    width: 100%;
-    height: 50vh;
-    background-color: #ebebeb;
-}
 
 .content_text p{
     font-family:"Montserrat", sans-serif ;
     font-size:1.2rem;
-    font-weight: 450;
+    font-weight: 4o0;
     color: #000000;
-    margin-top: 3%;
     display: flex;
     flex-direction: row;
     justify-content: justify;
@@ -197,10 +177,7 @@
 }
 
 .banner_btn{
-    margin-top: 2%;
-    width: 90%;
-    height: 15%;
-    display: flex;
+    margin-top: 3%;
 }
 
 .banner_btn a{
@@ -214,12 +191,18 @@
 }
 
 .btn{
-    background-color: #E30613;
+    background-color: var(--secondary-color);
     width: 10rem;
     height: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 1.5rem;
+    color: var(--bg-color);
+    font-family: var(--font-text);
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 /* Imagem do Banner */
@@ -236,8 +219,9 @@
 }
 
 .content_img img{
+    max-width: 100%;
     border-radius: 2rem;
-    width: 70%;
+    margin: 0 auto;
 }
 
 /* seção do gráfico de anúncios */
@@ -275,21 +259,27 @@
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    justify-content: space-around;
+    padding: 2rem;
 }
 
 .box_phrase p{
-   
+    font-family: var(--font-text);
+    margin-top: 2%;
+    font-size: 1rem;
 }
 
-.box-time-line{
+.box-time-line{ 
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-bottom: 2%;
     width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;    
 }
 
-.box{
-    width: 100%;
-      
-}
 
 .box-first-line{
     display: flex;
@@ -334,14 +324,6 @@
     margin-left: 2%;
 }
 
-.box-time-line{ 
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2%;
-    margin-bottom: 2%;
-
-
-}
 
 .box-second-line{
     display: flex;
@@ -373,7 +355,7 @@ footer {
     padding: 0; 
     margin: 0; 
     text-align: center;
-    color: white;
+    color: var(--bg-color);
     font-family: "Montserrat", sans-serif;
     position: relative; 
   }
@@ -409,14 +391,15 @@ footer {
     height: 100%; 
     object-fit: contain; 
   }
+  
   .addresses {
     display: flex;
     justify-content: space-around;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-text);
     align-items: center;
     flex-wrap: wrap;
     gap: 20px; 
-    padding: 20px 0; 
+    padding: 2rem 0; 
     background-color: #b61818;
   }
   
@@ -427,13 +410,6 @@ footer {
     padding: 10px; 
   }
   
-  .divider {
-    width: 2px;
-    height: 60px;
-    background-color: white;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
 
 
 
