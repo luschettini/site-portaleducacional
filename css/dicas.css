@@ -161,8 +161,9 @@
 }
 
 .banner_content h1 {
-    font-size: 5.1rem;
-    justify-content: flex-start;
+    justify-content: justify;
+    font-size: 4.1rem;
+    font-family: "Montserrat", sans-serif;
     font-weight: 900;
     color: #FFFF;
     line-height: 1.2;
@@ -171,6 +172,8 @@
 .banner_title h1 span {
     color: #E30613;
 }
+
+
 
 /* Footer*/
 footer {
@@ -268,4 +271,8 @@ h2 {
     text-align: center;
     flex-direction: row;
     font-size: 2em;
+}
+
+.banner_title p{
+    color: #E30613;
 }
