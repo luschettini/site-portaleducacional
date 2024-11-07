@@ -129,11 +129,11 @@
 
 }
 
-/* Dicas */
 
-.container_banner {
+/* Notícias */
+
+.container_banner{
     background-color: var(--bg-color);
-    
     height: 50rem;
     width: 100%;
     display: flex;
@@ -143,33 +143,99 @@
     align-content: center;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to Left, rgba(0, 0, 0, 0.848), rgba(0, 0, 0, 0.634)), url('../media/img/banner-noticias.png');
-    background-size: cover;
+    background-image: linear-gradient(to Left, rgba(0, 0, 0, 0.848), rgba(0, 0, 0, 0.634)), url('../media/img/img-noticias/Banner-noticias.png');
+    background-size:cover;
     background-position: bottom center;
 }
 
 /* Conteúdo do Banner */
-.banner_content {
+.banner_content{
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
     margin-left: 7%;
-    margin-top: 20%;
 }
-
-.banner_content h1 {
-    font-size: 5.1rem;
-    justify-content: flex-start;
+.banner_content h1{
+    justify-content: justify;
+    font-size: 4rem;
+    font-family: "Montserrat", sans-serif;
     font-weight: 900;
     color: #FFFF;
     line-height: 1.2;
 }
 
-.banner_title h1 span {
+.banner_title h1 span{
     color: #E30613;
 }
+
+.banner_title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+}
+
+
+
+/* Conteúdo do Banner */
+
+.banner_text{
+    width: 78%;
+    height: 100%;
+    display: flex;
+
+
+}
+.banner_text p{
+    font-family:"Montserrat", sans-serif ;
+    font-size:1rem;
+    font-weight: 450;
+    color: #FFFF;
+    margin-top: 3%;
+    text-align: center;
+}
+
+
+/* Imagem do Banner */
+
+.banner_image{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: -1rem;
+}
+
+.aluno-notícias img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Division content  */
+
+.division{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.banner_division{
+    width: 100%;
+    height: 100%;
+    background-color: #a12720;
+    display: flex;
+}
+
 
 /* Footer*/
 footer {
