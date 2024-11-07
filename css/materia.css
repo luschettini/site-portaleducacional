@@ -189,7 +189,7 @@ sidebar a{
     padding: 0;
     width: 100%;
     height: 55rem;
-    background-image: linear-gradient(to Left, rgba(0, 0, 0, 0.848), rgba(0, 0, 0, 0.634)), url('../media/img/disciplinas-banner.png');
+    background-image: linear-gradient(to Left, rgba(0, 0, 0, 0.848), rgba(0, 0, 0, 0.634)), url('../media/img/DisciplinasFundo.png');
     background-size: cover;
     background-position: bottom center;
     display: flex;
