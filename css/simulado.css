@@ -227,6 +227,7 @@
 /* seção do gráfico de anúncios */
 
 .content-container{
+
     display: flex;
     justify-content: center;
     width: 100%;
@@ -263,6 +264,7 @@
 /* time line */
 
 .roll-container{
+    height: 30vh;
     display: flex;
     justify-content: center;
     display: flex;
