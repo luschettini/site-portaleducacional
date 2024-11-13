@@ -12,6 +12,69 @@
     box-sizing: border-box;
 }
 
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    flex-wrap: wrap;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius:5% ;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 2px solid red;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.text {
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom:30px;
+    margin-top: 50px;
+    line-height: 1.6;
+}
+
+.image-container img{
+    border-radius: 25px;
+}
+
+image {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #f8f8f8;
+    border-radius: 50px 50px;
+}
+
+
+.divider-title {
+    border: 0;
+    height: 3px;
+    background: #d71920   ;
+    margin: 0%;
+    width: 100%;
+  }
+
 /* Barra de Navegação */
 
 .nav-content{
@@ -51,13 +114,14 @@
 }
 
 /* Botão */
-.nav-content ul li a.botao-sobre {
+.nav-content ul li a .botao-dicas {
     background-color: #b61818;
     color: #fff;
 }
 
+/*passar o mouse sobre o botão*/
 .nav-content ul li a:hover {
-    background-color: #868686;
+    background-color: #b61818;
     color: #000000;
 }
 
@@ -129,11 +193,11 @@
 
 }
 
+/* Dicas */
 
-/* Notícias */
-
-.container_banner{
+.container_banner {
     background-color: var(--bg-color);
+    
     height: 50rem;
     width: 100%;
     display: flex;
@@ -143,98 +207,35 @@
     align-content: center;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to Left, rgba(0, 0, 0, 0.848), rgba(0, 0, 0, 0.634)), url('../media/img/img-noticias/Banner-noticias.png');
-    background-size:cover;
+    background-image: linear-gradient(to Left, rgba(0, 0, 0, 0.848), rgba(0, 0, 0, 0.634)), url('../media/img/DicasFundo.png');
+    background-size: cover;
     background-position: bottom center;
 }
 
 /* Conteúdo do Banner */
-.banner_content{
+.banner_content {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
     margin-left: 7%;
+    margin-top: 20%;
 }
-.banner_content h1{
+
+.banner_content h1 {
     justify-content: justify;
-    font-size: 4rem;
+    font-size: 4.1rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
     color: #FFFF;
     line-height: 1.2;
 }
 
-.banner_title h1 span{
+.banner_title h1 span {
     color: #E30613;
 }
 
-.banner_title{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    align-content: center;
-}
-
-
-
-/* Conteúdo do Banner */
-
-.banner_text{
-    width: 78%;
-    height: 100%;
-    display: flex;
-
-
-}
-.banner_text p{
-    font-family:"Montserrat", sans-serif ;
-    font-size:1rem;
-    font-weight: 450;
-    color: #FFFF;
-    margin-top: 3%;
-    text-align: center;
-}
-
-
-/* Imagem do Banner */
-
-.banner_image{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    margin-bottom: -1rem;
-}
-
-.aluno-notícias img {
-    width: 100%;
-    height: 100%;
-}
-
-/* Division content  */
-
-.division{
-    width: 100%;
-    height: 5vh;
-    display: flex;
-    flex-direction: row;
-    align-content: flex-end;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.banner_division{
-    width: 100%;
-    height: 100%;
-    background-color: #a12720;
-    display: flex;
-}
 
 
 /* Footer*/
@@ -302,13 +303,12 @@ footer {
 
 .tip {
     display: flex;
-    align-items: flex-start;
     margin-bottom: 2rem;
     background-color: #f5f5f5;
+    margin-top: 2rem;
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 2rem;   
 }
 
 .tip img {
@@ -330,18 +330,12 @@ footer {
     margin-top: 3%;
 }
 
-a{
-    color: white;
-    text-decoration: none;
+h2 {
     text-align: center;
+    flex-direction: row;
+    font-size: 2em;
 }
 
-p{
-    margin-top: 1rem;
-}
-
-h2{
- text-align: center;
- font-size: 2.2em;
-
+.banner_title p{
+    color: #E30613;
 }
