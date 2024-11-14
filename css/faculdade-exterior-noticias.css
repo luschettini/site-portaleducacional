@@ -95,7 +95,7 @@ body {
 
 main{
     padding: 1em;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -110,6 +110,12 @@ main{
     font-size: 0.9em;
     color: #333;
     margin-bottom: 1rem;
+}
+
+.video-ad iframe{
+    margin-bottom: 1em;
+    width: 1000px;
+    height:315px;
 }
 
 .video-ad video{
@@ -216,8 +222,7 @@ footer {
 
   /* Para telas médias (tablet) */
 
-  @media (min-widht: 769px and max-width: 1023px) {
-
+  @media (min-widht: 769px) and (max-width: 1023px) {
     .container_header {
         flex-direction: column;
         height: auto;
@@ -268,6 +273,11 @@ footer {
 
     .universidade-img {
         max-height: 300px;
+    }
+
+    .video-ad iframe{
+        width: 100%;
+        height:auto;
     }
 
     footer .addresses {
