@@ -95,7 +95,7 @@ body {
 
 main{
     padding: 1em;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -114,7 +114,7 @@ main{
 
 .video-ad iframe{
     margin-bottom: 1em;
-    width: 760px;
+    width: 1000px;
     height:315px;
 }
 
