@@ -207,24 +207,52 @@
         <button1 type="submit" class="form-button">Enviar</button1>
     </div>
 
-    <section class="news-section">
-        <h2 class="title-news">Principais notícias</h2>
-        <div class="news-container">
-            <div class="news-box">
+    
 
-                <img src="./media/img/unicamp.png" alt="Notícia 1">
+    <main class="main-content">
+
+        <section class="quadro-notícias">
+            <h1 class="title-news">PRINCIPAIS NOTÍCIAS</h1>
+
+            <div id="movimentos-linha">
+                <hr>
             </div>
-            <div class="news-box">
-                <img src="./media/img/fuvest.png" alt="Notícia 2">
+
+            <div class="noticia-container-1">
+                <button class="noticia-button prev" onclick="slideLeft1()">&#10094;</button>
+                <div class="cards-slide">
+                    <div class="cards">
+                        <!-- Card 1- Noticia-->
+                         <div class="card">
+                            <img src="./media/img/noticia-enem.png" alt="Noticia-Enem">
+                            <div class="card-content">
+                                <h3>Conheça as faculdades no exterior que aceitam a nota do Enem</h3>
+                                <p>Diversos países oferecem vagas nas universidades para estudantes brasileiros que possuem uma boa nota no ENEM</p>
+                            </div>
+                            <a href="./pages/faculdade-exterior-noticias.html">
+                                <button class="button-noticias">Ler mais</button>
+                            </a>
+                         </div>
+                         <!-- Card 2 - Noticia -->
+
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="news-box">
-                <img src="./media/img/puc.png" alt="Notícia 3">
-            </div>
-            <div class="news-box">
-                <img src="./media/img/unesp.png" alt="Notícia 4">
-            </div>
-        </div>
-    </section>
+        </section>
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
     
 
     <footer>
@@ -259,6 +287,8 @@
         </div>
     </footer>
 
+    <script src="./js/home.js"></script>
+    
 </body>
 
 </html>
