@@ -167,6 +167,67 @@ nav a:hover{
   margin-left: 20%;
 }
   
+
+/* Barra de Navegação */
+
+.nav-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 1.5%;
+}
+
+.nav-content ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 1rem;
+  
+  /* padding: 1.5%; */
+  /* align-items: center; */
+}
+
+.nav-content ul li a {
+  width: 15rem;
+  height: 3rem;
+  font-family:"Montserrat", sans-serif ;
+  align-items: center;
+  justify-content: center;
+  /* display: inline-block; */
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+  padding: 13% 40%;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: black;
+  border-radius: 30px;
+  background-color: #D9D9D9;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Linha vermelha abaixo dos botões ativos */
+.nav-division {
+  margin-top: 1.5%;
+  height: 4px;
+  background-color: #b61818;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  margin-bottom: 1.5%;
+}
+
+
+.nav-content ul li a:hover {
+  background-color: #868686;
+  color: #000000;
+}
+
   .container {
     display: flex;
     justify-content: space-between; 
@@ -258,12 +319,12 @@ nav a:hover{
   }
 
 .duvidas {
-  max-width: 1200px;
-  padding: 20px;
+  max-width: 75rem;
+  padding: 1.25rem;
   background-color: #9a1915;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
@@ -273,8 +334,8 @@ nav a:hover{
 division-content {
   align-items: center;
   width: auto;
-  height: 20px;
-  left: 930px;
+  height: 0.7rem;
+  left: 58rem;
   top: 73px;
   background-color: #c70000;
 }
@@ -284,7 +345,7 @@ division-content {
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
-  margin-top: 25px;
+  margin-top: 1.5rem;
 }
 
 .section-title2 {
@@ -292,7 +353,7 @@ division-content {
   font-optical-sizing: auto;
   font-weight: 800;
   color: #fff5f5;
-  margin-top: 25px;
+  margin-top: 1.5rem;
 }
 
 .div-title {
@@ -310,24 +371,24 @@ p {
 }
 
 .pergunta {
-  max-width: 1200px;
+  max-width: 75rem;
   align-items: center;
-  padding: 20px;
+  padding: 1.25rem;
   background-color: #c4c0c0;
-  box-shadow: 0 0 10px rgba(153, 149, 149, 0.1);
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  box-shadow: 0 0 0.6rem rgba(153, 149, 149, 0.1);
+  border-bottom-right-radius: 1.25rem;
+  border-bottom-left-radius: 1.25rem;
   margin: 0 auto;
 }
 
 .noticia {
-  max-width: 1200px;
-  margin-top: 120px;
+  max-width: 3rem;
+  margin-top: 0.1rem;
   align-items: center;
-  padding: 20px;
+  padding: 1.25rem;
   background-color: #D9D9D9;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
+  box-shadow: 0 0 0.6rem rgba(255, 255, 255, 0.1);
+  border-radius: 0.3rem;
   justify-content: center;
 }
 
@@ -339,7 +400,7 @@ form {
 }
 
 label {
-  margin-bottom: 10px;
+  margin-bottom: 0.6rem;
   font-weight: bold;
   color: #fcf3f3;
 }
@@ -347,18 +408,18 @@ label {
 select,
 textarea {
   width: 100%;
-  max-width: 1200px;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  max-width: 75rem;
+  padding: 0.6rem;
+  margin-bottom: 1.25rem;
+  border: 0.06rem solid #ccc;
+  border-radius: 0.3rem;
   font-size: large;
   font-weight: bold;
 }
 
 textarea {
-  max-width: 1300px;
-  min-height: 200px;
+  max-width: 82rem;
+  min-height: 12.5rem;
   font-size: large;
 }
 
@@ -366,19 +427,19 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 0.6rem;
   flex-direction: column;
 
 }
 
 button1 {
-   width: 1200px;
-  padding: 10px;
-  font-size: 25px;
+   width: 82rem;
+  padding: 0.6rem;
+  font-size: 1.5rem;
   background-color: #9a1915;
   color: white;
   border: none;
-  border-radius: 30px;
+  border-radius: 1.8rem;
   cursor: pointer;
   align-self: center;
   text-align: center;
@@ -389,55 +450,107 @@ button:hover {
   background-color: #c70000;
 }
 
-.news-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+/* Principais notícias */
+.news-section {
+  padding: 3rem;
+  margin-top: 4rem;
 }
 
-.news-box {
-  width: 300px;
-  height: 250px;
-  background-color: #dcdcdc;
-  overflow: hidden;
-}
-
-.news-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-  }
-  
-  .news-section {
-      padding: 20px;
+.title-news {
+  font-weight: bold;
+      font-size: 3rem;
       text-align: center;
-  }
-  
+}
+
   .news-container {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 1.25rem;
       justify-content: center;
   }
   
   .news-box {
-      flex: 1 1 200px; 
+      flex: 1 1 12.5rem; 
   }
   
   .news-box img {
       width: 100%;
       height: auto;
       display: block;
-      border-radius: 8px; 
+      border-radius: 0.5rem; 
   }
   
- 
+
+
+/* Footer */
+
+footer {
+  background-color: #a12720; 
+  padding: 0; 
+  margin: 0; 
+  text-align: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  position: relative; 
+}
+
+.social-media-container {
+  background-color: #D71920; 
+  padding: 0.6rem; 
+  border-radius: 0.3rem;
+  margin-bottom: -0.3rem; 
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  background-color: #D71920;
+  padding: 10px;
+  border-radius: 5px;
+  width: calc(100% + 20px);
+  margin: 0 -10px;     box-sizing: border-box; 
+}
+
+.social-icon {
+  width: 50px; 
+  height: 50px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: contain; 
+}
+.addresses {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; 
+  padding: 20px 0; 
+  background-color: #b61818;
+}
+
+.address {
+  flex: 1;
+  max-width: 300px; 
+  text-align: center;
+  padding: 0.6rem; 
+}
+
+.divider {
+  width: 2px;
+  height: 60px;
+  background-color: white;
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
+}
+
   @media (max-width: 768px) {
       .news-container {
           flex-direction: column; 
