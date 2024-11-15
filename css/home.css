@@ -527,6 +527,185 @@ button:hover {
   margin-right: 1rem;
 }
 
+.noticia-container-1 {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  max-width: 82rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.cards-slide{
+  overflow: hidden;
+  width: 100%;
+}
+
+.cards{
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.card {
+  background-color: var(--secondary-color);
+  border-radius: 0.5rem;
+  box-shadow: 0rem 0.3rem rgba(0.5, 0.5, 0.5, 0.5);
+  overflow: hidden;
+  width: 26rem;
+  height: 28rem;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin-bottom: 1rem;  
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1.3rem;
+}
+
+.noticia-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+}
+
+.prev {
+  left: -10px;
+}
+
+.button-noticias {
+  background-color: var(--third-color);
+  color:#000000;
+  width: 60%;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 5rem;
+}
+
+.button-noticias:hover{
+  background-color:#c70000;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+@media screen and (max-width: 500px) {
+  #tittle-news {
+    height: 0.2rem;
+    width: 63%;
+    background-color: var(--secondary-color);
+    margin-left: 5rem;
+  }
+
+  .tittle-news {
+    margin-left: 5rem;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .noticia-container-1 {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    max-width: 50rem; 
+    overflow: hidden;
+    margin-top: 8rem;
+    margin-left: 4rem;
+  }
+
+  .cards-slide{
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .cards{
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .card{
+    width: 16rem;
+    height: 29rem;
+  }
+
+  .button-noticias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    margin-left: 3.4rem;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  #movimentos-linha {
+    height: 0.2rem;
+    width: 40%;
+    margin-left: 6rem;
+  }
+
+  .tittle-news {
+    margin-left: 6rem;
+  }
+
+  .noticia-container-1
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Footer */
 
 footer {
