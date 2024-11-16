@@ -102,6 +102,7 @@
 .address {
     line-height: 1.6;
 }
+
 form .row {
     gap: 2rem;
 }
@@ -111,14 +112,16 @@ input {
     font-size: var(--p-font);
 }
 
-input, select {
+input,
+select {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 1rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-input:focus, select:focus {
+input:focus,
+select:focus {
     border-color: var(--secondary-color);
     outline: none;
     box-shadow: 0 0 0 3px rgba(227, 6, 19. 0.5);
@@ -232,25 +235,6 @@ footer {
 
     .nav_header a {
         font-size: 1.1em;
-    }
-
-    main {
-        padding: 1em;
-        max-width: 90%;
-    }
-
-    .news-university h2 {
-        font-size: 1.6em;
-    }
-
-    .news-university .content {
-        font-size: 1em;
-    }
-
-    .universidade-img {
-        max-width: 100%;
-        border-radius: 2rem;
-        margin: 0 auto;
     }
 
     footer .addresses {
