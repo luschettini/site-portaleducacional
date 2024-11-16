@@ -99,6 +99,9 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.address {
+    line-height: 1.6;
+}
 form .row {
     gap: 2rem;
 }
@@ -127,6 +130,7 @@ label {
     color: #555;
     font-weight: 500;
 }
+
 
 footer {
     background-color: #a12720;
