@@ -23,6 +23,13 @@ O portal será organizado em mini-sites, sendo que cada um contará com:
   - Node.js
 - **Ferramentas de teste:**
   - Testes: Go Live, Vercel
+ 
+
+## 👥 Equipe do Projeto
+- **Desenvolvedores:** Alunas do curso de Desenvolvimento de Sistemas 2TDS1.
+- **Designers:** Alunas do curso de Desenvolvimento de Sistemas 2TDS1, responsáveis pelo layout e experiência do usuário.
+- **Colaboradores:** Professores e especialistas que contribuem com conteúdos.
+
 
 
 
