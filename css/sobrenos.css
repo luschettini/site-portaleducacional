@@ -1,13 +1,12 @@
-
 /* Importação de fontes  */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-.montserrat{
+.montserrat {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-  }
+}
 
-  /* Reset */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -16,10 +15,10 @@
 
 /* Definição de rotas padrão */
 
-.root{
+.root {
     --bg-color: #FFFF;
     --secondary-color: #E30613;
-    --third-color:  #a12720;
+    --third-color: #a12720;
 
     --font-text: "Montserrat", sans-serif;
     --h1-font: 6rem;
@@ -29,7 +28,7 @@
 
 /* Header */
 
-.container_header{
+.container_header {
     background-color: #E30613;
     height: 7rem;
     width: 100%;
@@ -40,7 +39,7 @@
     padding: 0.3rem;
 }
 
-.img_header{
+.img_header {
     width: 30%;
     height: 100%;
     display: flex;
@@ -49,22 +48,23 @@
     justify-content: center;
     align-items: center;
 }
-.img_header img{
+
+.img_header img {
     width: 75%;
     height: 60%;
 }
 
-.division_header{
+.division_header {
     background-color: white;
     width: 0.2%;
     height: 53%;
-    display: flex;  
+    display: flex;
 }
 
-.nav_header{
+.nav_header {
     display: flex;
     flex-direction: row;
-    gap : 10%;
+    gap: 10%;
     width: 60%;
     align-content: center;
     justify-content: center;
@@ -73,19 +73,19 @@
     list-style: none;
 }
 
-.nav_header a{
+.nav_header a {
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
     font-size: var(--p-font);
     color: white;
     text-transform: uppercase;
     font-weight: 800;
-    
+
 }
 
 /* Sobre Nós */
 
-.container_banner{
+.container_banner {
     background-color: var(--bg-color);
     height: 50rem;
     width: 100%;
@@ -97,12 +97,12 @@
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(to Left, rgba(0, 0, 0, 0.848), rgba(0, 0, 0, 0.634)), url('../media/img/Background-sobre.jpeg');
-    background-size:cover;
+    background-size: cover;
     background-position: bottom center;
 }
 
 /* Conteúdo do Banner */
-.banner_content{
+.banner_content {
     width: 100%;
     height: 100%;
     display: flex;
@@ -112,7 +112,8 @@
     align-items: center;
     margin-left: 7%;
 }
-.banner_content h1{
+
+.banner_content h1 {
     justify-content: justify;
     font-size: 5.1rem;
     font-family: "Montserrat", sans-serif;
@@ -121,50 +122,53 @@
     line-height: 1.2;
 }
 
-.banner_title h1 span{
+.banner_title h1 span {
     color: #E30613;
 }
 
 
 /* Conteúdo do Banner */
 
-.banner_text{
+.banner_text {
     width: 78%;
     height: 100%;
     display: flex;
 
 }
-.banner_text p{
-    font-family:"Montserrat", sans-serif ;
-    font-size:1rem;
+
+.banner_text p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
     font-weight: 450;
     color: #FFFF;
     margin-top: 3%;
 }
 
 /* Botão se inscrever */
-.banner_btn{
+.banner_btn {
+    background-color: #E30613;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 5%;
+    width: 16rem;
+    height: 3rem;
     margin-top: 3%;
+    border-radius: 30px;
+    align-items: center;
+    margin-left: -70%;
 }
 
-.banner_btn a{
+.banner_btn a {
+    padding: 0.7rem 1rem;
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
     font-size: var(--p-font);
-    text-transform: uppercase;
     font-weight: 800;
-    background-color: #E30613;
-    border-radius: 0.5rem;
     color: #ffff;
 }
 
 /* Imagem do Banner */
 
-.banner_image{
+.banner_image {
     width: 100%;
     height: 100%;
     display: flex;
@@ -174,14 +178,14 @@
     margin-bottom: -1rem;
 }
 
-.alunos-sobre img{
+.alunos-sobre img {
     width: 100%;
     height: 100%;
 }
 
 /* Division content  */
 
-.division{
+.division {
     width: 100%;
     height: 2rem;
     display: flex;
@@ -191,7 +195,7 @@
     align-items: flex-end;
 }
 
-.banner_division{
+.banner_division {
     width: 100%;
     height: 100%;
     background-color: #a12720;
@@ -200,7 +204,7 @@
 
 /* Barra de Navegação */
 
-.nav-content{
+.nav-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -213,23 +217,17 @@
     justify-content: space-between;
     list-style-type: none;
     gap: 1rem;
-    
-    /* padding: 1.5%; */
-    /* align-items: center; */
 }
 
 .nav-content ul li a {
     width: 15rem;
     height: 3rem;
-    font-family:"Montserrat", sans-serif ;
+    font-family: "Montserrat", sans-serif;
     align-items: center;
     justify-content: center;
-    /* display: inline-block; */
-
     display: flex;
     flex-direction: column;
     gap: 10px;
-    
     padding: 13% 40%;
     font-size: 1.3rem;
     font-weight: 800;
@@ -238,6 +236,16 @@
     background-color: #D9D9D9;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Botão */
@@ -266,7 +274,7 @@
 
 /* Seção SESI SENAI */
 
-.container_content{
+.container_content {
     width: 100%;
     height: 34em;
     display: flex;
@@ -278,7 +286,7 @@
     align-items: center;
 }
 
-.content_box{
+.content_box {
     width: 100%;
     height: 100%;
     display: flex;
@@ -288,7 +296,7 @@
     margin-left: 3%;
 }
 
-.content_phrase{
+.content_phrase {
     width: 100%;
     height: 100%;
     display: flex;
@@ -299,7 +307,7 @@
     margin-top: 3%;
 }
 
-.content_phrase h2{
+.content_phrase h2 {
     margin-top: 11%;
     font-family: "Montserrat", sans-serif;
     font-size: 3rem;
@@ -308,16 +316,15 @@
     line-height: 1.2;
 }
 
-.content_phrase h2 span{
+.content_phrase h2 span {
     color: #b61818;
 }
 
 
-/* Division content */
 
 /* Division content */
 
-.division-phrase{
+.division-phrase {
     height: 4px;
     background-color: #b61818;
     width: 75%;
@@ -325,16 +332,16 @@
     border-radius: 10px;
 }
 
-.content_text{
+.content_text {
     width: 80%;
     height: 100%;
 
 }
 
-.content_text p{
-    font-family:"Montserrat", sans-serif ;
+.content_text p {
+    font-family: "Montserrat", sans-serif;
     margin-right: auto;
-    font-size:1.2rem;
+    font-size: 1.2rem;
     font-weight: 450;
     color: #000000;
     margin-top: 3%;
@@ -346,7 +353,7 @@
 
 /* Imagem do Banner */
 
-.content_img{
+.content_img {
     width: 100%;
     height: 100%;
     display: flex;
@@ -357,7 +364,7 @@
     margin-right: auto;
 }
 
-.content_img img{
+.content_img img {
     border-radius: 2rem;
     width: 70%;
 }
@@ -365,7 +372,7 @@
 
 /* Seção informações / dados do SESI SENAI */
 
-.info_container{
+.info_container {
     width: 100%;
     margin-top: 3%;
     height: 34em;
@@ -378,7 +385,7 @@
     align-items: center;
 }
 
-.info_title{    
+.info_title {
     width: 40%;
     height: 30%;
     display: flex;
@@ -390,7 +397,7 @@
     margin-bottom: 3%;
 }
 
-.info_title h2{
+.info_title h2 {
     margin-top: 11%;
     font-family: "Montserrat", sans-serif;
     font-size: 3rem;
@@ -399,11 +406,11 @@
     line-height: 1.2;
 }
 
-.info_title h2 span{
+.info_title h2 span {
     color: #b61818;
 }
 
-.info_box{
+.info_box {
     width: 100%;
     height: 50%;
     display: flex;
@@ -413,7 +420,7 @@
     justify-content: flex-start;
 }
 
-.info_card{
+.info_card {
     background-color: #e5e5e5;
     width: 100%;
     height: 49%;
@@ -426,7 +433,7 @@
     margin-right: 3%;
 }
 
-.card_content{
+.card_content {
     width: 100%;
     height: 100%;
     display: flex;
@@ -437,7 +444,7 @@
     align-items: center;
 }
 
-.card_content h1{
+.card_content h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 3rem;
     font-weight: 900;
@@ -445,19 +452,22 @@
     line-height: 1.2;
 }
 
-.card_content h3{
+.card_content h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
     font-weight: 900;
     color: #a12720;
     line-height: 1.2;
-}   
+}
 
 /* Seção teams */
 
-.teams_container{    
+.teams_section {
+    flex: 1 1 32%;
+}
+
+.teams_container {
     width: 100%;
-    height: 70rem;
     display: flex;
     gap: 0.5rem;
     padding: 0.3rem;
@@ -465,9 +475,9 @@
     align-content: center;
     justify-content: center;
     align-items: center;
-}               
+}
 
-.teams_content{ 
+.teams_content {
     width: 100%;
     height: 15%;
     display: flex;
@@ -477,7 +487,7 @@
     align-items: center;
 }
 
-.teams_title{       
+.teams_title {
     width: 35%;
     height: 100%;
     display: flex;
@@ -487,7 +497,7 @@
     justify-content: center;
 }
 
-.teams_title h1{
+.teams_title h1 {
     margin-top: 11%;
     font-family: "Montserrat", sans-serif;
     font-size: 3rem;
@@ -496,11 +506,11 @@
     line-height: 1.2;
 }
 
-.teams_title h1 span{
+.teams_title h1 span {
     color: #b61818;
 }
 
-.teams_division{
+.teams_division {
     width: 90%;
     height: 1%;
     background-color: #a12720;
@@ -509,7 +519,7 @@
 
 }
 
-.team_box{
+.team_box {
     width: 100%;
     height: 100%;
     display: flex;
@@ -517,8 +527,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}   
-.box_1{ 
+}
+
+.box_1 {
     width: 100%;
     height: 100%;
     display: flex;
@@ -527,7 +538,8 @@
     justify-content: center;
     align-items: center;
 }
-.box_2{ 
+
+.box_2 {
     width: 100%;
     height: 100%;
     display: flex;
@@ -538,7 +550,7 @@
     align-items: center;
 }
 
-.team_section{
+.team_section {
     width: 100%;
     height: 100%;
     display: flex;
@@ -549,7 +561,7 @@
     align-items: center;
 }
 
-.team_text{
+.team_text {
     width: 100%;
     height: 10%;
     display: flex;
@@ -559,7 +571,7 @@
     align-items: center;
 }
 
-.team_text h1{
+.team_text h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 1.4rem;
     font-weight: 900;
@@ -567,30 +579,30 @@
     line-height: 1.2;
 }
 
-.team_text h2{
+.team_text h2 {
     font-family: "Montserrat", sans-serif;
     font-size: 1.2rem;
     font-weight: 300;
     color: #000000;
     line-height: 1.2;
-}   
+}
 
-.equipes-portal{
+.equipes-portal {
     width: 80%;
     height: 40%;
-}   
+}
 
-.equipes-portal img{
+.equipes-portal img {
     width: 100%;
     height: 100%;
 }
-    
-.equipes-portal2{
+
+.equipes-portal2 {
     width: 80%;
     height: 40%;
-}   
+}
 
-.equipes-portal2 img{
+.equipes-portal2 img {
     width: 100%;
     height: 100%;
 }
@@ -598,87 +610,89 @@
 /* Footer */
 
 footer {
-    background-color: #a12720; 
-    padding: 0; 
-    margin: 0; 
+    background-color: #a12720;
+    padding: 0;
+    margin: 0;
     text-align: center;
     color: white;
     font-family: "Montserrat", sans-serif;
-    position: relative; 
-  }
-  
-  .social-media-container {
-    background-color: #D71920; 
-    padding: 10px; 
+    position: relative;
+}
+
+.social-media-container {
+    background-color: #D71920;
+    padding: 10px;
     border-radius: 5px;
-    margin-bottom: -5px; 
-  }
-  
-  .social-media {
+    margin-bottom: -5px;
+}
+
+.social-media {
     display: flex;
     justify-content: center;
-    gap: 20px; 
+    gap: 20px;
     background-color: #D71920;
     padding: 10px;
     border-radius: 5px;
     width: calc(100% + 20px);
-    margin: 0 -10px;     box-sizing: border-box; 
-  }
-  
-  .social-icon {
-    width: 50px; 
-    height: 50px; 
+    margin: 0 -10px;
+    box-sizing: border-box;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .social-icon img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: contain; 
-  }
-  .addresses {
+}
+
+.social-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.addresses {
     display: flex;
     justify-content: space-around;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px; 
-    padding: 20px 0; 
+    gap: 20px;
+    padding: 20px 0;
     background-color: #b61818;
-  }
-  
-  .address {
+}
+
+.address {
     flex: 1;
-    max-width: 300px; 
+    max-width: 300px;
     text-align: center;
-    padding: 10px; 
-  }
-  
-  .divider {
+    padding: 10px;
+}
+
+.divider {
     width: 2px;
     height: 60px;
     background-color: white;
     margin-left: 10px;
-    margin-right: 10px;
-  }
+    margin-right: 10px;
+}
 
 
-  /* Responsividade */
+/* Responsividade */
 
-  @media (max-wid: 768px) {
+@media (max-width: 768px) {
 
     .container_header {
         flex-direction: column;
         height: auto;
-        padding: 1rem;
+        /* padding: 1rem; */
         align-items: center;
         justify-content: center;
     }
 
     .img_header {
-        width: 50%;
+        width: 70%;
         height: auto;
         margin-bottom: 1rem;
     }
@@ -691,74 +705,199 @@ footer {
         flex-direction: column;
         gap: 1rem;
         width: 100%;
-        align-items: flex-start;
-        padding: 1rem;
+        align-items: center;
+        padding: 2rem;
     }
 
     .nav_header a {
-        font-size: 1.1em;
+        font-size: 1.3rem;
     }
 
+    /* Spbre Nós  */
+
     .container_banner {
-        height: 100vh;
+        height: 50rem;
     }
-    
+
+    .alunos-sobre {
+        display: none;
+    }
+
+    .content_img img {
+        background-image: none;
+    }
+
+    .banner_content h1 {
+        margin-left: 2%;
+        font-size: 5rem;
+    }
 
     .banner_content h1 {
         font-size: 3rem;
+        justify-content: justify;
     }
 
     .banner_text p {
         font-size: 1rem;
+        justify-content: justify;
+    }
+
+    .banner_btn {
+        margin-left: 0;
+        width: 70%;
     }
 
     .banner_btn a {
         padding: 0.5rem 1rem;
     }
 
-    .nav-content ul li a {
-        padding: 1rem 2rem;
-        font-size: 1rem;
+    .menu-list {
+        flex-direction: column;
     }
 
-    .content_img img{
-        background: none;
+    .nav-content ul li a {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+
+    }
+
+    /* Frase SESI e SENAI */
+    .container_content {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .content_box {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .content_phrase h2 {
+        font-size: 1.8rem;
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    .content_text p {
+        font-size: 1rem;
+        text-align: justify;
+        padding: 1rem 0;
+        word-wrap: break-word;
+    }
+
+    .content_img {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content_img img {
+        max-width: 100%;
+        height: auto;
+        margin: 1rem 0;
+    }
+
+    /* SESI SENAI Card - Informações */
+
+    .info_container {
+        display: flex;
+        flex-direction: column;
+        align-items: column;
+        padding: 1rem;
     }
 
     .info_title h2 {
         font-size: 2rem;
+        text-align: center;
+        word-wrap: break-word;
     }
 
-    .info_title h2 span {
-        font-size: 1.5rem;
+    .divider{
+        background-color: #b61818;
+        width: 70%;
+        height: 1%;
+        margin: 1rem auto;
+    }
+
+    .info_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
     .info_card {
-        height: 100%;
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .card_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
     }
 
     .card_content h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0.5rem 0;
     }
 
     .card_content h3 {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .team_box {
+        flex-direction: column;
+    }
+
+        /* Times box */
+    
+    .team_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .box_1, .box_2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+    }
+
+    .team_section { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .team_section img {
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
     }
 
     .teams_title h1 {
         font-size: 2rem;
     }
 
-    .teams_title h1 span {
-        font-size: 1.5rem;
-    }
-
     .team_text h1 {
         font-size: 1.2rem;
+        text-align: center;
+        margin: 0.5rem 0;
     }
 
     .team_text h2 {
         font-size: 1rem;
+        text-align: center;
     }
 
     footer .addresses {
@@ -775,6 +914,5 @@ footer {
         width: 45px;
         height: 45px;
     }
-    
-  }
 
+} 
