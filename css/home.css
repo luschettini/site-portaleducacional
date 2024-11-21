@@ -64,13 +64,22 @@
   display: flex;
 }
 
-.header-nav{
+.nav_header {
   list-style: none;
   display: flex;
   margin-left: 15rem;
 }
 
-nav ul{
+.nav_header a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  font-size: var(--p-font);
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+nav ul {
   width: 100%;
   list-style: none;
   display: flex;
@@ -78,11 +87,11 @@ nav ul{
   align-items: center;
 }
 
-nav li{
+nav li {
   height: 50px;
 }
 
-nav a{
+nav a {
   font-family: "Montserrat", sans-serif;
   font-size: larger;
   height: 100%;
@@ -93,22 +102,52 @@ nav a{
   color: white;
 }
 
-nav a:hover{
+nav a:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* nav li:first-child{
-  margin-right: auto;
-} */
+/* Estilo para o conteúdo do dropdown */
+.dropdown-content {
+  display: none; /* Inicialmente escondido */
+  position: absolute; /* Posicionamento absoluto para sobrepor outros elementos */
+  background-color: #f9f9f9; /* Cor de fundo */
+  min-width: 160px; /* Largura mínima */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra */
+  z-index: 1; /* Garantir que fique acima de outros elementos */
+}
 
-.menuSidebar{
+/* Estilo para os itens do dropdown */
+.dropdown-content li {
+  color: rgb(53, 53, 53) !important; /* Cor do texto */
+  padding: 12px 16px; /* Espaçamento interno */
+  text-decoration: none; /* Remover sublinhado */
+  display: block; /* Exibir como bloco */
+  background-color: #f1f1f1; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo para os itens do dropdown ao passar o mouse */
+.dropdown-content li:hover {
+  color: black; /* Manter a cor do texto preta ao passar o mouse */
+}
+
+/* Classe para exibir o dropdown */
+.dropdown-content.show {
+  display: block; /* Exibir o dropdown */
+}
+
+/* Classe para exibir o dropdown */
+.dropdown-content.show {
+    display: block; /* Exibir o dropdown */
+}
+
+.menuSidebar {
   position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
   width: 250px;
   z-index: 999;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #a12720;
   backdrop-filter: blur(10px);
   box-shadow: -10px 0px 10px rgba(53, 53, 53, 0.9);
   display: none;
@@ -117,25 +156,35 @@ nav a:hover{
   justify-content: flex-start;
 }
 
-.menuSidebar li{
+.menuSidebar li {
   width: 100%;
 }
 
-.menuSidebar a{
+.menuSidebar a {
   width: 100%;
 }
 
-@media(max-width: 800px){
-  .hideOnMobile{
-      display: none;
+@media(max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .dropdown-content {
+    left: 0;
   }
 }
 
-@media(max-width: 400px){
-  .menuSidebar{
-      width: 100%;
+@media(max-width: 400px) {
+  .menuSidebar {
+    width: 100%;
+  }
+  .dropdown {
+    width: 100%;
+  }
+  .dropdown-content {
+    position: static;
   }
 }
+
 
 .banner {
   padding: 0;
