@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/sisu-noticias"></link>
+    <title>Entenda como funciona o SiSU e o processo de inscrição</title>
+
+    
+<!--Link para pacote de icons e fonts-->
+<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <section class="container_header">
+            <div class="img_header">
+                <img src="../media/img/logo-sesi-senai.png" alt="SESI SENAI Logo" class="logo-img">
+            </div>
+
+            <div class="division_header">
+            </div>
+            <div class="nav_header">
+                <li> <a href="../index.html">HOME</a></li>
+                <li> <a href="../pages/sobrenos.html">SOBRE NÓS</a></li>
+                <li> <a href="../pages/cadastro.html">CADASTRE-SE<a></li>
+            </div>
+    
+            <div class="icon_menu">
+                <i class='bx bx-menu bx-md' style='color:#ffffff'></i>
+            </div>
+    
+        </section>
+    </header>
+
+    <section class="division">
+
+        <div class="banner_division"></div>
+
+    </section>
+
+    <main>
+        <article class="news-mental">
+
+            <h2>Entenda como funciona o SiSU e o processo de inscrição </h2>
+
+            <p class="author"> Por Luiza Schettini - 21/11/2024 9:30</p>
+
+            <img src="../media/img/" alt="menina e sistema do sisu" class="sisu-img">
+
+            <p class="intro">
+                As inscrições do SiSU 2024 começaram no dia 22 de janeiro e o sistema é a principal porta de entrada para o Ensino Superior no Brasil. Mas apesar de existir desde 2010, dúvidas sobre como funciona o SiSU ainda surgem entre os candidatos.
+            </p>
+
+            <p class="intro">
+                Por isso, a equipe do Portal preparou esse conteúdo especial sobre o processo seletivo. Bora conferir e se preparar? 🎓
+            </p>
+
+            <h3>O que é o SiSU?</h3>
+
+            <p class="content">O Sistema de Seleção Unificada (SiSU) é o programa do Governo Federal para selecionar candidatos às vagas de universidades públicas brasileiras e institutos federais.></p>
+
+            <p class="content">A seleção dos estudantes acontece com base na nota do Exame Nacional do Ensino Médio (Enem) até o limite da oferta das vagas, por curso e modalidade de concorrência, de acordo com as escolhas dos inscritos.</p>
+
+            <h3>Para o quê serve o SiSU?</h3>
+
+            <p class="content">O SiSU nasceu com o intuito de substituir os processos seletivos próprios das instituições públicas do país e promover acesso universal ao Ensino Superior.</p>
+
+            <p class="content">Anteriormente, cada universidade aplicava sua própria avaliação que, muitas vezes, coincidia com datas de provas de outras instituições. Isso obrigava os candidatos a fazerem escolhas e limitava o acesso às diferentes universidades e institutos. Hoje, um estudante paulista pode optar por uma universidade em Goiás ou vice-versa, sem precisar viajar para outra cidade ou estado a fim de prestar o vestibular.</p>
+
+            <h3>Como funciona o SiSU?</h3>
+
+            <p class="content">Para entender como funciona o Sisu, é preciso saber que o sistema classifica os estudantes com base na nota do Enem. De forma simples, os inscritos com as 40 maiores notas preenchem as 40 vagas disponíveis de curso em uma modalidade específica. A inscrição é gratuita e o processo acontece em uma única edição.</p>
+
+            <p class="content">As inscrições para o SiSU ocorriam duas vezes ao ano até 2023, no primeiro e segundo semestre. No entanto, a partir de agora, a seleção ocorrerá em uma edição anual para evitar desistências e vagas remanescentes.</p>
+
+            <h3>Como funciona o sistema de classificação?</h3>
+
+            <p class="content">As notas de corte do SiSU são as notas mínimas que o candidato precisa ter obtido no Enem para conseguir ingressar no curso e faculdade desejados. Diariamente, o sistema atualiza as notas de corte parciais, conforme os candidatos realizam as inscrições.</p>
+
+            <p class="content">A nota de corte oficial para cada curso e modalidade só é divulgada após o fim do processo, sendo a nota de corte a mesma da classificação da última posição do candidato aprovado em primeira chamada.</p>
+
+            <h3>Quem pode se inscrever no SiSU?</h3>
+
+            <p class="content">Qualquer candidato que tenha realizado a última edição do Enem pode fazer a inscrição no SiSU. No caso, quem realizou a edição de 2023 pode se inscrever no Sisu 2024. O sistema recupera automaticamente as notas obtidas na edição válida para o processo seletivo.</p>
+
+            <p class="content">Mas atenção! Candidatos que faltaram ao primeiro dia do Enem e não participaram da reaplicação, não podem participar do processo seletivo do SiSU. Já os candidatos que não compareceram apenas no segundo dia, podem fazer a inscrição -- mas dificilmente serão aprovados apenas com a pontuação de um único dia.</p>
+
+            <h3>Como fazer a inscrição no SiSU</h3>
+
+            <p class="content">A inscrição do SiSU é online. O candidato deve acessar o Portal Único de Acesso ao Ensino Superior e selecionar a opção "Fazer inscrição". Na página de login, deve efetuar o cadastro no "Login Único" do Governo Federal e criar uma conta gov.br. Caso já possua a conta gov.br, basta informar o número do CPF e senha.</p>
+
+            <p class="content">O sistema carrega as notas automaticamente. O candidato deve escolher até duas opções de curso no ato da inscrição, em ordem de preferência. Durante o período de inscrição, o candidato pode alterar suas opções de curso. A última inscrição confirmada será considerada a válida para classificação.</p>
+
+            <h3>Como saber se fui aprovado no SiSU?</h3>
+
+            <p class="content">O Ministério da Educação divulgará os resultados no dia 30 de janeiro.</p>
+
+            <p class="content">Lembre-se de que a aprovação na primeira opção cancela a segunda escolha. Ou seja, ser aprovado na segunda opção é possível somente quando a primeira é descartada.</p>
+
+            <p class="content">Quem não for selecionado em nenhuma das duas opções de curso indicadas no ato de inscrição ainda pode disputar uma das vagas por meio da lista de espera do SiSU. Por isso, fique atento também aos prazos para manifestar interesse em participar da lista de espera. No caso do SiSU 2024, entre os dias 30 de janeiro e 7 de fevereiro.</p>
+
+            <p class="content">E aí, você entendeu como funciona o SiSU? Agora é hora de ficar de olho nas datas e não perder o prazo de inscrição!</p>
+
+        </article>
+
+    </main>
+
+    <footer>
+        <div class="social-media-container">
+            <div class="social-media">
+                <nav class="menu-icon bx-md "> <i class='bx bxl-facebook-square'></i></nav>
+                <nav class="menu-icon bx-md "> <i class='bx bxl-instagram' ></i></nav>
+                <nav class="menu-icon bx-md "> <i class='bx bxl-whatsapp' ></i></nav>
+                <nav class="menu-icon bx-md "> <i class='bx bxl-youtube' ></i></nav>
+                <nav class="menu-icon bx-md "> <i class='bx bxl-linkedin' ></i></nav>
+            </div>
+        </div>
+
+        <div class="addresses">
+
+            <div class="address">
+
+                <h3>EDIFÍCIO REDE SENAI VALINHOS</h3>
+                <p>R. Artur Fernandes Querido, 55 - Vila Santo Antonio, Valinhos - SP, 13270-530</p>
+
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="address">
+
+                <h3>EDIFÍCIO REDE SESI VALINHOS</h3>
+                <p>Rod. Flávio de Carvalho, 2787 - Jardim São Paulo, Valinhos - SP, 13273-450</p>
+
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
