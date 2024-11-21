@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definição de rotas padrão */
+
+:root {
+    --bg-color: #ffff;
+    --secondary-color: #e30613;
+    --third-color: #a12720;
+    --font-text: "Montserrat", sans-serif;
+    --h1-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1rem;
+}
+
+.montserrat {
+    font-family: var(--font-text);
+    font-optical-sizing: auto;
+}
+
+/* Header */
+
+.container_header {
+    background-color: var(--secondary-color);
+    height: 7rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem;
+}
+
+.img_header {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_header img {
+    width: 75%;
+    height: auto;
+}
+
+.division_header {
+    background-color: var(--bg-color);
+    width: 0.2%;
+    height: 53%;
+    display: flex;
+}
+
+.nav_header {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    width: 60%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    list-style: none;
+}
+
+.nav_header a {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-size: var(--p-font);
+    color: var(--bg-color);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 18rem;
+}
+
+.main-content form {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.address {
+    line-height: 1.6;
+}
+
+form .row {
+    gap: 2rem;
+}
+
+input {
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--p-font);
+}
+
+input,
+select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+input:focus,
+select:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(227, 6, 19. 0.5);
+}
+
+label {
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--p-font);
+    color: #555;
+    font-weight: 500;
+}
+
+
+footer {
+    background-color: #a12720;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+}
+
+.social-media-container {
+    background-color: #d71920;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: -5px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #d71920;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(100% + 20px);
+    margin: 0 -10px;
+    box-sizing: border-box;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.addresses {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+    background-color: #b61818;
+}
+
+.address {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    padding: 10px;
+}
+
+.divider {
+    width: 2px;
+    height: 60px;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Respoonsividade */
+
+@media (max-width: 768px) {
+    .container_header {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img_header {
+        width: 50%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .division_header {
+        display: none;
+    }
+
+    .nav_header {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .nav_header a {
+        font-size: 1.1em;
+    }
+
+    footer .addresses {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .social-media {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .social-icon {
+        width: 45px;
+        height: 45px;
+    }
+}
