@@ -51,13 +51,14 @@
 }
 
 /* Botão */
-.nav-content ul li a.botao-noticias {
+.nav-content ul li a .botao-dicas {
     background-color: #b61818;
     color: #fff;
 }
 
+/*passar o mouse sobre o botão*/
 .nav-content ul li a:hover {
-    background-color: #868686;
+    background-color: #b61818;
     color: #000000;
 }
 
@@ -129,10 +130,9 @@
 
 }
 
+/* Dicas */
 
-/* Notícias */
-
-.container_banner{
+.container_banner {
     background-color: var(--bg-color);
     height: 50rem;
     width: 100%;
@@ -143,95 +143,57 @@
     align-content: center;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to Left, rgba(0, 0, 0, 0.848), rgba(0, 0, 0, 0.634)), url('../media/img/img-noticias/Banner-noticias.png');
-    background-size:cover;
+    background-image: linear-gradient(to Left, rgba(0, 0, 0, 0.848), rgba(0, 0, 0, 0.634)), url('../media/img/sociologiaFundo.png');
+    background-size: cover;
     background-position: bottom center;
 }
 
 /* Conteúdo do Banner */
-.banner_content{
+.banner_content {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
     margin-left: 7%;
+    margin-top: 20%;
 }
-.banner_content h1{
+
+.banner_content h1 {
     justify-content: justify;
-    font-size: 4rem;
+    font-size: 4.1rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
     color: #FFFF;
     line-height: 1.2;
 }
 
-.banner_title h1 span{
+.banner_title h1 span {
     color: #E30613;
 }
 
-.banner_title{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    align-content: center;
-}
-
-
-
-/* Conteúdo do Banner */
-
-.banner_text{
-    width: 78%;
-    height: 100%;
-    display: flex;
-
-
-}
-.banner_text p{
-    font-family:"Montserrat", sans-serif ;
-    font-size:1rem;
-    font-weight: 450;
-    color: #FFFF;
-    margin-top: 3%;
-    text-align: center;
-}
-
-
-/* Imagem do Banner */
-
 .banner_image{
-    width: 100%;
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    align-content: center;
-    justify-content: center;
     margin-bottom: -1rem;
 }
 
-.aluno-notícias img {
+/*divisão da imagem da mulher*/
+.division {
     width: 100%;
-    height: 100%;
-}
-
-/* Division content  */
-
-.division{
-    width: 100%;
-    height: 5vh;
+    height: 2rem;
     display: flex;
     flex-direction: row;
-    align-content: flex-end;
     justify-content: center;
     align-items: flex-end;
+    align-content: flex-end;
 }
 
-.banner_division{
+.banner_division {
     width: 100%;
-    height: 100%;
+    height: 150%;
     background-color: #a12720;
     display: flex;
 }
@@ -302,13 +264,12 @@ footer {
 
 .tip {
     display: flex;
-    align-items: flex-start;
     margin-bottom: 2rem;
     background-color: #f5f5f5;
+    margin-top: 2rem;
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 2rem;   
 }
 
 .tip img {
@@ -316,17 +277,9 @@ footer {
     margin-right: 1rem;
 }
 
-.tip a {
-    color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-}
-
 .text {
     flex: 1;
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
 }
 
 /* Botão se inscrever */
@@ -338,18 +291,69 @@ footer {
     margin-top: 3%;
 }
 
-a{
-    color: white;
-    text-decoration: none;
+h2 {
     text-align: center;
+    flex-direction: row;
+    font-size: 2em;
+}
+
+.banner_title p{
+    color: #E30613;
+}
+
+/*teste SOCIOLOGIA*/
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0px;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0px;
+}
+
+/*teste SOCIOLOGIA2*/
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0px;
+}
+
+body{
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 2em;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.linha{
+    border: none;
+    height: 4px;
+    background-color: #9A1915;
+    margin: 10px 0;
+    width: 30rem;
+    border-radius: 10px;
 }
 
 p{
-    margin-top: 1rem;
-}
-
-h2{
- text-align: center;
- font-size: 2.2em;
-
+    font-size: 1.2em;
+    font-weight: 400;
+    text-align: justify;
+    max-width: 700px;
 }
