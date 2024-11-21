@@ -1,4 +1,3 @@
-/* Importação de fontes  */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .montserrat{
@@ -20,22 +19,15 @@
     --secondary-color: #E30613;
     --third-color:  #a12720;
     --font-text: "Montserrat", sans-serif;
-
+    --h1-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1rem;
 }
 
 .montserrat {
     font-family: var(--font-text);
     font-optical-sizing: auto;
 }
-
-body {
-    font-family: var(--font-text);
-    line-height: 1.6;
-    text-align: justify;
-    hyphens: auto;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-  }
 
 /* Header */
 
@@ -93,58 +85,28 @@ body {
     
 }
 
-main{
-    padding: 1em;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.news-university h2{
-    font-size: 2em;
-    font-weight: bold;
-    margin-bottom: 0.5em;
+.main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 18rem;
 
 }
 
-.news-university .author{
-    font-size: 0.9em;
-    color: #333;
-    margin-bottom: 1rem;
+input{
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--p-font);
+
 }
 
-.video-ad video{
-    width: 100%;
-    max-height: 300px;
-}
-
-.news-university .intro{
-    margin: 1em 0;
-    font-size: 1.2em;
+label{
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--p-font);
     color: #555;
+    font-weight: 500;
 }
 
-.news-university h3{
-    font-size: 1.5em;
-    margin-top: 1.5em;
-    color: #333;
-}
 
-.news-university .content {
-    font-size: 1em;
-    margin: 1em 0;
-    color: #555;
-    margin-bottom: 1em;
-  }
-
-  .universidade-img{
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    margin: 1em 0;
-  }
-
-
-  /* Footer */
 
 footer {
     background-color: #a12720; 
@@ -213,11 +175,9 @@ footer {
     margin-right: 10px;
   }
 
+/* Respoonsividade */
 
-  /* Para telas médias (tablet) */
-
-  @media (min-widht: 769px and max-width: 1023px) {
-
+@media (max-width: 768px) {
     .container_header {
         flex-direction: column;
         height: auto;
@@ -267,7 +227,9 @@ footer {
     }
 
     .universidade-img {
-        max-height: 300px;
+        max-width: 100%;
+        border-radius: 2rem;
+        margin: 0 auto;
     }
 
     footer .addresses {
@@ -285,89 +247,4 @@ footer {
         height: 45px;
     }
     
-  }
-
-/* Para telas pequenas (celulares) */
-@media (max-width: 768px) {
-    .container_header {
-        flex-direction: column;
-        height: auto;
-    }
-    
-    .img_header {
-        width: 80%;
-        height: auto;
-        margin-bottom: 1rem;
-        object-fit: cover;
-    }
-
-
-    .nav_header {
-        flex-direction: column;
-        gap: 1rem;
-        width: 100%;
-        align-items: flex-start;
-        padding: 1rem;
-    }
-
-    .nav_header a {
-        font-size: 1.2em;
-    }
-
-    .video iframe {
-        display: none !important; 
-    }
-
-    main {
-        padding: 0.5em;
-        max-width: 100%;
-    }
-
-    .news-university h2 {
-        font-size: 1.8em;
-    }
-
-    .news-university .content {
-        font-size: 1em;
-    }
-
-    .universidade-img {
-        width: 100%;
-        max-height: 300px;
-        object-fit: cover;
-
-    }
-
-    footer .addresses {
-        max-width: 100%;
-        text-align: left;
-        gap: 1rem;
-        padding: 1rem;
-    }
-
-    .social-media {
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px;
-    }
-
-    .social-icon {
-        width: 40px;
-        height: 40px;
-    }
-
-    .social-media-container {
-        margin-bottom: 0;
-    }
-
-    footer{
-        font-size: 0.9rem;
-        padding: 1rem;
-    }
-    .divider{
-        display: none;
-    }
-}
-
-
-
+}           

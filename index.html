@@ -171,7 +171,7 @@
     </main>
       
     <div class="div-title">
-        <h1 class="section-title1">Tire suas Dúvidas! </h1>
+        <h1 class="section-title1">TIRE SUAS DÚVIDAS!</h1>
     </div>
 
     <section id="duvidas" class="duvidas">
@@ -207,25 +207,89 @@
         <button1 type="submit" class="form-button">Enviar</button1>
     </div>
 
-    <section class="news-section">
-        <h2 class="title-news">Principais notícias</h2>
-        <div class="news-container">
-            <div class="news-box">
-
-                <img src="./media/img/unicamp.png" alt="Notícia 1">
-            </div>
-            <div class="news-box">
-                <img src="./media/img/fuvest.png" alt="Notícia 2">
-            </div>
-            <div class="news-box">
-                <img src="./media/img/puc.png" alt="Notícia 3">
-            </div>
-            <div class="news-box">
-                <img src="./media/img/unesp.png" alt="Notícia 4">
-            </div>
-        </div>
-    </section>
     
+
+    <main class="main-content">
+
+        <section class="quadro-notícias">
+            <h1 class="title-news">PRINCIPAIS NOTÍCIAS</h1>
+
+            <div id="movimentos-linha">
+                <hr>
+            </div>
+
+            <div class="slider-container">
+                <button class="slider-button prev" onclick="slideLeft1()">&#10094;</button>
+                <div class="card-slider">
+                    <div class="cards">
+                        <!-- Card 1- Noticia-->
+                        <div class="card">
+                            <img src="./media/img/faculdade-exterior-noticia.png" alt="Noticia-faculdade-exterior">
+                            <div class="card-content">
+                                <h3>Estudar no Exterior com a Nota do ENEM</h3>
+                                <p>Uma explicação sobre como a nota do ENEM pode ser usada para ingressar em universidades internacionais e quais países aceitam o exame como critério de seleção.</p>
+                            </div>
+                            <a href="./pages/faculdade-exterior-noticias.html">
+                                <button class="button-noticias">Ler mais</button>
+                            </a>
+                        </div>
+                        <!-- Card 2 - Noticia -->
+                        <div class="card">
+                            <img src="./media/img/puc-noticias.png" alt="Noticia-Pucc">
+                            <div class="card-content">
+                                <h3>Vestibular e Saúde Mental: Como se Preparar sem Pirar</h3>
+                                <p>Como manter o equilíbrio emocional durante a preparação para o vestibular, com dicas de atividades para reduzir o estresse, como meditação, exercícios físicos e gestão do tempo.</p>
+                            </div>
+                            <a href="./pages/pucc-noticias.html">
+                                <button class="button-noticias-2">Ler mais</button>
+                            </a>
+                        </div>
+                        <!-- Card 3 - Noticia -->
+                        <div class="card">
+                            <img src="./media/img/noticia-enem.png" alt="Noticia-Enem">
+                            <div class="card-content">
+                                <h3>Proteja-se Contra Golpes de Sites Falsos do Enem!</h3>
+                                <p>Uma análise dos riscos de golpes durante a inscrição do Enem 2024, com dicas de como se proteger e garantir que o processo seja feito exclusivamente no site oficial do Inep.</p>
+                            </div>
+                            <a href="./pages/enem-golpe-noticia.html">
+                                <button class="button-noticias-3">Ler mais</button>
+                            </a>
+                        </div>
+                        <!-- Card 4 - Noticia -->
+                        <div class="card">
+                            <img src="./media/img/img-noticias/noticias-img-biologia.jpg" alt="Noticia-biologia">
+                            <div class="card-content">
+                                <h3>Biologia no Enem 2024: os assuntos que mais caem na prova</h3>
+                                <p>Uma explicação sobre os principais temas de Biologia que mais caem no Enem, como ecologia, bioenergética, fisiologia, citologia e botânica, e como se preparar para essas questões.</p>
+                            </div>
+                            <a href="./pages/biologia-notícias.html">
+                                <button class="button-noticias-4">Ler mais</button>
+                            </a>
+                        </div>
+                        <!-- Card 5 - Noticia -->
+                        <div class="card">
+                            <img src="./media/img/puc-noticias.png" alt="Noticia-Pucc">
+                            <div class="card-content">
+                                <h3>Vestibular da PUC-Campinas</h3>
+                                <p> Uma visão geral sobre os vestibulares realizados pela PUC-Campinas, com detalhes sobre as inscrições, provas, vagas disponíveis e os critérios de avaliação, incluindo o Vestibular de Inverno e as oportunidades para quem fez o Enem.</p>
+                            </div>
+                            <a href="./pages/pucc-noticias.html">
+                                <button class="button-noticias-5">Ler mais</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <button class="slider-button next" onclick="slideRight1()">&#10095;</button>
+            </div>
+        </section>
+    </main>
+    <script src="./js/home.js"></script>
+
+    <div id="line">
+        <hr>
+    </div>
 
     <footer>
         <div class="social-media-container">
@@ -259,6 +323,8 @@
         </div>
     </footer>
 
+    <script src="./js/home.js"></script>
+    
 </body>
 
 </html>
