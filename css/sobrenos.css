@@ -562,6 +562,12 @@
 }
 
 .team_text {
+.team_section img{
+    width: 80%;
+    height: 60%;
+}
+
+.team_text{
     width: 100%;
     height: 10%;
     display: flex;
