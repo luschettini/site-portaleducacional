@@ -301,7 +301,7 @@ h2 {
     color: #E30613;
 }
 
-/*teste*/
+/*teste SOCIOLOGIA*/
 * {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -314,4 +314,46 @@ body {
     padding: 0px;
 }
 
+/*teste SOCIOLOGIA2*/
 
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0px;
+}
+
+body{
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 2em;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.linha{
+    border: none;
+    height: 4px;
+    background-color: #9A1915;
+    margin: 10px 0;
+    width: 30rem;
+    border-radius: 10px;
+}
+
+p{
+    font-size: 1.2em;
+    font-weight: 400;
+    text-align: justify;
+    max-width: 700px;
+}
