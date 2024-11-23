@@ -185,34 +185,105 @@ nav a:hover {
   }
 }
 
-
-.banner {
-  padding: 0;
+.container_banner {
+  background-color: var(--bg-color);
+  height: 50rem;
   width: 100%;
-  height: 55rem;
-  filter: brightness(0.9);
-}
-
-
-.text-overlay {
-  position: absolute;
-  width: 50%;
-  height: 100%;
   display: flex;
+  gap: 0.5rem;
+  padding: 0.3rem;
+  flex-direction: row;
+  align-content: center;
   justify-content: center;
   align-items: center;
-  z-index: 4;
-  color: white;
+  background-image: linear-gradient(to Left, rgba(0, 0, 0, 0.848), rgba(0, 0, 0, 0.634)), url('../media/img/home-carrossel.png');
+  background-size: cover;
+  background-position: bottom center;
+}
+
+/* Conteúdo do Banner */
+.banner_content {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+
+  align-items: left;
+  margin-left: 7%;
+}
+
+.banner_content h1 {
+  justify-content: justify;
+  font-size: 5.1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: #FFFF;
+  line-height: 1.2;
+}
+
+.banner_title h1 {
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+
+.banner_title h1 span {
+  color: #E30613;
+  text-transform: uppercase;
 }
 
 
-.banner-titulo {
+/* Conteúdo do Banner */
+
+.banner_text {
+  width: 78%;
+  height: 100%;
+  display: flex;
+
+}
+
+.banner_text p {
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-  margin-bottom: 8%;
-  margin-left: 20%;
+  font-size: 1rem;
+  font-weight: 450;
+  color: #FFFF;
+  margin-top: 3%;
+}
+
+
+/* Imagem do Banner */
+
+.banner_image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: -1rem;
+}
+
+.aluna img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Division content  */
+
+.division {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.banner_division {
+  width: 100%;
+  height: 100%;
+  background-color: #a12720;
+  display: flex;
 }
   
 
