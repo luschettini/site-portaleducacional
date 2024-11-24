@@ -24,6 +24,11 @@ body{
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-height: 30rem;
+    min-height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
@@ -46,12 +51,11 @@ body{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    height: 10rem;
+    height: rem;
     font-size: 1rem;    
     color: #616161;
     font-weight: 400;
     line-height: 1.6;
-    margin-bottom: 0.5rem;
 }
 
 .card-footer {
