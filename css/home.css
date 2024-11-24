@@ -64,13 +64,22 @@
   display: flex;
 }
 
-.header-nav{
+.nav_header {
   list-style: none;
   display: flex;
   margin-left: 15rem;
 }
 
-nav ul{
+.nav_header a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  font-size: var(--p-font);
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+nav ul {
   width: 100%;
   list-style: none;
   display: flex;
@@ -78,11 +87,11 @@ nav ul{
   align-items: center;
 }
 
-nav li{
+nav li {
   height: 50px;
 }
 
-nav a{
+nav a {
   font-family: "Montserrat", sans-serif;
   font-size: larger;
   height: 100%;
@@ -93,22 +102,41 @@ nav a{
   color: white;
 }
 
-nav a:hover{
+nav a:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* nav li:first-child{
-  margin-right: auto;
-} */
+/* Estilo para o conteúdo do dropdown */
+.dropdown-content {
+  width: auto;
+  display: none; /* Inicialmente escondido */
+  position: absolute; /* Posicionamento absoluto para sobrepor outros elementos */
+  background-color: #97221c; /* Cor de fundo */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra */
+  z-index: 1; /* Garantir que fique acima de outros elementos */
+}
 
-.menuSidebar{
+/* Estilo para os itens do dropdown */
+.dropdown-content li a {
+  padding: 12px 16px; /* Espaçamento interno */
+  text-decoration: none; /* Remover sublinhado */
+  display: block; /* Exibir como bloco */
+  background-color: #97221c; /* Cor de fundo ao passar o mouse */
+}
+
+/* Classe para exibir o dropdown */
+.dropdown-content.show {
+  display: block; /* Exibir o dropdown */
+}
+
+.menuSidebar {
   position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
   width: 250px;
   z-index: 999;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #a12720;
   backdrop-filter: blur(10px);
   box-shadow: -10px 0px 10px rgba(53, 53, 53, 0.9);
   display: none;
@@ -117,53 +145,134 @@ nav a:hover{
   justify-content: flex-start;
 }
 
-.menuSidebar li{
+.menuSidebar li {
   width: 100%;
 }
 
-.menuSidebar a{
+.menuSidebar a {
   width: 100%;
 }
 
-@media(max-width: 800px){
-  .hideOnMobile{
-      display: none;
+@media(max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .dropdown-content {
+    left: 0;
   }
 }
 
-@media(max-width: 400px){
-  .menuSidebar{
-      width: 100%;
+@media(max-width: 400px) {
+  .menuSidebar {
+    width: 100%;
+  }
+  .dropdown {
+    width: 100%;
+  }
+  .dropdown-content {
+    position: static;
   }
 }
 
-.banner {
-  padding: 0;
+.container_banner {
+  background-color: var(--bg-color);
+  height: 50rem;
   width: 100%;
-  height: 55rem;
-  filter: brightness(0.9);
-}
-
-
-.text-overlay {
-  position: absolute;
-  width: 50%;
-  height: 100%;
   display: flex;
+  gap: 0.5rem;
+  padding: 0.3rem;
+  flex-direction: row;
+  align-content: center;
   justify-content: center;
   align-items: center;
-  z-index: 4;
-  color: white;
+  background-image: linear-gradient(to Left, rgba(0, 0, 0, 0.848), rgba(0, 0, 0, 0.634)), url('../media/img/home-carrossel.png');
+  background-size: cover;
+  background-position: bottom center;
+}
+
+/* Conteúdo do Banner */
+.banner_content {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+
+  align-items: left;
+  margin-left: 7%;
+}
+
+.banner_content h1 {
+  justify-content: justify;
+  font-size: 5.1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: #FFFF;
+  line-height: 1.2;
+}
+
+.banner_title h1 {
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+
+.banner_title h1 span {
+  color: #E30613;
+  text-transform: uppercase;
 }
 
 
-.banner-titulo {
+/* Conteúdo do Banner */
+
+.banner_text {
+  width: 78%;
+  height: 100%;
+  display: flex;
+
+}
+
+.banner_text p {
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-  margin-bottom: 8%;
-  margin-left: 20%;
+  font-size: 1rem;
+  font-weight: 450;
+  color: #FFFF;
+  margin-top: 3%;
+}
+
+
+/* Imagem do Banner */
+
+.banner_image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: -1rem;
+}
+
+.aluna img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Division content  */
+
+.division {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.banner_division {
+  width: 100%;
+  height: 100%;
+  background-color: #a12720;
+  display: flex;
 }
   
 
