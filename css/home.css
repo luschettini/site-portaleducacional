@@ -108,36 +108,25 @@ nav a:hover {
 
 /* Estilo para o conteúdo do dropdown */
 .dropdown-content {
+  width: auto;
   display: none; /* Inicialmente escondido */
   position: absolute; /* Posicionamento absoluto para sobrepor outros elementos */
-  background-color: #f9f9f9; /* Cor de fundo */
-  min-width: 160px; /* Largura mínima */
+  background-color: #97221c; /* Cor de fundo */
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra */
   z-index: 1; /* Garantir que fique acima de outros elementos */
 }
 
 /* Estilo para os itens do dropdown */
-.dropdown-content li {
-  color: rgb(53, 53, 53) !important; /* Cor do texto */
+.dropdown-content li a {
   padding: 12px 16px; /* Espaçamento interno */
   text-decoration: none; /* Remover sublinhado */
   display: block; /* Exibir como bloco */
-  background-color: #f1f1f1; /* Cor de fundo ao passar o mouse */
-}
-
-/* Estilo para os itens do dropdown ao passar o mouse */
-.dropdown-content li:hover {
-  color: black; /* Manter a cor do texto preta ao passar o mouse */
+  background-color: #97221c; /* Cor de fundo ao passar o mouse */
 }
 
 /* Classe para exibir o dropdown */
 .dropdown-content.show {
   display: block; /* Exibir o dropdown */
-}
-
-/* Classe para exibir o dropdown */
-.dropdown-content.show {
-    display: block; /* Exibir o dropdown */
 }
 
 .menuSidebar {
