@@ -424,3 +424,10 @@ p {
         width: 50%;
     }
 }
+
+.news-mental {
+    text-align: center;
+    margin: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
