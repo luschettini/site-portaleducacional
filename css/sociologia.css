@@ -429,9 +429,15 @@ p {
     text-align: center;
     margin: 1em 0;
     font-size: 1.2em;
-    color: #555;
+    color: #020000;
 }
 
 a.btn {
     color: #c90000;
+}
+
+p.intro {
+    text-align: center;
+    margin: 1em 0;
+    color: #000000;
 }
