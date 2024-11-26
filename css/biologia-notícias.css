@@ -215,9 +215,8 @@ footer {
 
 
   /* Para telas médias (tablet) */
-
-  @media (min-widht: 769px and max-width: 1023px) {
-
+ 
+    @media (min-width: 769px) and (max-width: 1023px) {
     .container_header {
         flex-direction: column;
         height: auto;
@@ -284,8 +283,7 @@ footer {
         width: 45px;
         height: 45px;
     }
-    
-  }
+}
 
 /* Para telas pequenas (celulares) */
 @media (max-width: 768px) {
