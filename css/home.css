@@ -275,7 +275,6 @@ nav a:hover {
   display: flex;
 }
   
-
 /* Barra de Navegação */
 
 .nav-content{
@@ -291,9 +290,6 @@ nav a:hover {
   justify-content: space-between;
   list-style-type: none;
   gap: 1rem;
-  
-  /* padding: 1.5%; */
-  /* align-items: center; */
 }
 
 .nav-content ul li a {
@@ -302,7 +298,6 @@ nav a:hover {
   font-family:"Montserrat", sans-serif ;
   align-items: center;
   justify-content: center;
-  /* display: inline-block; */
 
   display: flex;
   flex-direction: column;
@@ -318,6 +313,18 @@ nav a:hover {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Botão */
+.nav-content ul li a.botao-noticias {
+  background-color: #b61818;
+  color: #fff;
+}
+
+.nav-content ul li a:hover {
+  background-color: #868686;
+  color: #000000;
+}
+
+
 /* Linha vermelha abaixo dos botões ativos */
 .nav-division {
   margin-top: 1.5%;
@@ -330,11 +337,6 @@ nav a:hover {
   margin-bottom: 1.5%;
 }
 
-
-.nav-content ul li a:hover {
-  background-color: #868686;
-  color: #000000;
-}
 
   .container {
     display: flex;
