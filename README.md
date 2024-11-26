@@ -22,7 +22,7 @@ O portal será organizado em mini-sites, sendo que cada um contará com:
 - **Back-End:**
   - Node.js
 - **Ferramentas de teste:**
-  - Testes: Go Live, Vercel
+  - Go Live, Vercel
  
 
 ## 👥 Equipe do Projeto
