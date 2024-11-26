@@ -30,6 +30,16 @@ O portal será organizado em mini-sites, sendo que cada um contará com:
 - **Designers:** Alunas do curso de Desenvolvimento de Sistemas 2TDS1, responsáveis pelo layout e experiência do usuário.
 - **Colaboradores:** Professores e especialistas que contribuem com conteúdos.
 
+### 📸 Conheça o time: 
+
+| 🌟 Julia Neves - Scrum Master | ⭐ Luiza Schettini - (PO) | Giovanna Caron  |
+|--------------------------------|-------------------------------|-----------------|
+| ![Foto Desenvolvedor 1](https://avatars.githubusercontent.com/u/158210262?v=4) | ![Foto Desenvolvedor 2](https://avatars.githubusercontent.com/u/158210596?v=4) | ![Foto Desenvolvedor 3](https://avatars.githubusercontent.com/u/158209996?v=4) |
+
+| Ana C. Freitas  | Luana Domenegheti | Maria Eduarda Parma|
+|-----------------|-------------------|--------------------|
+| ![Foto Desenvolvedor 4](https://avatars.githubusercontent.com/u/158210617?v=4) | ![Foto Desenvolvedor 5](https://avatars.githubusercontent.com/u/158210063?v=4) | ![Foto Desenvolvedor 6](https://avatars.githubusercontent.com/u/158210075?v=4) |
+
 
 
 
