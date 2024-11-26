@@ -431,3 +431,7 @@ p {
     font-size: 1.2em;
     color: #555;
 }
+
+a.btn {
+    color: #c90000;
+}
