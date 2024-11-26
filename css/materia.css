@@ -1,3 +1,4 @@
+@import url(./header.css);
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .montserrat {
@@ -29,99 +30,7 @@
     --p-font: 1rem;
 }
 
-/* Header */
 
-.container_header{
-    background-color: #E30613;
-    height: 7rem;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.3rem;
-}
-
-.img_header{
-    width: 30%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-}
-.img_header img{
-    width: 75%;
-    height: 60%;
-}
-
-.division_header{
-    background-color: white;
-    width: 0.2%;
-    height: 53%;
-    display: flex;  
-}
-
-.nav_header{
-    display: flex;
-    flex-direction: row;
-    gap : 10%;
-    width: 60%;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    height: 80%;
-    list-style: none;
-}
-
-.nav_header a{
-    font-family: "Montserrat", sans-serif;
-    text-decoration: none;
-    font-size: var(--p-font);
-    color: white;
-    text-transform: uppercase;
-    font-weight: 800;
-    
-}
-
-
-
-.sidebar{
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    z-index: 999;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
-    box-shadow: -10px 0px 10px rgba(53, 53, 53, 0.9);
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.sidebar li{
-    width: 100%;
-}
-
-sidebar a{
-    width: 100%;
-}
-
-@media(max-width: 800px){
-    .hideOnMobile{
-        display: none;
-    }
-}
-
-@media(max-width: 400px){
-    .sidebar{
-        width: 100%;
-    }
-}
 /*Banner Sobre*/
 .container_banner{
     background-color: var(--bg-color);
