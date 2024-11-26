@@ -590,6 +590,10 @@ textarea {
   margin-left: 24rem;
 }
 
+.quadro-noticias {
+  margin-right: 24rem;
+}
+
 .title-news {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -603,6 +607,7 @@ textarea {
 .cards{
   display: flex;
   transition: transform 0.5s ease;
+  margin-right: 24rem;
 }
 
 .card-slider {
@@ -647,6 +652,7 @@ textarea {
   position: relative;
   justify-content: center;
   margin-top: 2.5rem;
+  margin-right: 24rem;
 }
 
 .card {
@@ -661,6 +667,7 @@ textarea {
   flex-direction: column;
   flex-shrink: 0;
   margin-bottom: 1rem;  
+  ;
 }
 
 .card-content {
