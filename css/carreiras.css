@@ -26,7 +26,7 @@
     --p-font: 1rem;
 }
 
-/* Header */
+
 
 .container_header {
     background-color: #E30613;
@@ -83,7 +83,7 @@
 
 }
 
-/* Sobre Nós */
+/* Carreiras */
 
 .container_banner {
     background-color: var(--bg-color);
@@ -144,10 +144,6 @@
     margin-top: 3%;
 }
 
-/* Botão se inscrever */
-.banner_btn {
-   
-}
 
 .banner_btn a {
     padding: 0.7rem 1rem;
@@ -170,7 +166,7 @@
     margin-bottom: -1rem;
 }
 
-.homem-carreira img {
+.home-carreira img {
     width: 80%;
     height: 80%;
 }
@@ -208,13 +204,13 @@
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    gap: 1rem;
+    gap: 1.7rem;
     flex-wrap: wrap;
     padding: 0;
 }
 
 .nav-content ul li a {
-    width: 10.7rem;
+    width: 12.9rem;
     height: 2.8rem;
     font-family: "Montserrat", sans-serif;
     align-items: center;
@@ -245,7 +241,7 @@
 .nav-content ul li a.botao-sobre {
     background-color: #b61818;
     color: #fff;
-    height: 2.5rem;
+    height: 2rem;
     padding: 0.8rem 2 rem;
 }
 
@@ -374,6 +370,11 @@ footer {
     width: calc(100% + 20px);
     margin: 0 -10px;
     box-sizing: border-box;
+    text-decoration: none;
+}
+
+.social-media i {
+    text-decoration: none;
 }
 
 .social-icon {
