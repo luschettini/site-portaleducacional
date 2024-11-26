@@ -26,7 +26,7 @@
     --p-font: 1rem;
 }
 
-/* Header */
+
 
 .container_header {
     background-color: #E30613;
@@ -83,7 +83,7 @@
 
 }
 
-/* Sobre Nós */
+/* Carreiras */
 
 .container_banner {
     background-color: var(--bg-color);
@@ -144,10 +144,6 @@
     margin-top: 3%;
 }
 
-/* Botão se inscrever */
-.banner_btn {
-   
-}
 
 .banner_btn a {
     padding: 0.7rem 1rem;
@@ -173,6 +169,7 @@
 .homem-carreira img {
     width: 80%;
     height: 80%;
+    display: block;
 }
 
 /* Division content  */
@@ -196,7 +193,7 @@
 
 /* Barra de Navegação */
 
-.nav-content {
+.nav-content{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,21 +203,22 @@
 
 .nav-content ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style-type: none;
     gap: 1rem;
-    flex-wrap: wrap;
-    padding: 0;
 }
 
 .nav-content ul li a {
-    width: 10.7rem;
-    height: 2.8rem;
-    font-family: "Montserrat", sans-serif;
+    width: 15rem;
+    height: 3rem;
+    font-family:"Montserrat", sans-serif ;
     align-items: center;
     justify-content: center;
-    display: flex;
 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
     padding: 13% 40%;
     font-size: 1.3rem;
     font-weight: 800;
@@ -231,21 +229,11 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.menu-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
 /* Botão */
 .nav-content ul li a.botao-sobre {
     background-color: #b61818;
     color: #fff;
-    height: 2.5rem;
+    height: 2rem;
     padding: 0.8rem 2 rem;
 }
 
@@ -276,7 +264,7 @@
 
 
 body{
-    background-image: linear-gradient(to right, #d6d6d6, #f7f7f7);
+    background-image: linear-gradient(to right, #ffffff, #f7f7f7);
 }
 
 .container{
@@ -374,6 +362,11 @@ footer {
     width: calc(100% + 20px);
     margin: 0 -10px;
     box-sizing: border-box;
+    text-decoration: none;
+}
+
+.social-media i {
+    text-decoration: none;
 }
 
 .social-icon {
