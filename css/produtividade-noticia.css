@@ -1,0 +1,365 @@
+/* Importação de fontes  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.montserrat{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Definição de rotas padrão */
+:root{
+    --bg-color: #FFFF;
+    --secondary-color: #E30613;
+    --third-color:  #a12720;
+    --font-text: "Montserrat", sans-serif;
+
+}
+
+.montserrat {
+    font-family: var(--font-text);
+    font-optical-sizing: auto;
+}
+
+body {
+    font-family: var(--font-text);
+    line-height: 1.6;
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+  }
+
+/* Header */
+
+.container_header{
+    background-color:  var(--secondary-color);
+    height: 7rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem;
+}
+
+.img_header{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.img_header img{
+    width: 75%;
+    height: auto;
+}
+
+.division_header{
+    background-color: var(--bg-color);
+    width: 0.2%;
+    height: 53%;
+    display: flex;  
+}
+
+.nav_header{
+    display: flex;
+    flex-direction: row;
+    gap : 10%;
+    width: 60%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    list-style: none;
+}
+
+.nav_header a{
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-size: var(--p-font);
+    color: var(--bg-color);
+    text-transform: uppercase;
+    font-weight: 800;
+    
+}
+
+/*Conteúdo notícia*/
+
+main{
+    padding: 1em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.news-mental h2{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.news-mental .author{
+    font-size: 0.9;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.tempo-img{
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin: 1em 0;
+}
+
+.news-mental .intro{
+    margin: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.news-mental h3{
+    font-size: 1.5em;
+    margin-top: 1.5em;
+    color: #333;
+}
+
+.news-mental .content{
+    font-size: 1em;
+    margin: 1em 0;
+    color: #555;
+    margin-bottom: 1em;
+}
+
+
+  /* Footer */
+
+  footer {
+    background-color: #a12720; 
+    padding: 0; 
+    margin: 0; 
+    text-align: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    position: relative; 
+  }
+
+  .social-media-container {
+    background-color: #D71920; 
+    padding: 10px; 
+    border-radius: 5px;
+    margin-bottom: -5px; 
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    background-color: #D71920;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(100% + 20px);
+    margin: 0 -10px;     box-sizing: border-box; 
+  }
+  
+  .social-icon {
+    width: 50px; 
+    height: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .social-icon img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+  }
+  .addresses {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; 
+    padding: 20px 0; 
+    background-color: #b61818;
+  }
+  
+  .address {
+    flex: 1;
+    max-width: 300px; 
+    text-align: center;
+    padding: 10px; 
+  }
+  
+  .divider {
+    width: 2px;
+    height: 60px;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+
+  /* Para telas médias (tablet) */
+
+  @media (min-widht: 769px) and (max-width: 1023px) {
+    .container_header {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+    .img_header {
+        width: 50%;
+        height: auto;
+        margin-bottom: 1rem;
+
+    }
+    
+    .division_header {
+        display: none ;
+    }
+    
+    .nav_header {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        align-items: flex-start;
+        padding: 1rem;
+
+    }
+    
+    .nav_header a {
+        font-size: 1.1em;
+
+    }
+
+    main {
+        padding: 1em;
+        max-width: 90%;
+
+    }
+
+    .news-mental h2 {
+        font-size: 1.6em;
+    }
+
+    .news-mental .content {
+        font-size: 1em;
+    }
+
+    .mental-img {
+        max-height: 300px;
+    }
+
+    footer .addresses {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .social-media {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .social-icon {
+        width: 45px;
+        height: 45px;
+    }
+    
+  }
+
+/* Para telas pequenas (celulares) */
+@media (max-width: 768px) {
+    .container_header {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .img_header {
+        width: 80%;
+        height: auto;
+        margin-bottom: 1rem;
+        object-fit: cover;
+    }
+
+
+    .nav_header {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .nav_header a {
+        font-size: 1.2em;
+    }
+
+    .video iframe {
+        display: none !important; 
+    }
+
+    main {
+        padding: 0.5em;
+        max-width: 100%;
+    }
+
+    .news-mental h2 {
+        font-size: 1.8em;
+    }
+
+    .news-mental .content {
+        font-size: 1em;
+    }
+
+    .mental-img {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+
+    }
+
+    footer .addresses {
+        max-width: 100%;
+        text-align: left;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .social-media {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-media-container {
+        margin-bottom: 0;
+    }
+
+    footer{
+        font-size: 0.9rem;
+        padding: 1rem;
+    }
+    .divider{
+        display: none;
+    }
+}
+
