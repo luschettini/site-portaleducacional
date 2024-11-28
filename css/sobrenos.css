@@ -670,6 +670,7 @@ footer {
 }
 
 .address {
+    background-color: black;
     flex: 1;
     max-width: 300px;
     text-align: center;
