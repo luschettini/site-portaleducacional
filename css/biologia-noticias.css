@@ -4,16 +4,17 @@
 .montserrat{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-}
+  }
 
-/*Reset*/
-*{
+  /* Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/*Definição de rotas padrão */
+/* Definição de rotas padrão */
+
 :root{
     --bg-color: #FFFF;
     --secondary-color: #E30613;
@@ -92,56 +93,66 @@ body {
     
 }
 
-/*Conteúdo notícia*/
-
 main{
     padding: 1em;
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.news-sisu h2{
+.news-university h2{
     font-size: 2em;
     font-weight: bold;
     margin-bottom: 0.5em;
+
 }
 
-.news-sisu .author{
-    font-size: 0.9;
+.news-university .author{
+    font-size: 0.9em;
     color: #333;
     margin-bottom: 1rem;
 }
 
-.sisu-img{
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    margin: 1em 0;
+.video-ad iframe{
+    margin-bottom: 1em;
+    width: 1000px;
+    height:315px;
 }
 
-.news-sisu .intro{
+.video-ad video{
+    width: 100%;
+    max-height: 300px;
+}
+
+.news-university .intro{
     margin: 1em 0;
     font-size: 1.2em;
     color: #555;
 }
 
-.news-sisu h3{
+.news-university h3{
     font-size: 1.5em;
     margin-top: 1.5em;
     color: #333;
 }
 
-.news-sisu .content{
+.news-university .content {
     font-size: 1em;
     margin: 1em 0;
     color: #555;
     margin-bottom: 1em;
-}
+  }
+
+  .universidade-img{
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin: 1em 0;
+  }
 
 
   /* Footer */
 
-  footer {
+footer {
     background-color: #a12720; 
     padding: 0; 
     margin: 0; 
@@ -252,16 +263,21 @@ main{
 
     }
 
-    .news-sisu h2 {
+    .news-university h2 {
         font-size: 1.6em;
     }
 
-    .news-sisu .content {
+    .news-university .content {
         font-size: 1em;
     }
 
-    .sisu-img {
+    .universidade-img {
         max-height: 300px;
+    }
+
+    .video-ad iframe{
+        width: 100%;
+        height:auto;
     }
 
     footer .addresses {
@@ -317,15 +333,15 @@ main{
         max-width: 100%;
     }
 
-    .news-sisu h2 {
+    .news-university h2 {
         font-size: 1.8em;
     }
 
-    .news-sisu .content {
+    .news-university .content {
         font-size: 1em;
     }
 
-    .sisu-img {
+    .universidade-img {
         width: 100%;
         max-height: 300px;
         object-fit: cover;
@@ -361,5 +377,110 @@ main{
     .divider{
         display: none;
     }
+}
+
+
+/* Footer*/
+footer {
+    background-color: #a12720;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+.social-media-container {
+    background-color: #D71920;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: -5px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.addresses {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.address {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Barra de Navegação */
+
+.nav-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 1.5%;
+}
+
+.nav-content ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+.nav-content ul li a {
+    width: 15rem;
+    height: 3rem;
+    font-family:"Montserrat", sans-serif ;
+    align-items: center;
+    justify-content: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    padding: 13% 40%;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: black;
+    border-radius: 30px;
+    background-color: #D9D9D9;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Botão */
+.nav-content ul li a .botao-dicas {
+    background-color: #b61818;
+    color: #fff;
+}
+
+/*passar o mouse sobre o botão*/
+.nav-content ul li a:hover {
+    background-color: #b61818;
+    color: #000000;
+}
+
+
+/* Linha vermelha abaixo dos botões ativos */
+.nav-division {
+    margin-top: 1.5%;
+    height: 4px;
+    background-color: #b61818;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-bottom: 1.5%;
 }
 
