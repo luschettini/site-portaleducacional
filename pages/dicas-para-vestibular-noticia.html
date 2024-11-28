@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <html class="root">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/dicas-para-vestibular-noticia.css">
+    <title>Dicas para se preparar para o vestibular</title>
+
+    <!--Link para pacote de icons e fonts-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+
+</head>
+
+<body>
+    <header>
+        <section class="container_header">
+    
+            <div class="img_header">
+                <img src="../media/img/logo-sesi-senai.png" alt="SESI SENAI Logo" class="logo-img">
+            </div>
+    
+            <div class="division_header">
+            </div>
+
+            <nav>
+                <ul class="menuSidebar">
+                    <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+
+                    <li> <a href="../index.html">HOME</a></li>
+                    <li><a href="sobrenos.html">SOBRE NÓS</a></li>
+                    <li><a href="cadastro.html">CADASTRE-SE</a></li>
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle">MATÉRIAS</a> 
+                        <ul class="dropdown-content"> 
+                            <li><a href="https://portal-de-materias.vercel.app/">QUÍMICA</a></li> 
+                            <li><a href="https://site-fisica.vercel.app/index.html">FÍSICA</a></li> <li><a href="https://site-biologia-41g2.vercel.app/">BIOLOGIA</a></li> 
+                            <li><a href="https://projeto-portal-matematica.vercel.app/">MATEMÁTICA</a></li> 
+                            <li><a href="https://site-historia-six.vercel.app/">HISTÓRIA</a></li> 
+                            <li><a href="https://site-sociologia.vercel.app/">SOCIOLOGIA</a></li> 
+                            <li><a href="https://site-filosofia.vercel.app/">FILOSOFIA</a></li> 
+                            <li><a href="https://portal-noticias-html.vercel.app/">ARTES & E.F.</a></li> 
+                            <li><a href="https://site-ingles-1rhh.vercel.app/?authuser=0">INGLÊS</a></li> 
+                            <li><a href="https://lp-projeto.vercel.app/">PORTUGUÊS</a></li> 
+                            <li><a href="https://projeto-geografia.vercel.app/">GEOGRAFIA</a></li> 
+                        </ul> 
+                    </li>
+                    <li><a href="estagios.html">ESTÁGIOS</a></li>
+                    <li><a href="simulado.html">SIMULADO</a></li>
+                    <li><a href="noticias.html">NOTÍCIAS</a></li>
+                    <li><a href="dicas.html">DICAS</a></li>
+                </ul> 
+                    <!-- para adicionar um item somente no menu, alterar somente a ul class sidebar -->
+                </ul>
+                <ul class="nav_header">
+                    <li class="hideOnMobile"><a href="../index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="sobrenos.html">Sobre nós</a></li>
+                    <li class="hideOnMobile"><a href="cadastro.html">Cadastre-se</a></li>
+                    <li onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </nav>
+
+            <script>
+                function showSidebar(){
+                    const menuSidebar = document.querySelector('.menuSidebar');
+                    menuSidebar.style.display = 'flex';
+                }
+
+                function hideSidebar(){
+                    const menuSidebar = document.querySelector('.menuSidebar');
+                    menuSidebar.style.display = 'none';
+                }
+
+                const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+
+                dropdownToggles.forEach(toggle => {
+                    toggle.addEventListener('click', () => {
+                        const dropdownContent = toggle.nextElementSibling;
+                        dropdownContent.classList.toggle('show');
+                    });
+                });
+            </script>
+            
+        </section>
+    </header>
+
+    <main>
+    <article class="tips-news">
+        <h2>Dicas para se preparar para o vestibular</h2>
+        <p class="author">Por Ana Carolina Freitas - 28/11/24 14:43</p>
+
+        <img src="../media/img/img-noticias/Dicas para se preparar para o vestibular.png" alt="banner notícia">
+
+        <p class="intro">
+            Para obter um bom resultado nas provas de vestibular ou mesmo no Enem, é necessário que os candidatos preparem-se com antecedência. Por isso, é importante a dedicação de um bom tempo de estudos durante todo o ano.
+        </p>
+
+        <p class="intro">
+            O fim do Ensino Médio e a preparação para entrar para a faculdade podem ser um momento estressante na vida de um aluno. No entanto,uma boa organização do tempo e das atividades pode deixar esse período mais tranquilo. Seja individual, seja em grupo, o tempo de preparação é, sem dúvidas, o item mais importante na rotina de um estudante.
+
+            Na tentativa de facilitar os estudos, elencamos dez dicas para quem está se preparando para o Vestibular e Enem.
+        </p>
+
+        <h3>1. Faça um cronograma de estudos:</h3>
+        <p class="article-content">
+            A definição de um cronograma para seus estudos é de extrema importância. Ao definir os conteúdos separe um tempo para estudar cada uma das disciplinas, concentrando-se em um conteúdo específico por vez você obtém mais chances de entender o conteúdo. Além disso, uma boa organização ajuda com que você estabeleça horários para descanso!
+        </p>
+
+        <h3>2. Leia o edital do vestibular:</h3>
+        <p class="article-content">
+            Entenda detalhadamente o que será cobrado na prova. Isso te ajudará a focar nos conteúdos mais relevantes e a evitar surpresas no dia da prova.
+        </p>
+
+        <h3>3. Priorize as matérias que você tem mais dúvidas:</h3>
+        <p class="article-content">
+            Dedique mais tempo para as disciplinas que você tem mais dificuldade. Utilize diferentes materiais de estudo, como livros, videoaulas e exercícios.
+        </p>
+
+        <h3>4. Faça simulados e provas antigas:</h3>
+        <p class="article-content">
+            Os simulados são uma ótima ferramenta para você se familiarizar com o formato da prova, identificar seus pontos fortes e fracos e treinar a gestão do tempo.
+        </p>
+
+        <h3>5. Planeje-se sobre a redação:</h3>
+        <p class="article-content">
+            A redação é uma parte fundamental da maioria dos vestibulares. Pratique a escrita regularmente, leia textos variados e busque feedback sobre seus escritos.
+        </p>
+
+        <h3>6. Leitura das obras obrigatórias:</h3>
+        <p class="article-content">
+            Se o vestibular que você vai prestar exigir a leitura de obras literárias, dedique um tempo para analisar cada uma delas. Faça resumos, destaque trechos importantes e interprete as mensagens dos autores.
+        </p>
+
+        <h3>7. Busque outras fontes para aprender:</h3>
+        <p class="article-content">
+            Não se limite aos livros didáticos. Utilize a internet, assista a videoaulas, participe de grupos de estudo e converse com professores e outros estudantes.
+        </p>
+
+        <h3>8. Mantenha-se sempre atualizado:</h3>
+        <p class="article-content">
+            Acompanhe as notícias, leia jornais e revistas, assista a documentários e debates. Isso te ajudará a ter uma visão mais ampla dos acontecimentos e a desenvolver seu senso crítico.
+        </p>
+
+        <h3>9. Dedique-se:</h3>
+        <p class="article-content">
+            A aprovação no vestibular exige dedicação e esforço. Estude com regularidade, mantenha o foco e não desista dos seus objetivos.
+        </p>
+
+        <h3>10. Mantenha-se calmo e tenha momentos de lazer:</h3>
+        <p class="article-content">
+            O estresse pode atrapalhar o seu desempenho. Por isso, procure relaxar, praticar atividades físicas e dedicar um tempo para se divertir.
+        </p>
+
+        <p class="out">
+            Lembre-se de que cada pessoa tem seu próprio ritmo de estudo e que é importante respeitar os seus limites. Não se compare com os outros e não se cobre demais. A aprovação no vestibular é o resultado de um processo contínuo de aprendizado e dedicação. Com organização, disciplina e foco, você alcançará seus objetivos! Acredite em si mesmo, você é capaz!
+        </p>
+    </article>
+</main>
+
+    <footer>
+        <div class="social-media-container">
+            <div class="social-media">
+                <nav class="menu-icon bx-md "> <i class='bx bxl-facebook-square'></i></nav>
+                <nav class="menu-icon bx-md "> <i class='bx bxl-instagram' ></i></nav>
+                <nav class="menu-icon bx-md "> <i class='bx bxl-whatsapp' ></i></nav>
+                <nav class="menu-icon bx-md "> <i class='bx bxl-youtube' ></i></nav>
+                <nav class="menu-icon bx-md "> <i class='bx bxl-linkedin' ></i></nav>
+            </div>
+        </div>
+
+        <div class="addresses">
+
+            <div class="address">
+
+                <h3>EDIFÍCIO REDE SENAI VALINHOS</h3>
+                <p>R. Artur Fernandes Querido, 55 - Vila Santo Antonio, Valinhos - SP, 13270-530</p>
+
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="address">
+
+                <h3>EDIFÍCIO REDE SESI VALINHOS</h3>
+                <p>Rod. Flávio de Carvalho, 2787 - Jardim São Paulo, Valinhos - SP, 13273-450</p>
+
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
+</html>

@@ -37,6 +37,7 @@ body {
     -moz-hyphens: auto;
   }
 
+
 /*Conteúdo notícia*/
 
 main{
@@ -57,7 +58,7 @@ main{
     margin-bottom: 1rem;
 }
 
-.mental-img{
+.tempo-img{
     width: 100%;
     max-height: 400px;
     object-fit: cover;
@@ -95,7 +96,7 @@ main{
     font-family: "Montserrat", sans-serif;
     position: relative; 
   }
-  
+
   .social-media-container {
     background-color: #D71920; 
     padding: 10px; 

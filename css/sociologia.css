@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(./header.css);
 
 .montserrat {
     font-family: "Montserrat", sans-serif;
@@ -73,61 +74,6 @@
     margin-right: auto;
     border-radius: 10px;
     margin-bottom: 1.5%;
-}
-
-
-/* Header */
-
-.container_header {
-    background-color: #E30613;
-    height: 7rem;
-    display: flex;
-    align-items: center;
-    padding: 0.3rem;
-}
-
-.img_header {
-    width: 30%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.img_header img {
-    width: 75%;
-    height: 60%;
-}
-
-.division_header {
-    background-color: white;
-    width: 0.2%;
-    height: 53%;
-    display: flex;
-}
-
-.nav_header {
-    display: flex;
-    flex-direction: row;
-    gap: 10%;
-    width: 60%;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    height: 80%;
-    list-style: none;
-}
-
-.nav_header a {
-    font-family: "Montserrat", sans-serif;
-    text-decoration: none;
-    font-size: var(--p-font);
-    color: white;
-    text-transform: uppercase;
-    font-weight: 800;
-
 }
 
 /* Dicas */
@@ -425,18 +371,25 @@ p {
 }
 
 .news-mental {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin: 1em 0;
     font-size: 1.2em;
     color: #020000;
 }
 
+
 a.btn {
     color: #D71920;
 }
 
 p.intro {
-    text-align: center;
     margin: 1em 0;
     color: #000000;
+    font-size: 1.2em;
+    
 }
