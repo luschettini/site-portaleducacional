@@ -156,10 +156,11 @@
     .menuSidebar {
       width: 100%;
     }
-    .dropdown {
-      width: 100%;
+    .hideOnMobile {
+      display: none;
     }
     .dropdown-content {
-      position: static;
+      left: 0;
     }
+    
   }
