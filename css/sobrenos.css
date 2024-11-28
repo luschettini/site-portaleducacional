@@ -19,7 +19,6 @@
     --bg-color: #FFFF;
     --secondary-color: #E30613;
     --third-color: #a12720;
-
     --font-text: "Montserrat", sans-serif;
     --h1-font: 6rem;
     --h2-font: 3rem;
@@ -626,7 +625,6 @@ footer {
 }
 
 .social-media-container {
-    background-color: #D71920;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: -5px;

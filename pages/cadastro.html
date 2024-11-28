@@ -46,27 +46,27 @@
                 cadastro</h1>
             <div class="col-md-6">
                 <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
             </div>
 
             <div class="col-md-6">
                 <label for="inputPassword4" class="form-label">Senha</label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Senha" required>
             </div>
 
             <div class="col-12">
                 <label for="inputName" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="inputName" placeholder="Nome">
+                <input type="text" class="form-control" id="inputName" placeholder="Nome" required>
             </div>
 
             <div class="col-12">
                 <label for="inputName" class="form-label">Data de Nascimento</label>
-                <input type="date" class="form-control" id="inputName" placeholder="Data de Nascimento">
+                <input type="date" class="form-control" id="inputName" placeholder="Data de Nascimento" required>
             </div>
 
             <div class="col-12">
                 <label for="inputAddress2" class="form-label">Endereço</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Endereço">
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Endereço" required>
             </div>
 
 
@@ -107,12 +107,12 @@
 
             <div class="col-md-2">
                 <label for="inputPhone" class="form-label">Telefone</label>
-                <input type="" class="form-control" id="inputPhone" placeholder="Telefone">
+                <input type="" class="form-control" id="inputPhone" placeholder="Telefone" required>
             </div>
 
             <div class="col-12">
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <input class="form-check-input" type="checkbox" id="gridCheck" required>
                     <label class="form-check-label" for="gridCheck">
                         Concordo com os termos de uso
                     </label>
@@ -120,16 +120,7 @@
             </div>
 
             <div class="col-12">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                        Desejo receber emails sobre novidades e eventos
-                    </label>
-                </div>
-            </div>
-
-            <div class="col-12">
-                <button type="submit" class="btn btn-primary">Cadastrar-se</button>
+                <a href="../pages/confirmacao.html" class="btn btn-primary">Cadastrar</a>
             </div>
         </form>
     </main>
@@ -165,11 +156,12 @@
 
         </div>
     </footer>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="../js/cadastro.js"></script>
+
+    
 </body>
 
 </html>
