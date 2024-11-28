@@ -19,7 +19,7 @@ function slideRight1() {
   const cardsContainer = document.querySelector(".slider-container .cards");
   const totalCards = document.querySelectorAll(".slider-container .card").length;
   const visibleCards = 3;
-  const cardWidth = document.querySelector(".slider-container-1 .card").offsetWidth + 20; 
+  const cardWidth = document.querySelector(".slider-container .card").offsetWidth + 20; 
 
   if (currentIndex1 < totalCards - visibleCards) {
     currentIndex1++;
@@ -29,6 +29,8 @@ function slideRight1() {
 
   updateSlide(cardsContainer, currentIndex1, cardWidth);
 }
+
+
 function updateSlide(container, index, cardWidth) {
   container.style.transform = `translateX(-${index * cardWidth}px)`;
 }
@@ -50,3 +52,9 @@ sliderContainer.addEventListener('mouseenter', () => {
 sliderContainer.addEventListener('mouseleave', () => {
   slideInterval = setInterval(autoSlide, 4000);
 });
+
+//tire suas duvidas
+
+function irParaPagina() {
+  window.location.href = "sua-pagina-destino.html";
+}

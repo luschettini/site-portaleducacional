@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+.montserrat {
+    font-family: var(--font-text);
+    font-optical-sizing: auto;
+}
 /* Barra de Navegação */
 
 .nav-content{
@@ -131,6 +135,13 @@
 
 
 /* Notícias */
+
+h2{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
 
 .container_banner{
     background-color: var(--bg-color);
