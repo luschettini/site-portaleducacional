@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARTES E EDUCAÇÃO FÍSICA</title>
+    <title>UNICAMP</title>
     <link rel="stylesheet" href="../css/faculdade-exterior-noticias.css">
 </head>
 <body>
@@ -20,29 +20,77 @@
 
 <body>
 
-<header>
+    <header>
+        <section class="container_header">
+    
+            <div class="img_header">
+                <img src="../media/img/logo-sesi-senai.png" alt="SESI SENAI Logo" class="logo-img">
+            </div>
+    
+            <div class="division_header">
+            </div>
 
-    <section class="container_header">
+            <nav>
+                <ul class="menuSidebar">
+                    <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
 
-        <div class="img_header">
-            <img src="../media/img/logo-sesi-senai.png" alt="SESI SENAI Logo" class="logo-img">
-        </div>
+                    <li> <a href="../index.html">HOME</a></li>
+                    <li><a href="sobrenos.html">SOBRE NÓS</a></li>
+                    <li><a href="cadastro.html">CADASTRE-SE</a></li>
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle">MATÉRIAS</a> 
+                        <ul class="dropdown-content"> 
+                            <li><a href="https://portal-de-materias.vercel.app/">QUÍMICA</a></li> 
+                            <li><a href="https://site-fisica.vercel.app/index.html">FÍSICA</a></li> <li><a href="https://site-biologia-41g2.vercel.app/">BIOLOGIA</a></li> 
+                            <li><a href="https://projeto-portal-matematica.vercel.app/">MATEMÁTICA</a></li> 
+                            <li><a href="https://site-historia-six.vercel.app/">HISTÓRIA</a></li> 
+                            <li><a href="https://site-sociologia.vercel.app/">SOCIOLOGIA</a></li> 
+                            <li><a href="https://site-filosofia.vercel.app/">FILOSOFIA</a></li> 
+                            <li><a href="https://portal-noticias-html.vercel.app/">ARTES & E.F.</a></li> 
+                            <li><a href="https://site-ingles-1rhh.vercel.app/?authuser=0">INGLÊS</a></li> 
+                            <li><a href="https://lp-projeto.vercel.app/">PORTUGUÊS</a></li> 
+                            <li><a href="https://projeto-geografia.vercel.app/">GEOGRAFIA</a></li> 
+                        </ul> 
+                    </li>
+                    <li><a href="estagios.html">ESTÁGIOS</a></li>
+                    <li><a href="simulado.html">SIMULADO</a></li>
+                    <li><a href="noticias.html">NOTÍCIAS</a></li>
+                    <li><a href="dicas.html">DICAS</a></li>
+                    <li><a href="carreiras.html">CARREIRAS</a></li>
+                </ul> 
+                    <!-- para adicionar um item somente no menu, alterar somente a ul class sidebar -->
+                </ul>
+                <ul class="nav_header">
+                    <li class="hideOnMobile"><a href="../index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="sobrenos.html">Sobre nós</a></li>
+                    <li class="hideOnMobile"><a href="cadastro.html">Cadastre-se</a></li>
+                    <li onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </nav>
 
-        <div class="division_header">
-        </div>
+            <script>
+                function showSidebar(){
+                    const menuSidebar = document.querySelector('.menuSidebar');
+                    menuSidebar.style.display = 'flex';
+                }
 
-        <div class="nav_header">
-            <li> <a href="../index.html">HOME</a></li>
-            <li> <a href="../pages/sobrenos.html">SOBRE NÓS</a></li>
-            <li> <a href="../pages/cadastro.html">CADASTRE-SE<a></li>
-        </div>
+                function hideSidebar(){
+                    const menuSidebar = document.querySelector('.menuSidebar');
+                    menuSidebar.style.display = 'none';
+                }
 
-        <div class="icon_menu">
-            <i class='bx bx-menu bx-md' style='color:#ffffff'></i>
-        </div>
+                const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
 
-    </section>
-   </header>
+                dropdownToggles.forEach(toggle => {
+                    toggle.addEventListener('click', () => {
+                        const dropdownContent = toggle.nextElementSibling;
+                        dropdownContent.classList.toggle('show');
+                    });
+                });
+            </script>
+            
+            
+        </section>
+    </header>
 
    <section class="container_banner">
 
@@ -78,6 +126,10 @@
             <p class="author"> <strong>Como funciona o vestibular da Unicamp?</strong>
             </p>
 
+            <p class="content">
+                <img src="../media/img/img-noticias/unicamp2025.png" alt="imagem Unicamp" class="imagem padrão"> 
+            </p>
+
             <p class="author">Até o ano de 2018, o ingresso na Unicamp se dava apenas pelo vestibular tradicional.  Desde 2019 a universidade abriu suas portas aos novos estudantes por meio do Enem, do vestibular indígena e das cotas étnico-raciais.
                 A seleção da Unicamp pelo vestibular tradicional acontece em duas fases, com provas iguais para todas as áreas. Para cursos que exigem avaliação específica, como é o caso de Artes Cênicas, Arquitetura e Urbanismo, Dança e Música. Para esses, há uma terceira etapa.
             </p>
@@ -99,6 +151,11 @@
 
             <p class="author"> <strong>Unicamp: como fazer a inscrição?</strong>
             </p>
+
+            <p class="content">
+                <img src="../media/img/img-noticias/unicamp25.jpg" alt="imagem unicamp" class="imagem padrão"> 
+            </p>
+    
 
             <p class="author"> Para se inscrever como candidato a uma vaga em um dos cursos de graduação da Unicamp, você deve ter concluído ou estar concluindo o Ensino Médio. É necessário preencher o Formulário de Inscrição disponível na página da comissão organizadora dentro da data estipulada.
             </p>
@@ -183,6 +240,8 @@
 
             <p class="author"> <strong>Segunda Fase:</strong>
             </p>
+
+            <img src="../media/img/img-noticias/fisica-unicamp-t4nfj8gz6ur6.webp" alt="imagem unicamp" class="imagem padrão">
 
             <p class="author">A realização da segunda etapa é feita a partir da convocação da Unicamp aos candidatos que obtiveram as maiores notas na primeira prova, respeitando o limite de vagas e a cota de 15% para participantes autodeclarados pardos ou negros
             </p>
