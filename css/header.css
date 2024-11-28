@@ -123,6 +123,27 @@
   }
   
   @media(max-width: 800px) {
+    .container_header {
+      flex-direction: column;
+      height: auto;
+      padding: 1rem;
+  }
+  .img_header {
+      width: 100%;
+      height: auto;
+  }
+
+    .division_header {
+      display: none;
+    }
+    .nav_header{
+      align-items: center;
+      margin-left: 0;
+    }
+    
+  .showSidebar {
+    width: 100%;
+  }
     .hideOnMobile {
       display: none;
     }
