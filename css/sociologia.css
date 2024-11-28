@@ -277,10 +277,6 @@ footer {
     margin-right: 1rem;
 }
 
-.text {
-    flex: 1;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 /* Botão se inscrever */
 .banner_btn{
@@ -301,8 +297,9 @@ h2 {
     color: #E30613;
 }
 
-/*teste*/
-* {
+/*teste SOCIOLOGIA2*/
+
+*{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0px;
@@ -314,4 +311,132 @@ body {
     padding: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 2em;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.linha{
+    border: none;
+    height: 4px;
+    background-color: #9A1915;
+    margin: 10px 0;
+    width: 30rem;
+    border-radius: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    text-align: justify;
+    max-width: 700px;
+}
+
+.container_text{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.3rem;
+    max-width: 1400px;
+}
+
+.content {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.image-container {
+    flex-shrink: 0;
+    margin-left: 30px;
+}
+
+.imagem-lado-a-lado {
+    max-width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.text-block {
+    flex: 1;
+    margin-right: 30px;
+    height: 150px;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        display: block;
+    }
+
+    .container_text {
+        padding: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+    }
+
+    .imagem-lado-a-lado {
+        width: 150%;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .linha, .linha-2 {
+        width: 50%;
+    }
+}
+
+.news-mental {
+    text-align: center;
+    margin: 1em 0;
+    font-size: 1.2em;
+    color: #020000;
+}
+
+a.btn {
+    color: #D71920;
+}
+
+p.intro {
+    text-align: center;
+    margin: 1em 0;
+    color: #000000;
+}
