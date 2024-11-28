@@ -338,3 +338,21 @@ h2 {
 .banner_title p{
     color: #E30613;
 }
+
+/* Estilos para telas maiores (mais de 600px de largura) */
+@media (min-width: 600px) {
+    .menu-icon {
+        display: none; /* Esconde o ícone de menu em telas maiores */
+    }
+}
+
+/* Estilos para telas menores (menos de 600px de largura) */
+@media (max-width: 600px) {
+    .navigation {
+        display: none; /* Esconde a navegação em telas menores */
+        font-size: 1.5rem; /* Aumenta o tamanho da fonte em dispositivos móveis */
+    }
+    .menu-icon {
+        display: block; /* Mostra o ícone de menu em telas menores */
+    }
+}
