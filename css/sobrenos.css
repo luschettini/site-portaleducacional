@@ -1,6 +1,5 @@
 /* Importação de fontes  */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url(./header.css);
 
 .montserrat {
     font-family: "Montserrat", sans-serif;
@@ -20,10 +19,68 @@
     --bg-color: #FFFF;
     --secondary-color: #E30613;
     --third-color: #a12720;
+
     --font-text: "Montserrat", sans-serif;
     --h1-font: 6rem;
     --h2-font: 3rem;
     --p-font: 1rem;
+}
+
+/* Header */
+
+.container_header {
+    background-color: #E30613;
+    height: 7rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem;
+}
+
+.img_header {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_header img {
+    width: 75%;
+    height: 60%;
+}
+
+.division_header {
+    background-color: white;
+    width: 0.2%;
+    height: 53%;
+    display: flex;
+}
+
+.nav_header {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    width: 60%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    list-style: none;
+}
+
+.nav_header a {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-size: var(--p-font);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+
 }
 
 /* Sobre Nós */
@@ -505,12 +562,6 @@
 }
 
 .team_text {
-.team_section img{
-    width: 80%;
-    height: 60%;
-}
-
-.team_text{
     width: 100%;
     height: 10%;
     display: flex;
@@ -569,6 +620,7 @@ footer {
 }
 
 .social-media-container {
+    background-color: #D71920;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: -5px;
@@ -612,7 +664,6 @@ footer {
 }
 
 .address {
-    background-color: black;
     flex: 1;
     max-width: 300px;
     text-align: center;
@@ -865,4 +916,3 @@ footer {
     }
 
 } 
- }
