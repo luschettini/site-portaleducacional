@@ -378,6 +378,8 @@ textarea {
   max-width: 82rem;
   min-height: 12.5rem;
   font-size: large;
+  margin: 0 auto;
+  display: block;
 }
 
 .botao {
@@ -386,12 +388,20 @@ textarea {
   justify-content: center;
   margin-top: 0.6rem;
   flex-direction: column;
+  width: 100%;
 
+}
+
+.form-button-link{
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
 }
 
 .form-button {
   width: 100%;
-  max-width: 75rem;
   padding: 0.6rem;
   font-size: 1.5rem;
   background-color: #9a1915;
@@ -399,9 +409,9 @@ textarea {
   border: none;
   border-radius: 1.8rem;
   cursor: pointer;
-  align-self: center;
   text-align: center;
   font-weight: bold;
+  display: block;
 }
 
 .form-button:hover {
