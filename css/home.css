@@ -30,8 +30,6 @@
   --p-font: 1rem;
 }
 
-
-
 .container_banner {
   background-color: var(--bg-color);
   height: 50rem;
@@ -313,9 +311,9 @@ division-content {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.8rem;
-  margin-top: 3rem;
-  margin-right: 45rem;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  margin-right: 55rem;
   color: rgb(0, 0, 0);
 }
 
@@ -332,7 +330,7 @@ division-content {
   flex-direction: row;
   align-content: center;
   justify-content: center;
-  align-items: center;
+  text-align: left;
   padding: 3rem;
 }
 
@@ -440,28 +438,29 @@ textarea {
 .main-content{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 #movimentos-linha {
   height: 0.2rem;
   width: 18rem;
   background-color: var(--secondary-color);
-  margin-left: 24rem;
+  margin-left: 0;
 }
 
 .quadro-noticias {
-  margin-right: 24rem;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .title-news {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: black;
-  margin-left: 24rem;
-  margin-top: 3rem;
+  text-align: left;
+  margin-top: 6rem;
 }
 
 .cards{
@@ -526,7 +525,7 @@ textarea {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  margin-bottom: 1rem;  
+  margin-bottom: 2rem;  
   ;
 }
 
