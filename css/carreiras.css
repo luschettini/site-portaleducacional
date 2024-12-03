@@ -173,6 +173,18 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
 /* Botão */
 .nav-content ul li a.botao-sobre {
     background-color: #b61818;
@@ -209,6 +221,8 @@
 
 body{
     background-image: linear-gradient(to right, #ffffff, #f7f7f7);
+    margin: 0;
+    padding: 0;
 }
 
 .container{
@@ -355,9 +369,7 @@ footer {
 
 
 /* Responsividade */
-
-@media (max-width: 768px) {
-
+@media (max-width: 780px) {
     .container_header {
         flex-direction: column;
         height: auto;
