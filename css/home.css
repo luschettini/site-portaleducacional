@@ -637,6 +637,40 @@ textarea {
 }
 
 @media (max-width: 768px) {
+  .container_banner {
+    height: 25rem;
+}
+
+.banner_image {
+    display: none;
+}
+
+.banner_content {
+    max-width: fit-content;
+}
+
+.banner_content h1 {
+    margin-left: 2%;
+    font-size: 3rem;
+    justify-content: justify;
+}
+
+.banner_text p {
+    font-size: 1rem;
+    justify-content: justify;
+    margin-top: 3rem;
+}
+
+.nav-content ul {
+  flex-direction: column;
+  gap: 1rem;
+}
+.nav-content ul li a {
+  width: auto;
+  font-size: 0.9rem;
+  padding: 5% 10%;
+}
+
   #movimentos-linha {
     width: 10rem;
   }
