@@ -656,4 +656,12 @@ footer {
     .icon-item a {
         font-size: 0.8rem;
     }
+    .menu-list {
+        flex-direction: column;
 }
+.nav-content ul li a {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+}
+}
+
