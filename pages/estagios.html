@@ -16,26 +16,74 @@
 <body>
 
     <header>
-
         <section class="container_header">
-
+    
             <div class="img_header">
                 <img src="../media/img/logo-sesi-senai.png" alt="SESI SENAI Logo" class="logo-img">
             </div>
-
+    
             <div class="division_header">
             </div>
 
-            <div class="nav_header">
-                <li> <a href="../index.html">HOME</a></li>
-                <li> <a href="../pages/sobrenos.html">SOBRE NÓS</a></li>
-                <li> <a href="../pages/cadastro.html">CADASTRE-SE<a></li>
-            </div>
+            <nav>
+                <ul class="menuSidebar">
+                    <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
 
-            <div class="icon_menu">
-                <i class='bx bx-menu bx-md' style='color:#ffffff'></i>
-            </div>
+                    <li> <a href="../index.html">HOME</a></li>
+                    <li><a href="sobrenos.html">SOBRE NÓS</a></li>
+                    <li><a href="cadastro.html">CADASTRE-SE</a></li>
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle">MATÉRIAS</a> 
+                        <ul class="dropdown-content"> 
+                            <li><a href="https://portal-de-materias.vercel.app/">QUÍMICA</a></li> 
+                            <li><a href="https://site-fisica.vercel.app/index.html">FÍSICA</a></li> <li><a href="https://site-biologia-41g2.vercel.app/">BIOLOGIA</a></li> 
+                            <li><a href="https://projeto-portal-matematica.vercel.app/">MATEMÁTICA</a></li> 
+                            <li><a href="https://site-historia-six.vercel.app/">HISTÓRIA</a></li> 
+                            <li><a href="https://site-sociologia.vercel.app/">SOCIOLOGIA</a></li> 
+                            <li><a href="https://site-filosofia.vercel.app/">FILOSOFIA</a></li> 
+                            <li><a href="https://portal-noticias-html.vercel.app/">ARTES & E.F.</a></li> 
+                            <li><a href="https://site-ingles-1rhh.vercel.app/?authuser=0">INGLÊS</a></li> 
+                            <li><a href="https://lp-projeto.vercel.app/">PORTUGUÊS</a></li> 
+                            <li><a href="https://projeto-geografia.vercel.app/">GEOGRAFIA</a></li> 
+                        </ul> 
+                    </li>
+                    <li><a href="estagios.html">ESTÁGIOS</a></li>
+                    <li><a href="simulado.html">SIMULADO</a></li>
+                    <li><a href="noticias.html">NOTÍCIAS</a></li>
+                    <li><a href="dicas.html">DICAS</a></li>
+                    <li><a href="carreiras.html">CARREIRAS</a></li>
+                </ul> 
+                    <!-- para adicionar um item somente no menu, alterar somente a ul class sidebar -->
+                </ul>
+                <ul class="nav_header">
+                    <li class="hideOnMobile"><a href="../index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="sobrenos.html">Sobre nós</a></li>
+                    <li class="hideOnMobile"><a href="cadastro.html">Cadastre-se</a></li>
+                    <li onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </nav>
 
+            <script>
+                function showSidebar(){
+                    const menuSidebar = document.querySelector('.menuSidebar');
+                    menuSidebar.style.display = 'flex';
+                }
+
+                function hideSidebar(){
+                    const menuSidebar = document.querySelector('.menuSidebar');
+                    menuSidebar.style.display = 'none';
+                }
+
+                const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+
+                dropdownToggles.forEach(toggle => {
+                    toggle.addEventListener('click', () => {
+                        const dropdownContent = toggle.nextElementSibling;
+                        dropdownContent.classList.toggle('show');
+                    });
+                });
+            </script>
+            
+            
         </section>
     </header>
 
@@ -59,35 +107,33 @@
     <section class="division">
 
         <div class="banner_division"></div>
-
     </section>
 
-    <section class="nav-pages">
+    <nav class="nav-content">
+            
+        <nav class="nav-bottom">
 
-        <nav class="nav-content">
+            <ul>
 
-            <nav class="nav-bottom">
+                <li><a href="../pages/sobrenos.html" class="botao-sobre">SOBRE</a></li>
+                <li><a href="../pages/disciplinas.html" class="botao">MATÉRIAS</a></li>
+                <li><a href="../pages/estagios.html" class="botao">ESTÁGIOS</a></li>
+                <li><a href="../pages/simulado.html" class="botao">SIMULADOS</a></li>
+                <li><a href="../pages/noticias.html" class="botao">NOTÍCIAS</a></li>
+                <li><a href="../pages/dicas.html" 
+                    class="botao-dicas">DICAS</a></li>
+                <li><a href="../pages/carreiras.html" class="botao">CARREIRAS</a></li>
 
-                <ul>
-
-                    <li><a href="../pages/sobrenos.html" class="botao-sobre">SOBRE</a></li>
-                    <li><a href="../pages/disciplinas.html" class="botao">MATÉRIAS</a></li>
-                    <li><a href="../pages/estagios.html" class="botao-estagios">ESTÁGIOS</a></li>
-                    <li><a href="../pages/simulado.html" class="botao">SIMULADOS</a></li>
-                    <li><a href="../pages/noticias.html" class="botao">NOTÍCIAS</a></li>
-                    <li><a href="../pages/dicas.html" class="botao">DICAS</a></li>
-                    <li><a href="../pages/video-aula.html" class="botao">VÍDEO-AULAS</a></li>
-
-                </ul>
-
-            </nav>
-
+            </ul>
 
         </nav>
+
+        
+    </nav>
         <nav class="nav-division"></nav>
 
     </section>
-
+    
     <section class="container_content">
 
         <div class="content_box">
@@ -192,6 +238,27 @@
             <p>Visa integrar o aluno à realidade industrial, possibilitando contato direto com o ambiente de trabalho e
                 permitindo que sejam aplicadas as técnicas aprendidas na fase escolar, completando sua formação
                 profissional.</p>
+        </div>
+
+        <div class="content_title">
+            <p> Faculdade Senai</p>
+        </div>
+
+        <div class="content_text">
+            <p>Os estágios na faculdade SENAI desempenham um papel crucial na formação dos estudantes, proporcionando uma oportunidade valiosa para aplicar os conhecimentos teóricos adquiridos em sala de aula em situações práticas do dia a dia de uma empresa. Eles oferecem aos estudantes a chance de vivenciar o ambiente de trabalho real, ajudando a desenvolver habilidades práticas e técnicas essenciais para a carreira profissional.</p>
+        </div>
+
+        <div class="content_text">
+            <p>Além disso, os estágios ajudam os alunos a aprimorar suas habilidades interpessoais, como comunicação, trabalho em equipe e resolução de problemas. Durante o estágio, os estudantes têm a oportunidade de construir uma rede de contatos profissionais, fundamental para futuras oportunidades de emprego. Aplicar os conhecimentos adquiridos em sala de aula em situações reais contribui para consolidar a aprendizagem e entender melhor os conceitos teóricos. Muitas vezes, os estágios podem resultar em ofertas de emprego após a conclusão do curso, pois as empresas já conhecem o desempenho e o potencial do estagiário.</p>
+        </div>
+
+        <div class="content_text">
+            <p>Para conseguir um estágio na faculdade SENAI, os estudantes geralmente precisam ter um bom desempenho acadêmico, participar de processos seletivos e providenciar documentação necessária, como currículo atualizado, carta de apresentação e, às vezes, comprovantes de matrícula e histórico escolar.</p>
+            
+        </div>
+
+        <div class="content_text">
+            <p>Os estágios na faculdade SENAI são uma ponte entre a teoria e a prática, proporcionando aos alunos uma experiência enriquecedora que contribui significativamente para sua formação profissional. Participar de um estágio é uma etapa essencial para qualquer estudante que deseja ingressar no mercado de trabalho com um diferencial competitivo e uma bagagem de experiências práticas relevante.</p>
         </div>
 
     </section>

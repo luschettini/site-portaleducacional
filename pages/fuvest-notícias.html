@@ -20,29 +20,77 @@
 
 <body>
 
-<header>
+    <header>
+        <section class="container_header">
+    
+            <div class="img_header">
+                <img src="../media/img/logo-sesi-senai.png" alt="SESI SENAI Logo" class="logo-img">
+            </div>
+    
+            <div class="division_header">
+            </div>
 
-    <section class="container_header">
+            <nav>
+                <ul class="menuSidebar">
+                    <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
 
-        <div class="img_header">
-            <img src="../media/img/logo-sesi-senai.png" alt="SESI SENAI Logo" class="logo-img">
-        </div>
+                    <li> <a href="../index.html">HOME</a></li>
+                    <li><a href="sobrenos.html">SOBRE NÓS</a></li>
+                    <li><a href="cadastro.html">CADASTRE-SE</a></li>
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle">MATÉRIAS</a> 
+                        <ul class="dropdown-content"> 
+                            <li><a href="https://portal-de-materias.vercel.app/">QUÍMICA</a></li> 
+                            <li><a href="https://site-fisica.vercel.app/index.html">FÍSICA</a></li> <li><a href="https://site-biologia-41g2.vercel.app/">BIOLOGIA</a></li> 
+                            <li><a href="https://projeto-portal-matematica.vercel.app/">MATEMÁTICA</a></li> 
+                            <li><a href="https://site-historia-six.vercel.app/">HISTÓRIA</a></li> 
+                            <li><a href="https://site-sociologia.vercel.app/">SOCIOLOGIA</a></li> 
+                            <li><a href="https://site-filosofia.vercel.app/">FILOSOFIA</a></li> 
+                            <li><a href="https://portal-noticias-html.vercel.app/">ARTES & E.F.</a></li> 
+                            <li><a href="https://site-ingles-1rhh.vercel.app/?authuser=0">INGLÊS</a></li> 
+                            <li><a href="https://lp-projeto.vercel.app/">PORTUGUÊS</a></li> 
+                            <li><a href="https://projeto-geografia.vercel.app/">GEOGRAFIA</a></li> 
+                        </ul> 
+                    </li>
+                    <li><a href="estagios.html">ESTÁGIOS</a></li>
+                    <li><a href="simulado.html">SIMULADO</a></li>
+                    <li><a href="noticias.html">NOTÍCIAS</a></li>
+                    <li><a href="dicas.html">DICAS</a></li>
+                    <li><a href="carreiras.html">CARREIRAS</a></li>
+                </ul> 
+                    <!-- para adicionar um item somente no menu, alterar somente a ul class sidebar -->
+                </ul>
+                <ul class="nav_header">
+                    <li class="hideOnMobile"><a href="../index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="sobrenos.html">Sobre nós</a></li>
+                    <li class="hideOnMobile"><a href="cadastro.html">Cadastre-se</a></li>
+                    <li onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </nav>
 
-        <div class="division_header">
-        </div>
+            <script>
+                function showSidebar(){
+                    const menuSidebar = document.querySelector('.menuSidebar');
+                    menuSidebar.style.display = 'flex';
+                }
 
-        <div class="nav_header">
-            <li> <a href="../index.html">HOME</a></li>
-            <li> <a href="../pages/sobrenos.html">SOBRE NÓS</a></li>
-            <li> <a href="../pages/cadastro.html">CADASTRE-SE<a></li>
-        </div>
+                function hideSidebar(){
+                    const menuSidebar = document.querySelector('.menuSidebar');
+                    menuSidebar.style.display = 'none';
+                }
 
-        <div class="icon_menu">
-            <i class='bx bx-menu bx-md' style='color:#ffffff'></i>
-        </div>
+                const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
 
-    </section>
-   </header>
+                dropdownToggles.forEach(toggle => {
+                    toggle.addEventListener('click', () => {
+                        const dropdownContent = toggle.nextElementSibling;
+                        dropdownContent.classList.toggle('show');
+                    });
+                });
+            </script>
+            
+            
+        </section>
+    </header>
 
    <section class="container_banner">
 
@@ -72,6 +120,8 @@
     <main>
         <article class="news-university">
             <h2>Fuvest</h2>
+            
+            <img src="../media/img/img-noticias/fuvest.png" alt="imagem saude mental" class="imagem padrao">
 
             <p class="author">
                 O vestibular da Fuvest é o mais tradicional do país e seleciona candidatos para os cursos da USP. Ele atrai estudantes de todas as regiões do Brasil.
@@ -85,14 +135,12 @@
               <strong>Como se inscrever na Fuvest?</strong>
             </p>
 
+            <img src="../media/img/img-noticias/inscricao fuvest.jpg" alt="imagem fuvest" class="imagem padrao">
+
             <p class="author">
                 As inscrições no vestibular da Fuvest são abertas uma vez ao ano, geralmente no mês de agosto, pela internet. Para concorrer as oportunidades ofertadas pela USP é preciso ter concluído o Ensino Médio ou concluí-lo até o dia da matrícula. 
                 Aqueles que ainda não finalizaram o Ensino Médio, mas querem fazer as provas do vestibular, podem se inscrever na opção treineiros. Contudo, caso o participante seja classificado, não será possível ingressar na USP. As provas funcionam, neste caso, apenas como um treinamento.
                 Os candidatos devem fazer a opção pela modalidade de concorrência (cotas ou ampla concorrência) ao se cadastrarem no Vestibular da Fuvest. É preciso também responder a um questionário socioeconômico.                
-            </p>
-
-            <p class="author">
-            <strong>Como se inscrever na Fuvest?</strong>
             </p>
 
             <p class="author">
@@ -104,6 +152,8 @@
             <p class="author">
             <strong>Isenção da taxa da Fuvest</strong>
             </p>
+
+            <img src="../media/img/img-noticias/insencaotaxa.png" alt="imagem fuvest" class="imagem padrao">
 
             <p class="author">
                 A taxa de inscrição da Fuvest costuma ser uma das mais caras entre os vestibulares. No entanto, alguns candidatos são beneficiados com a isenção ou redução da taxa de inscrição.

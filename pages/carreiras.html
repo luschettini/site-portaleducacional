@@ -15,7 +15,6 @@
 
   <body>
     <header>
-
       <section class="container_header">
   
           <div class="img_header">
@@ -24,19 +23,68 @@
   
           <div class="division_header">
           </div>
-  
-          <div class="nav_header">
-              <li> <a href="../index.html">HOME</a></li>
-              <li> <a href="../pages/sobrenos.html">SOBRE NÓS</a></li>
-              <li> <a href="../pages/cadastro.html">CADASTRE-SE<a></li>
-          </div>
-  
-          <div class="icon_menu">
-              <i class='bx bx-menu bx-md' style='color:#ffffff'></i>
-          </div>
-  
+
+          <nav>
+              <ul class="menuSidebar">
+                  <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+
+                  <li> <a href="../index.html">HOME</a></li>
+                  <li><a href="sobrenos.html">SOBRE NÓS</a></li>
+                  <li><a href="cadastro.html">CADASTRE-SE</a></li>
+                  <li class="dropdown"> <a href="#" class="dropdown-toggle">MATÉRIAS</a> 
+                      <ul class="dropdown-content"> 
+                          <li><a href="https://portal-de-materias.vercel.app/">QUÍMICA</a></li> 
+                          <li><a href="https://site-fisica.vercel.app/index.html">FÍSICA</a></li> <li><a href="https://site-biologia-41g2.vercel.app/">BIOLOGIA</a></li> 
+                          <li><a href="https://projeto-portal-matematica.vercel.app/">MATEMÁTICA</a></li> 
+                          <li><a href="https://site-historia-six.vercel.app/">HISTÓRIA</a></li> 
+                          <li><a href="https://site-sociologia.vercel.app/">SOCIOLOGIA</a></li> 
+                          <li><a href="https://site-filosofia.vercel.app/">FILOSOFIA</a></li> 
+                          <li><a href="https://portal-noticias-html.vercel.app/">ARTES & E.F.</a></li> 
+                          <li><a href="https://site-ingles-1rhh.vercel.app/?authuser=0">INGLÊS</a></li> 
+                          <li><a href="https://lp-projeto.vercel.app/">PORTUGUÊS</a></li> 
+                          <li><a href="https://projeto-geografia.vercel.app/">GEOGRAFIA</a></li> 
+                      </ul> 
+                  </li>
+                  <li><a href="estagios.html">ESTÁGIOS</a></li>
+                  <li><a href="simulado.html">SIMULADO</a></li>
+                  <li><a href="noticias.html">NOTÍCIAS</a></li>
+                  <li><a href="dicas.html">DICAS</a></li>
+                  <li><a href="carreiras.html">CARREIRAS</a></li>
+              </ul> 
+                  <!-- para adicionar um item somente no menu, alterar somente a ul class sidebar -->
+              </ul>
+              <ul class="nav_header">
+                  <li class="hideOnMobile"><a href="../index.html">Home</a></li>
+                  <li class="hideOnMobile"><a href="sobrenos.html">Sobre nós</a></li>
+                  <li class="hideOnMobile"><a href="cadastro.html">Cadastre-se</a></li>
+                  <li onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+              </ul>
+          </nav>
+
+          <script>
+              function showSidebar(){
+                  const menuSidebar = document.querySelector('.menuSidebar');
+                  menuSidebar.style.display = 'flex';
+              }
+
+              function hideSidebar(){
+                  const menuSidebar = document.querySelector('.menuSidebar');
+                  menuSidebar.style.display = 'none';
+              }
+
+              const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+
+              dropdownToggles.forEach(toggle => {
+                  toggle.addEventListener('click', () => {
+                      const dropdownContent = toggle.nextElementSibling;
+                      dropdownContent.classList.toggle('show');
+                  });
+              });
+          </script>
+          
+          
       </section>
-     </header>
+  </header>
   
      <section class="container_banner">
 
@@ -107,17 +155,17 @@
             </div>
             <div class="card-body">
               <h5 class="card-title">  Técnico em Automação Industrial </h5>
-              <p class="card-text"> O Técnico em Automação Industrial é responsável por projetar, instalar e manter sistemas automatizados que controlam processos em fábricas e indústrias. Ele programa dispositivos como controladores lógicos programáveis (CLPs) e sensores para coordenar máquinas de produção, garantindo maior eficiência, segurança e redução de custos.</p>
-              <p class="card-text">Mercado: Indústrias de alimentos, bebidas, automobilística...</p>
+              <p class="card-text"> O Técnico em Automação Industrial é responsável por projetar, instalar e manter sistemas automatizados que controlam processos em fábricas e indústrias. Programa dispositivos como controladores lógicos programáveis e sensores para coordenar máquinas de produção, garantindo maior eficiência, segurança e redução de custos.</p>
+              <p class="card-text">Mercado: Indústrias de alimentos, automobilística...</p>
               <p class="card-text"> Salário Médio: R$ 2.500 a R$ 8.000</p>
             </div>
             <div class="card-footer text-center">
-              <i class="fab fa-facebook-f mx-2" ></i>
-              <i class="fab fa-twitter mx-2"></i>
-              <i class="fab fa-linkedin-in mx-2"></i>
-              <i class="fab fa-instagram mx-2"></i>
+              <a href="https://faculdades.sp.senai.br/curso/77171/automacao-industrial">
+            <img src="../media/img/graduation-solid-24 (1).png" alt="faculdade senai"></a>
+              <a href="https://www.sp.senai.br/curso/tecnico-em-automacao-industrial/95708">
+            <img src="../media/img/info-circle-regular-24.png" alt=""></a>
             </div>
-          </div>
+          </div>   
         </div>
         <div class="col">
           <div class="card custom-card">
@@ -126,16 +174,16 @@
             </div>
             <div class="card-body">
               <h5 class="card-title"> Técnico de Fabricação Mecânica </h5>
-              <p class="card-text"> O Técnico em Fabricação Mecânica é responsável por projetar, fabricar e montar peças e componentes mecânicos, como peças de carros, tratores, eletrodomésticos e ferramentas para a construção civil. Eles trabalham com matérias-primas e utilizam processos de usinagem, soldagem e fundição para criar produtos finais. </p>
+              <p class="card-text"> O Técnico em Fabricação Mecânica é responsável por projetar, fabricar e montar peças e componentes mecânicos, como peças de carros, tratores, eletrodomésticos e ferramentas para a construção civil. Eles trabalham com matérias-primas e utilizam processos de usinagem e soldagem. </p>
               <p class="card-text">Mercado: Indústrias de metalurgia, petróleo e gás, e usinagem.</p>
               <p class="card-text"> Salário Médio: R$5.606,99 </p>
             </div>
             <div class="card-footer text-center">
-              <i class="fab fa-facebook-f mx-2"></i>
-              <i class="fab fa-twitter mx-2"></i>
-              <i class="fab fa-linkedin-in mx-2"></i>
-              <i class="fab fa-instagram mx-2"></i>
-            </div>
+              <a href="https://faculdades.sp.senai.br/curso/98807/tecnologo-em-fabricacao-mecanica">
+              <img src="../media/img/graduation-solid-24 (1).png" alt="faculdade senai"></a>
+              <a href="https://www.sp.senai.br/cursos/cursos-livres/fabricacao-mecanica-e-mecanica-industrial?gratuito=1">
+              <img src="../media/img/info-circle-regular-24.png" alt="informação extra"></a>
+              </div>
           </div>
         </div>
         <div class="col">
@@ -150,11 +198,11 @@
               <p class="card-text">Salário médio: R$ 2.500 a R$ 7.000</p>
             </div>
             <div class="card-footer text-center">
-              <i class="fab fa-facebook-f mx-2"></i>
-              <i class="fab fa-twitter mx-2"></i>
-              <i class="fab fa-linkedin-in mx-2"></i>
-              <i class="fab fa-instagram mx-2"></i>
-            </div>
+              <a href="https://faculdades.sp.senai.br/curso/102915/tecnologo-em-eletronica-industrial">
+              <img src="../media/img/graduation-solid-24 (1).png" alt="faculdade senai"></a>
+              <a href="https://www.sp.senai.br/curso/tecnico-em-eletrotecnica/98753">
+              <img src="../media/img/info-circle-regular-24.png" alt="informação extra"></a>
+              </div>
           </div>
         </div>
       </div>
@@ -172,11 +220,11 @@
               <p class="card-text">Salário médio: R$ 2.000 a R$ 5.000</p>
             </div>
             <div class="card-footer text-center">
-              <i class="fab fa-facebook-f mx-2"></i>
-              <i class="fab fa-twitter mx-2"></i>
-              <i class="fab fa-linkedin-in mx-2"></i>
-              <i class="fab fa-instagram mx-2"></i>
-            </div>
+              <a href="https://faculdades.sp.senai.br/curso/102919/tecnologo-em-logistica">
+              <img src="../media/img/graduation-solid-24 (1).png" alt="faculdade senai"></a>
+              <a href="https://www.sp.senai.br/curso/tecnico-em-logistica/85623">
+              <img src="../media/img/info-circle-regular-24.png" alt="informação extra"></a>
+              </div>
           </div>
         </div>
         <div class="col">
@@ -191,11 +239,11 @@
               <p class="card-text">Salário médio: R$ 3.000 a R$ 8.000</p>
             </div>
             <div class="card-footer text-center">
-              <i class="fab fa-facebook-f mx-2"></i>
-              <i class="fab fa-twitter mx-2"></i>
-              <i class="fab fa-linkedin-in mx-2"></i>
-              <i class="fab fa-instagram mx-2"></i>
-            </div>
+              <a href="https://faculdades.sp.senai.br/curso/102901/tecnologo-em-analise-e-desenvolvimento-de-sistemas">
+              <img src="../media/img/graduation-solid-24 (1).png" alt="faculdade senai"></a>
+              <a href="https://sp.senai.br/cursos/cursos-livres/tecnologia-da-informacao-e-informatica?gratuito=1">
+              <img src="../media/img/info-circle-regular-24.png" alt="informação extra"></a>
+              </div>
           </div>
         </div>
         <div class="col">
@@ -204,17 +252,18 @@
                 <img src="https://app.fies.org.br/MatriculaWebSENAI/Imagens/CURSOSENAI_iStock-539467090.jpg" class="rounded-circle avatar" alt="Avatar">
               </div>
             <div class="card-body">
-              <h5 class="card-title">Técnico em Edificações</h5>
-              <p class="card-text">O Técnico em Edificações é responsável por elaborar projetos arquitetônicos e acompanhar obras de construção civil. Ele realiza cálculos estruturais, prepara orçamentos e supervisiona etapas de obras, garantindo que sejam executadas dentro dos padrões técnicos e legais.</p>
-              <p class="card-text">Mercado: Construtoras, empreiteiras e órgãos públicos.</p>
-              <p class="card-text">Salário médio: R$ 2.500 a R$ 6.500</p>
+              <h5 class="card-title">
+                Técnico de Alimentos</h5>
+              <p class="card-text">O Técnico em Alimentos é responsável por atuar em todas as etapas da cadeia produtiva de alimentos e bebidas, desde o desenvolvimento de novos produtos até o controle de qualidade e segurança alimentar. Ele supervisiona processos de produção, realiza análises laboratoriais e contribui para a otimização das operações industriais.</p>
+              <p class="card-text">Mercado:  Indústrias alimentícias, frigoríficos, cooperativas agroindustriais, e controle de qualidade.</p>
+              <p class="card-text">Salário médio: R$ 2.500 a R$ 5.000</p>
             </div>
             <div class="card-footer text-center">
-              <i class="fab fa-facebook-f mx-2"></i>
-              <i class="fab fa-twitter mx-2"></i>
-              <i class="fab fa-linkedin-in mx-2"></i>
-              <i class="fab fa-instagram mx-2"></i>
-            </div>
+              <a href="https://faculdades.sp.senai.br/curso/102889/tecnologo-em-alimentos">
+              <img src="../media/img/graduation-solid-24 (1).png" alt="faculdade senai"></a>
+              <a href="https://www.sp.senai.br/cursos/cursos-livres/alimentos-e-bebidas?gratuito=1">
+              <img src="../media/img/info-circle-regular-24.png" alt="informação extra"></a>
+              </div>
           </div>
         </div>
       </div>

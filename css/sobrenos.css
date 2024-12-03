@@ -1,5 +1,6 @@
 /* Importação de fontes  */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(./header.css);
 
 .montserrat {
     font-family: "Montserrat", sans-serif;
@@ -26,68 +27,11 @@
     --p-font: 1rem;
 }
 
-/* Header */
-
-.container_header {
-    background-color: #E30613;
-    height: 7rem;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.3rem;
-}
-
-.img_header {
-    width: 30%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.img_header img {
-    width: 75%;
-    height: 60%;
-}
-
-.division_header {
-    background-color: white;
-    width: 0.2%;
-    height: 53%;
-    display: flex;
-}
-
-.nav_header {
-    display: flex;
-    flex-direction: row;
-    gap: 10%;
-    width: 60%;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    height: 80%;
-    list-style: none;
-}
-
-.nav_header a {
-    font-family: "Montserrat", sans-serif;
-    text-decoration: none;
-    font-size: var(--p-font);
-    color: white;
-    text-transform: uppercase;
-    font-weight: 800;
-
-}
-
 /* Sobre Nós */
 
 .container_banner {
     background-color: var(--bg-color);
-    height: 50rem;
+    height: 60rem;
     width: 100%;
     display: flex;
     gap: 0.5rem;
@@ -104,7 +48,6 @@
 /* Conteúdo do Banner */
 .banner_content {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -131,7 +74,6 @@
 
 .banner_text {
     width: 78%;
-    height: 100%;
     display: flex;
 
 }
@@ -154,7 +96,8 @@
     margin-top: 3%;
     border-radius: 30px;
     align-items: center;
-    margin-left: -70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .banner_btn a {
@@ -562,12 +505,6 @@
 }
 
 .team_text {
-.team_section img{
-    width: 80%;
-    height: 60%;
-}
-
-.team_text{
     width: 100%;
     height: 10%;
     display: flex;
@@ -922,4 +859,3 @@ footer {
     }
 
 } 
- }

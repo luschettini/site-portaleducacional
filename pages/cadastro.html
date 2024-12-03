@@ -17,56 +17,104 @@
 
 <body>
     <header>
-
         <section class="container_header">
-
+    
             <div class="img_header">
                 <img src="../media/img/logo-sesi-senai.png" alt="SESI SENAI Logo" class="logo-img">
             </div>
-
+    
             <div class="division_header">
             </div>
 
-            <div class="nav_header">
-                <li> <a href="../index.html">HOME</a></li>
-                <li> <a href="../pages/sobrenos.html">SOBRE NÓS</a></li>
-                <li> <a href="../pages/cadastro.html">CADASTRE-SE<a></li>
-            </div>
+            <nav>
+                <ul class="menuSidebar">
+                    <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
 
-            <div class="icon_menu">
-                <i class='bx bx-menu bx-md' style='color:#ffffff'></i>
-            </div>
+                    <li> <a href="../index.html">HOME</a></li>
+                    <li><a href="sobrenos.html">SOBRE NÓS</a></li>
+                    <li><a href="cadastro.html">CADASTRE-SE</a></li>
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle">MATÉRIAS</a> 
+                        <ul class="dropdown-content"> 
+                            <li><a href="https://portal-de-materias.vercel.app/">QUÍMICA</a></li> 
+                            <li><a href="https://site-fisica.vercel.app/index.html">FÍSICA</a></li> <li><a href="https://site-biologia-41g2.vercel.app/">BIOLOGIA</a></li> 
+                            <li><a href="https://projeto-portal-matematica.vercel.app/">MATEMÁTICA</a></li> 
+                            <li><a href="https://site-historia-six.vercel.app/">HISTÓRIA</a></li> 
+                            <li><a href="https://site-sociologia.vercel.app/">SOCIOLOGIA</a></li> 
+                            <li><a href="https://site-filosofia.vercel.app/">FILOSOFIA</a></li> 
+                            <li><a href="https://portal-noticias-html.vercel.app/">ARTES & E.F.</a></li> 
+                            <li><a href="https://site-ingles-1rhh.vercel.app/?authuser=0">INGLÊS</a></li> 
+                            <li><a href="https://lp-projeto.vercel.app/">PORTUGUÊS</a></li> 
+                            <li><a href="https://projeto-geografia.vercel.app/">GEOGRAFIA</a></li> 
+                        </ul> 
+                    </li>
+                    <li><a href="estagios.html">ESTÁGIOS</a></li>
+                    <li><a href="simulado.html">SIMULADO</a></li>
+                    <li><a href="noticias.html">NOTÍCIAS</a></li>
+                    <li><a href="dicas.html">DICAS</a></li>
+                    <li><a href="carreiras.html">CARREIRAS</a></li>
+                </ul> 
+                    <!-- para adicionar um item somente no menu, alterar somente a ul class sidebar -->
+                </ul>
+                <ul class="nav_header">
+                    <li class="hideOnMobile"><a href="../index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="sobrenos.html">Sobre nós</a></li>
+                    <li class="hideOnMobile"><a href="cadastro.html">Cadastre-se</a></li>
+                    <li onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </nav>
 
+            <script>
+                function showSidebar(){
+                    const menuSidebar = document.querySelector('.menuSidebar');
+                    menuSidebar.style.display = 'flex';
+                }
+
+                function hideSidebar(){
+                    const menuSidebar = document.querySelector('.menuSidebar');
+                    menuSidebar.style.display = 'none';
+                }
+
+                const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+
+                dropdownToggles.forEach(toggle => {
+                    toggle.addEventListener('click', () => {
+                        const dropdownContent = toggle.nextElementSibling;
+                        dropdownContent.classList.toggle('show');
+                    });
+                });
+            </script>
+            
+            
         </section>
     </header>
-
+    
     <main class="main-content">
-        <form class="row g-3">
+        <form id="cadastroForm" class="row g-3">
             <h1 style="text-align: center; font-size: 2rem; margin-bottom: 20px;">Preencha as informações abaixo
                 cadastro</h1>
             <div class="col-md-6">
                 <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
             </div>
 
             <div class="col-md-6">
                 <label for="inputPassword4" class="form-label">Senha</label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Senha" required>
             </div>
 
             <div class="col-12">
                 <label for="inputName" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="inputName" placeholder="Nome">
+                <input type="text" class="form-control" id="inputName" placeholder="Nome" required>
             </div>
 
             <div class="col-12">
                 <label for="inputName" class="form-label">Data de Nascimento</label>
-                <input type="date" class="form-control" id="inputName" placeholder="Data de Nascimento">
+                <input type="date" class="form-control" id="inputName" placeholder="Data de Nascimento" required>
             </div>
 
             <div class="col-12">
                 <label for="inputAddress2" class="form-label">Endereço</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Endereço">
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Endereço" required>
             </div>
 
 
@@ -107,12 +155,12 @@
 
             <div class="col-md-2">
                 <label for="inputPhone" class="form-label">Telefone</label>
-                <input type="" class="form-control" id="inputPhone" placeholder="Telefone">
+                <input type="" class="form-control" id="inputPhone" placeholder="Telefone" required>
             </div>
 
             <div class="col-12">
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <input class="form-check-input" type="checkbox" id="gridCheck" required>
                     <label class="form-check-label" for="gridCheck">
                         Concordo com os termos de uso
                     </label>
@@ -120,16 +168,7 @@
             </div>
 
             <div class="col-12">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                        Desejo receber emails sobre novidades e eventos
-                    </label>
-                </div>
-            </div>
-
-            <div class="col-12">
-                <button type="submit" class="btn btn-primary">Cadastrar-se</button>
+                <a href="../pages/confirmacao.html" class="btn btn-primary">Cadastrar</a>
             </div>
         </form>
     </main>
@@ -165,11 +204,12 @@
 
         </div>
     </footer>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="../js/cadastro.js"></script>
+
+    
 </body>
 
 </html>
