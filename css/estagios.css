@@ -417,3 +417,13 @@ footer {
 .banner_title p{
     color: #E30613;
 }
+
+@media (max-width: 480px) {
+    .menu-list {
+        flex-direction: column;
+}
+.nav-content ul li a {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+}
+    }
