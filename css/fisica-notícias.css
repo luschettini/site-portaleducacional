@@ -48,9 +48,9 @@ body {
     max-width: 100%;
     height: auto;
     border: 1px solid #f8f8f8;
-    border-radius: 50px; /* Aplica o arredondamento */
-    display: block; /* Remove espaços extras */
-    margin: 0 auto; /* Centraliza a imagem */
+    border-radius: 50px;
+    display: block; 
+    margin: 0 auto; 
 }
 
 
