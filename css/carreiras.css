@@ -113,7 +113,7 @@
 .homem-carreira img {
     width: 80%;
     height: 80%;
-    display: block;
+    display: none;
 }
 
 /* Division content  */
@@ -436,3 +436,17 @@ footer {
 
     } 
 }
+
+@media (max-width: 1100px) {
+    .menu-list {
+        flex-direction: column;
+    }
+    .homem-carreira {
+        display: none;
+    }
+}
+
+@media (max-width: 780px) {
+    .hide{
+        display: none;
+    }                   }
