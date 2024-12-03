@@ -428,3 +428,12 @@ footer {
     margin-bottom: 1.5%;
 }
 
+@media (max-width: 800px) {
+    .universidade-img {
+        width: auto;
+        max-height: 500px;
+        object-fit: cover;
+    }
+}
+
+
