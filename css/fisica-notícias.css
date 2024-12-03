@@ -14,7 +14,7 @@ body {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    border-radius:5% ;
+    border-radius: 5%;
 }
 
 .title {
@@ -35,32 +35,35 @@ body {
 .text {
     font-size: 16px;
     text-align: justify;
-    margin-bottom:30px;
+    margin-bottom: 30px;
     margin-top: 50px;
     line-height: 1.6;
 }
 
-.image-container img{
+.image-container img {
     border-radius: 25px;
-}
-
-.imagem {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #f8f8f8;
-    border-radius: 50px;
-    display: block; 
-    margin: 0 auto; 
 }
 
 
 .divider-title {
     border: 0;
     height: 3px;
-    background: #d71920   ;
+    background: #d71920;
     margin: 0%;
     width: 100%;
-} 
+}
+
+.imagem {
+    width:31rem;
+    height: auto;
+    border: 1px solid #f8f8f8;
+    border-radius: 50px 50px;
+}
+.universidade-img{
+    width: 100%;
+    max-height: 500px;
+}
+
 
 @media screen and (max-width: 480px) {
     .title {
@@ -77,5 +80,17 @@ body {
 
     .addresses {
         font-size: 12px;
+    }
+
+    .imagem-teste {
+        width: 200px;
+    }
+}
+
+@media (max-width: 800px) {
+    .universidade-img {
+        width: auto;
+        max-height: 500px;
+        object-fit: cover;
     }
 }
