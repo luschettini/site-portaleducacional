@@ -44,11 +44,13 @@ body {
     border-radius: 25px;
 }
 
-image {
+.imagem {
     max-width: 100%;
     height: auto;
     border: 1px solid #f8f8f8;
-    border-radius: 50px 50px;
+    border-radius: 50px; /* Aplica o arredondamento */
+    display: block; /* Remove espaços extras */
+    margin: 0 auto; /* Centraliza a imagem */
 }
 
 
@@ -58,6 +60,22 @@ image {
     background: #d71920   ;
     margin: 0%;
     width: 100%;
-  }
+} 
 
-  
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 18px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+
+    .addresses {
+        font-size: 12px;
+    }
+}
