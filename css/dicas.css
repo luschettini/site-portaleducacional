@@ -442,6 +442,11 @@ h2 {
     .banner_btn a {
         font-size: 0.4rem 0.7rem;
         padding: 0.8rem;
+
+        img.dicas-mulher {
+            width: 180%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 }
-
