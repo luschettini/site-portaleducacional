@@ -366,3 +366,19 @@ footer {
     padding: 10px;
 }
 
+.universidade-img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    margin: 1em 0;
+}
+
+
+@media (max-width: 768px) {
+    .universidade-img {
+        max-height: 300px;
+    }
+}
+
+
+
