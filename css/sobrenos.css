@@ -50,19 +50,21 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    margin-left: 7%;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    margin-left: 5%;
 }
 
 .banner_content h1 {
-    justify-content: justify;
-    font-size: 5.1rem;
+    justify-content: flex-start;
+    font-size: 4.1rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
     color: #FFFF;
     line-height: 1.2;
+    text-align: left;
 }
 
 .banner_title h1 span {
@@ -73,9 +75,9 @@
 /* Conteúdo do Banner */
 
 .banner_text {
-    width: 78%;
+    width: 100%;
     display: flex;
-
+    justify-content: flex-start;
 }
 
 .banner_text p {
@@ -83,7 +85,8 @@
     font-size: 1rem;
     font-weight: 450;
     color: #FFFF;
-    margin-top: 3%;
+    margin-top: 0;
+    text-align: flex-start;
 }
 
 /* Botão se inscrever */
@@ -96,8 +99,6 @@
     margin-top: 3%;
     border-radius: 30px;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .banner_btn a {
@@ -123,7 +124,7 @@
 
 .alunos-sobre img {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 /* Division content  */
@@ -504,17 +505,12 @@
     align-items: center;
 }
 
-<<<<<<< Updated upstream
-.team_text {
-=======
-
 .team_section img{
     width: 80%;
     height: 60%;
 }
 
 .team_text{
->>>>>>> Stashed changes
     width: 100%;
     height: 10%;
     display: flex;
