@@ -121,6 +121,63 @@
   .menuSidebar a {
     width: 100%;
   }
+
+  @media(max-width: 1920px) {
+    .container_header {
+      height: 8rem; /* Aumenta a altura para melhor proporção */
+      padding: 0.5rem; /* Ajusta o espaçamento interno */
+      gap: 1rem; /* Aumenta o espaçamento entre os elementos */
+    }
+  
+    .img_header {
+      width: 25%; /* Reduz a largura da imagem para evitar ocupar muito espaço */
+      height: 100%;
+    }
+  
+    .img_header img {
+      height: 60%; /* Ajusta a altura proporcional da imagem */
+    }
+  
+    .division_header {
+      height: 60%; /* Ajusta a altura do divisor */
+      width: 0.3%; /* Ligeiro aumento na espessura */
+    }
+
+    .nav_header {
+      margin-left: 9rem; /* Ajusta o espaçamento à direita */
+    }
+  
+    .nav_header a {
+      width: 100%;
+      gap: 0.3rem;
+    }
+  
+    nav ul {
+      justify-content: space-around; /* Distribui melhor os elementos no espaço disponível */
+    }
+  
+    nav a {
+      font-size: 1.1rem; /* Aumenta o tamanho da fonte */
+      padding: 0 40px; /* Amplia o espaçamento horizontal */
+    }
+  
+    .dropdown-content {
+      width: 300px; /* Aumenta a largura do dropdown */
+    }
+  
+    .dropdown-content li a {
+      font-size: 1rem; /* Ajusta o tamanho do texto nos itens */
+    }
+  
+    .menuSidebar {
+      width: 300px; /* Aumenta a largura da barra lateral */
+    }
+  
+    .menuSidebar a {
+      font-size: 1rem; /* Ajusta o tamanho do texto */
+      padding: 15px; /* Adiciona mais espaçamento interno */
+    }
+  }
   
   @media(max-width: 800px) {
     .container_header {
