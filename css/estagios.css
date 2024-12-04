@@ -51,14 +51,16 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    margin-left: 7%;
-    margin-top: 20%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 24rem;
 }
 .banner_content h1{
+    justify-content: justify;
     font-size: 5.1rem;
     font-family: "Montserrat", sans-serif;
-    justify-content: flex-start;
     font-weight: 900;
     color: #FFFF;
     line-height: 1.2;
@@ -73,37 +75,40 @@
 
 .banner_text{
     width: 78%;
-    height: 100%;
+    height: auto;
     display: flex;
-
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .banner_text p{
     font-family:"Montserrat", sans-serif ;
     font-size:1rem;
     font-weight: 450;
     color: #FFFF;
-    margin-top: 3%;
-    align-items: center;
+    margin-top: 1rem;
+    margin-left: 3rem;
 }
 
-/* Botão se inscrever */
-.banner_btn{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 5%;
-    margin-top: 3%;
-}
-
-.banner_btn a{
+.banner_btn a {
+    padding: 0.7rem 1rem;
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
     font-size: var(--p-font);
-    text-transform: uppercase;
     font-weight: 800;
-    background-color: #E30613;
-    border-radius: 0.5rem;
     color: #ffff;
+}
+
+/* Imagem do Banner */
+
+.banner_image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: -1rem;
 }
 
 /* Division content  */
@@ -191,80 +196,7 @@
     border-radius: 10px;
     margin-bottom: 1.5%;
 }
-/* Division content */
 
-.division-phrase{
-    height: 4px;
-    background-color: #b61818;
-    width: 75%;
-    margin-right: auto;
-    border-radius: 10px;
-}
-
-h2 {
-    font-family:"Montserrat", sans-serif ;
-    font-size: 1.6rem;
-    font-weight: 700;
-}
-
-.content_text{
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
-    text-align: justify;
-    padding: 20px;
-}
-
-.content_title{
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
-    text-align: justify;
-    padding: 20px;
-}
-
-.content_title p{
-    font-family:"Montserrat", sans-serif ;
-    font-size:1.8rem;
-    font-weight: 650;
-    color: #000000;
-    margin-bottom: 0.4rem;
-    text-align: justify;
-    font-style: uppercase;
-
-}
-
-
-.content_text p{
-    font-family:"Montserrat", sans-serif ;
-    font-size:1.5rem;
-    line-height: 0.5rem;
-    text-align: center;
-    font-weight: 450;
-    color: #000000;
-    margin-bottom: 3rem;
-    text-align: justify;
-    margin-bottom: 3rem;
-    line-height: 1.6rem;
-}
-
-/* Imagem do Banner */
-
-.content_img{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    margin-right: auto;
-}
-
-.content_img img{
-    border-radius: 2rem;
-    width: 70%;
-}
 
 /*Footer */
 footer {
@@ -332,91 +264,6 @@ footer {
     margin-right: 10px;
   }
 
-.div .content_text {
-    text-align: center;
-}
-
-.banner_title{
-    text-align: left;
-}
-
-.nav-bottom{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.container_content {
-    text-align: center;
-}
-
-/* Conteúdo do Banner */
-.banner_content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-left: 7%;
-    margin-top: 20%;
-}
-
-.banner_content h1 {
-    justify-content: justify;
-    font-size: 4.1rem;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 900;
-    color: #FFFF;
-    line-height: 1.2;
-}
-
-.banner_title h1 span {
-    color: #E30613;
-}
-
-.banner_image{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: -1rem;
-}
-
-/* Conteúdo do Banner */
-.banner_content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-left: 7%;
-    margin-top: 20%;
-}
-
-.banner_content h1 {
-    justify-content: justify;
-    font-size: 4.1rem;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 900;
-    color: #FFFF;
-    line-height: 1.2;
-}
-
-.banner_title h1 span {
-    color: #E30613;
-}
-
-.banner_image{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: -1rem;
-}
-
-.banner_title p{
-    color: #E30613;
-}
 
 /* Responsividade */
 @media (max-width: 1024px) {
