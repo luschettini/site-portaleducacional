@@ -30,8 +30,6 @@
   --p-font: 1rem;
 }
 
-
-
 .container_banner {
   background-color: var(--bg-color);
   height: 50rem;
@@ -143,12 +141,12 @@
   padding: 1.5%;
 }
 
-.nav-content ul {
+/* '.nav-content ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
   gap: 1rem;
-}
+}' */
 
 .nav-content ul li a {
   width: 15rem;
@@ -313,9 +311,9 @@ division-content {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.8rem;
-  margin-top: 3rem;
-  margin-right: 45rem;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  margin-right: 55rem;
   color: rgb(0, 0, 0);
 }
 
@@ -332,7 +330,7 @@ division-content {
   flex-direction: row;
   align-content: center;
   justify-content: center;
-  align-items: center;
+  text-align: left;
   padding: 3rem;
 }
 
@@ -380,6 +378,8 @@ textarea {
   max-width: 82rem;
   min-height: 12.5rem;
   font-size: large;
+  margin: 0 auto;
+  display: block;
 }
 
 .botao {
@@ -388,12 +388,20 @@ textarea {
   justify-content: center;
   margin-top: 0.6rem;
   flex-direction: column;
+  width: 100%;
 
+}
+
+.form-button-link{
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
 }
 
 .form-button {
   width: 100%;
-  max-width: 75rem;
   padding: 0.6rem;
   font-size: 1.5rem;
   background-color: #9a1915;
@@ -401,9 +409,9 @@ textarea {
   border: none;
   border-radius: 1.8rem;
   cursor: pointer;
-  align-self: center;
   text-align: center;
   font-weight: bold;
+  display: block;
 }
 
 .form-button:hover {
@@ -440,28 +448,29 @@ textarea {
 .main-content{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 #movimentos-linha {
   height: 0.2rem;
   width: 18rem;
   background-color: var(--secondary-color);
-  margin-left: 24rem;
+  margin-left: 0;
 }
 
 .quadro-noticias {
-  margin-right: 24rem;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .title-news {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: black;
-  margin-left: 24rem;
-  margin-top: 3rem;
+  text-align: left;
+  margin-top: 6rem;
 }
 
 .cards{
@@ -526,7 +535,7 @@ textarea {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  margin-bottom: 1rem;  
+  margin-bottom: 2rem;  
   ;
 }
 
@@ -628,6 +637,58 @@ textarea {
 }
 
 @media (max-width: 768px) {
+  .container_banner {
+    height: 25rem;
+}
+
+.banner_image {
+    display: none;
+}
+
+.banner_content h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.7em;
+    justify-content: justify;
+}
+
+.banner_text p {
+    font-size: 0.7rem;
+    justify-content: justify;
+    margin-top: 1rem;
+}
+
+.menu-list {
+  flex-direction: column;
+}
+
+.nav-content ul li a {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-new {
+  width: 100%; 
+  margin-right: 5px;
+}
+.sidebar {
+  width: fit-content;
+}
+
+.section-title{
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0%;
+}
+.duvidas {
+  width: fit-content;
+}
   #movimentos-linha {
     width: 10rem;
   }
@@ -658,6 +719,24 @@ textarea {
   .slider-button{
     font-size: 1.5em;
   }
+  footer .addresses {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.divider{
+  rotate: 90deg;
+}
+
+.social-media {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.social-icon {
+    width: 45px;
+    height: 45px;
+}
 }
 
   @media (max-width: 480px) {
