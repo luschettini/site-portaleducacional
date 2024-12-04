@@ -12,61 +12,69 @@
 </head>
 
 <body>
-   
+
     <header>
         <section class="container_header">
-    
+
             <div class="img_header">
                 <img src="../media/img/logo-sesi-senai.png" alt="SESI SENAI Logo" class="logo-img">
             </div>
-    
+
             <div class="division_header">
             </div>
 
             <nav>
                 <ul class="menuSidebar">
-                    <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                viewBox="0 -960 960 960" width="24px" fill="#ffff">
+                                <path
+                                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                            </svg></a></li>
 
                     <li> <a href="../index.html">HOME</a></li>
                     <li><a href="sobrenos.html">SOBRE NÓS</a></li>
                     <li><a href="cadastro.html">CADASTRE-SE</a></li>
-                    <li class="dropdown"> <a href="#" class="dropdown-toggle">MATÉRIAS</a> 
-                        <ul class="dropdown-content"> 
-                            <li><a href="https://portal-de-materias.vercel.app/">QUÍMICA</a></li> 
-                            <li><a href="https://site-fisica.vercel.app/index.html">FÍSICA</a></li> <li><a href="https://site-biologia-41g2.vercel.app/">BIOLOGIA</a></li> 
-                            <li><a href="https://projeto-portal-matematica.vercel.app/">MATEMÁTICA</a></li> 
-                            <li><a href="https://site-historia-six.vercel.app/">HISTÓRIA</a></li> 
-                            <li><a href="https://site-sociologia.vercel.app/">SOCIOLOGIA</a></li> 
-                            <li><a href="https://site-filosofia.vercel.app/">FILOSOFIA</a></li> 
-                            <li><a href="https://portal-noticias-html.vercel.app/">ARTES & E.F.</a></li> 
-                            <li><a href="https://site-ingles-1rhh.vercel.app/?authuser=0">INGLÊS</a></li> 
-                            <li><a href="https://lp-projeto.vercel.app/">PORTUGUÊS</a></li> 
-                            <li><a href="https://projeto-geografia.vercel.app/">GEOGRAFIA</a></li> 
-                        </ul> 
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle">MATÉRIAS</a>
+                        <ul class="dropdown-content">
+                            <li><a href="https://portal-de-materias.vercel.app/">QUÍMICA</a></li>
+                            <li><a href="https://site-fisica.vercel.app/index.html">FÍSICA</a></li>
+                            <li><a href="https://site-biologia-41g2.vercel.app/">BIOLOGIA</a></li>
+                            <li><a href="https://projeto-portal-matematica.vercel.app/">MATEMÁTICA</a></li>
+                            <li><a href="https://site-historia-six.vercel.app/">HISTÓRIA</a></li>
+                            <li><a href="https://site-sociologia.vercel.app/">SOCIOLOGIA</a></li>
+                            <li><a href="https://site-filosofia.vercel.app/">FILOSOFIA</a></li>
+                            <li><a href="https://portal-noticias-html.vercel.app/">ARTES & E.F.</a></li>
+                            <li><a href="https://site-ingles-1rhh.vercel.app/?authuser=0">INGLÊS</a></li>
+                            <li><a href="https://lp-projeto.vercel.app/">PORTUGUÊS</a></li>
+                            <li><a href="https://projeto-geografia.vercel.app/">GEOGRAFIA</a></li>
+                        </ul>
                     </li>
                     <li><a href="estagios.html">ESTÁGIOS</a></li>
                     <li><a href="simulado.html">SIMULADO</a></li>
                     <li><a href="noticias.html">NOTÍCIAS</a></li>
                     <li><a href="dicas.html">DICAS</a></li>
                     <li><a href="carreiras.html">CARREIRAS</a></li>
-                </ul> 
-                    <!-- para adicionar um item somente no menu, alterar somente a ul class sidebar -->
+                </ul>
+                <!-- para adicionar um item somente no menu, alterar somente a ul class sidebar -->
                 </ul>
                 <ul class="nav_header">
                     <li class="hideOnMobile"><a href="../index.html">Home</a></li>
                     <li class="hideOnMobile"><a href="sobrenos.html">Sobre nós</a></li>
                     <li class="hideOnMobile"><a href="cadastro.html">Cadastre-se</a></li>
-                    <li onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                    <li onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                viewBox="0 -960 960 960" width="24px" fill="#ffff">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                            </svg></a></li>
                 </ul>
             </nav>
 
             <script>
-                function showSidebar(){
+                function showSidebar() {
                     const menuSidebar = document.querySelector('.menuSidebar');
                     menuSidebar.style.display = 'flex';
                 }
 
-                function hideSidebar(){
+                function hideSidebar() {
                     const menuSidebar = document.querySelector('.menuSidebar');
                     menuSidebar.style.display = 'none';
                 }
@@ -80,8 +88,8 @@
                     });
                 });
             </script>
-            
-            
+
+
         </section>
     </header>
 
@@ -104,129 +112,155 @@
 
     <main>
 
-    <article class="news-university">
+        <article class="news-university">
 
-        <h2>Física no Enem 2024: 5 assuntos que mais caem na prova</h2>
+            <h2>Física no Enem 2024: 5 assuntos que mais caem na prova</h2>
 
-        <p class="author"> Por Luana Domeneghetti- 14/11/2024</p>
-        
+            <p class="author"> Por Luana Domeneghetti- 14/11/2024</p>
+
             <p class="intro">
-                <p>Em síntese, os 5 assuntos que mais aparecem nas questões de Física no Enem:</p>
-            </p>
-           
-            <p class="intro">
-                <p>1.Termologia.</p>
+            <p>Em síntese, os 5 assuntos que mais aparecem nas questões de Física no Enem:</p>
             </p>
 
             <p class="intro">
-                <p>2.Ondulatória.</p>
+            <p>1.Termologia.</p>
             </p>
 
             <p class="intro">
-                <p>3.Cinemática.</p>
+            <p>2.Ondulatória.</p>
             </p>
 
             <p class="intro">
-                <p>4.Óptica.</p>
-            </p>
-            
-            <p class="content">Abaixo, você pode conferir um gráfico com informações gerais dos assuntos de Física no Enem.
-            </p>
-            
-            <img src="../media/img/img-noticias/imgfisica2.jpg" alt="imagem física" class="imagem padrão">
-
-            <p class="content">A prova do Enem, na disciplina de Física, costuma ser bem diversificada, abordando conteúdos introdutórios e mais aprofundados. Entre os top 5 assuntos, a eletrodinâmica é o primeiro, com 20,3% de incidência. Depois, estão a termologia e a ondulatória, com 15,5% e 13,5% de presença, respectivamente. 
+            <p>3.Cinemática.</p>
             </p>
 
-            <p class="content">Vale ressaltar que eletrodinâmica, termologia e ondulatória compõem quase 50% da prova de Física do Enem. Depois, temos a cinemática, com 11,5%, e a óptica, com 8,8%.
+            <p class="intro">
+            <p>4.Óptica.</p>
+            </p>
+
+            <p class="content">Abaixo, você pode conferir um gráfico com informações gerais dos assuntos de Física no
+                Enem.
+            </p>
+
+            <img src="../media/img/img-noticias/imgfisica2.jpg" alt="Universidade Exterior" class="universidade-img">
+
+
+            <p class="content">A prova do Enem, na disciplina de Física, costuma ser bem diversificada, abordando
+                conteúdos introdutórios e mais aprofundados. Entre os top 5 assuntos, a eletrodinâmica é o primeiro, com
+                20,3% de incidência. Depois, estão a termologia e a ondulatória, com 15,5% e 13,5% de presença,
+                respectivamente.
+            </p>
+
+            <p class="content">Vale ressaltar que eletrodinâmica, termologia e ondulatória compõem quase 50% da prova de
+                Física do Enem. Depois, temos a cinemática, com 11,5%, e a óptica, com 8,8%.
             </p>
 
             <h3>Eletrodinâmica</h3>
 
-            <p class="content">No Enem, as questões de eletrodinâmica costumam perguntar sobre equipamentos elétricos (em que talvez seja necessário analisar manuais de funcionamento) e circuitos domésticos.
+            <p class="content">No Enem, as questões de eletrodinâmica costumam perguntar sobre equipamentos elétricos
+                (em que talvez seja necessário analisar manuais de funcionamento) e circuitos domésticos.
             </p>
 
-            <p class="content">Para se dar bem, é importante entender o significado e como calcular as seguintes grandezas do assunto: tensão, resistência, corrente, potência elétrica e, principalmente, resistência equivalente a partir de uma associação de resistores - esse último tópico é o mais cobrado!
-            </p>                
+            <p class="content">Para se dar bem, é importante entender o significado e como calcular as seguintes
+                grandezas do assunto: tensão, resistência, corrente, potência elétrica e, principalmente, resistência
+                equivalente a partir de uma associação de resistores - esse último tópico é o mais cobrado!
+            </p>
 
-            <p class="content">Além disso, não deixe de revisar as Leis de Ohm para responder a perguntas simples como: "Por que o disjuntor cai durante um banho muito quente?", "As lâmpadas de uma casa são associadas em série ou em paralelo?", "O que gera um curto circuito?" e "O que é potência elétrica e como ela aparece na conta de luz?".
-            </p>                
+            <p class="content">Além disso, não deixe de revisar as Leis de Ohm para responder a perguntas simples como:
+                "Por que o disjuntor cai durante um banho muito quente?", "As lâmpadas de uma casa são associadas em
+                série ou em paralelo?", "O que gera um curto circuito?" e "O que é potência elétrica e como ela aparece
+                na conta de luz?".
+            </p>
 
-            <p class="content">Ah, nos últimos anos, o Enem também deu certa atenção a geradores elétricos! 
-            </p>                
+            <p class="content">Ah, nos últimos anos, o Enem também deu certa atenção a geradores elétricos!
+            </p>
 
             <h3>Termologia</h3>
 
-            <p class="content">A termologia é o estudo dos fenômenos físicos relacionados ao calor e à temperatura. É importante entender muito bem o conceito de calor, as suas formas de transmissão (condução, convecção e irradiação) e a diferença entre calor e temperatura.
+            <p class="content">A termologia é o estudo dos fenômenos físicos relacionados ao calor e à temperatura. É
+                importante entender muito bem o conceito de calor, as suas formas de transmissão (condução, convecção e
+                irradiação) e a diferença entre calor e temperatura.
             </p>
 
-            <p class="content">Na termologia, existe ainda calorimetria, especialmente quando se fala em equilíbrio térmico. Nesse conintroo, busque entender como usar a equação fundamental da calorimetria, chamada de calor sensível (é a fórmula do “que macete”, lembra?  Q = m . c  ΔT). 
+            <p class="content">Na termologia, existe ainda calorimetria, especialmente quando se fala em equilíbrio
+                térmico. Nesse conintroo, busque entender como usar a equação fundamental da calorimetria, chamada de
+                calor sensível (é a fórmula do “que macete”, lembra? Q = m . c ΔT).
             </p>
 
-            <p class="content">
-            <img src="../media/img/img-noticias/imgfisica3.png" alt="imagem de dica" class="imagem padrão"> 
-            </p>
+                <img src="../media/img/img-noticias/imgfisica3.png" alt="Universidade Exterior" class="universidade-img">
 
             <h3>Ondulatória</h3>
 
-            <p class="content">É necessário saber como relacionar as principais características de uma onda: velocidade, frequência e comprimento de onda. Para isso, não se esqueça da equação fundamental da ondulatória: v = λ · f.
+            <p class="content">É necessário saber como relacionar as principais características de uma onda: velocidade,
+                frequência e comprimento de onda. Para isso, não se esqueça da equação fundamental da ondulatória: v = λ
+                · f.
             </p>
 
-            <p class="content">Em algumas questões, o vestibulando também precisa identificar fenômenos ondulatórios em situações cotidianas, principalmente difração, interferência, ressonância e efeito Doppler. Vale ressaltar, para isso, a importância de diferenciar uma onda eletromagnética de uma onda mecânica. 
+            <p class="content">Em algumas questões, o vestibulando também precisa identificar fenômenos ondulatórios em
+                situações cotidianas, principalmente difração, interferência, ressonância e efeito Doppler. Vale
+                ressaltar, para isso, a importância de diferenciar uma onda eletromagnética de uma onda mecânica.
             </p>
 
-            <h3>Cinemática</h3> 
+            <h3>Cinemática</h3>
 
             <p class="content">
-                Na cinemática, estude movimento circular, além de fundamentos da cinemática, movimento uniformemente variado e lançamentos.
+                Na cinemática, estude movimento circular, além de fundamentos da cinemática, movimento uniformemente
+                variado e lançamentos.
             </p>
 
-            <p class="content">As funções horárias também são essenciais para resolver as questões de cinemática, assim como os conceitos de velocidade, velocidade média e aceleração.
+            <p class="content">As funções horárias também são essenciais para resolver as questões de cinemática, assim
+                como os conceitos de velocidade, velocidade média e aceleração.
             </p>
 
             <h3>Óptica</h3>
 
-            <p class="content">A óptica é o campo da Física que estuda os fenômenos relacionados à luz. Essa área costuma ser dividida em óptica geométrica e a óptica ondulatória. A primeira estuda os fenômenos luminosos utilizando raios de luz, enquanto a segunda usa os fenômenos ondulatórios para explicar comportamentos da luz, como a polarização e a interferência.
+            <p class="content">A óptica é o campo da Física que estuda os fenômenos relacionados à luz. Essa área
+                costuma ser dividida em óptica geométrica e a óptica ondulatória. A primeira estuda os fenômenos
+                luminosos utilizando raios de luz, enquanto a segunda usa os fenômenos ondulatórios para explicar
+                comportamentos da luz, como a polarização e a interferência.
             </p>
 
-            <article class="content">É essencial compreender os fundamentos da óptica, além de tópicos como refração da luz, olho humano e problemas de visão. O Enem gosta de abordar dinâmicas do cotidiano e a óptica está 100% inserida nele.
+            <article class="content">É essencial compreender os fundamentos da óptica, além de tópicos como refração da
+                luz, olho humano e problemas de visão. O Enem gosta de abordar dinâmicas do cotidiano e a óptica está
+                100% inserida nele.
 
             </article>
 
-        </main>
+    </main>
 
-   
-        <footer>
-            <div class="social-media-container">
-                <div class="social-media">
-                    <nav class="menu-icon bx-md "> <i class='bx bxl-facebook-square'></i></nav>
-                    <nav class="menu-icon bx-md "> <i class='bx bxl-instagram' ></i></nav>
-                    <nav class="menu-icon bx-md "> <i class='bx bxl-whatsapp' ></i></nav>
-                    <nav class="menu-icon bx-md "> <i class='bx bxl-youtube' ></i></nav>
-                    <nav class="menu-icon bx-md "> <i class='bx bxl-linkedin' ></i></nav>
-                </div>
+
+    <footer>
+        <div class="social-media-container">
+            <div class="social-media">
+                <nav class="menu-icon bx-md "> <i class='bx bxl-facebook-square'></i></nav>
+                <nav class="menu-icon bx-md "> <i class='bx bxl-instagram'></i></nav>
+                <nav class="menu-icon bx-md "> <i class='bx bxl-whatsapp'></i></nav>
+                <nav class="menu-icon bx-md "> <i class='bx bxl-youtube'></i></nav>
+                <nav class="menu-icon bx-md "> <i class='bx bxl-linkedin'></i></nav>
             </div>
-    
-            <div class="addresses">
-    
-                <div class="address">
-    
-                    <h3>EDIFÍCIO REDE SENAI VALINHOS</h3>
-                    <p>R. Artur Fernandes Querido, 55 - Vila Santo Antonio, Valinhos - SP, 13270-530</p>
-    
-                </div>
-    
-                <div class="divider"></div>
-    
-                <div class="address">
-    
-                    <h3>EDIFÍCIO REDE SESI VALINHOS</h3>
-                    <p>Rod. Flávio de Carvalho, 2787 - Jardim São Paulo, Valinhos - SP, 13273-450</p>
-    
-                </div>
-    
+        </div>
+
+        <div class="addresses">
+
+            <div class="address">
+
+                <h3>EDIFÍCIO REDE SENAI VALINHOS</h3>
+                <p>R. Artur Fernandes Querido, 55 - Vila Santo Antonio, Valinhos - SP, 13270-530</p>
+
             </div>
-        </footer>
-    
-    </body>
-    </html>
+
+            <div class="divider"></div>
+
+            <div class="address">
+
+                <h3>EDIFÍCIO REDE SESI VALINHOS</h3>
+                <p>Rod. Flávio de Carvalho, 2787 - Jardim São Paulo, Valinhos - SP, 13273-450</p>
+
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
