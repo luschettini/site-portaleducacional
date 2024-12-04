@@ -1,7 +1,6 @@
 /* Importação de fontes  */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url(./header.css);
-
 .montserrat{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -37,7 +36,6 @@ body {
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
   }
-
 
 main{
     padding: 1em;
@@ -89,6 +87,7 @@ main{
   }
 
   .universidade-img{
+    width: 100%;
     max-height: 400px;
     object-fit: cover;
     margin: 1em 0;
@@ -365,4 +364,76 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+/* Barra de Navegação */
+
+.nav-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 1.5%;
+}
+
+.nav-content ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+.nav-content ul li a {
+    width: 15rem;
+    height: 3rem;
+    font-family:"Montserrat", sans-serif ;
+    align-items: center;
+    justify-content: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    padding: 13% 40%;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: black;
+    border-radius: 30px;
+    background-color: #D9D9D9;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Botão */
+.nav-content ul li a .botao-dicas {
+    background-color: #b61818;
+    color: #fff;
+}
+
+/*passar o mouse sobre o botão*/
+.nav-content ul li a:hover {
+    background-color: #b61818;
+    color: #000000;
+}
+
+
+/* Linha vermelha abaixo dos botões ativos */
+.nav-division {
+    margin-top: 1.5%;
+    height: 4px;
+    background-color: #b61818;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-bottom: 1.5%;
+}
+
+@media (max-width: 800px) {
+    .universidade-img {
+        width: auto;
+        max-height: 500px;
+        object-fit: cover;
+    }
+}
+
 
