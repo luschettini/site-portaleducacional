@@ -417,6 +417,3 @@ footer {
 .banner_title p{
     color: #E30613;
 }
-@media (max-width: 780px) {
-    .container_header {
-        flex-direction: column;
