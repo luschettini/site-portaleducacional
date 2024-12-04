@@ -428,6 +428,11 @@ footer {
     margin-bottom: 1.5%;
 }
 
+.universidade-img{
+    width: 100%;
+    max-height: 500px;
+}
+
 @media (max-width: 800px) {
     .universidade-img {
         width: auto;
