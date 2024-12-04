@@ -173,18 +173,8 @@
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-
-
-.menu-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
+menu-list {
+    flex-direction: column;
   }
 
 /* Botão */
