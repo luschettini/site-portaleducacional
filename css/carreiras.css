@@ -54,7 +54,7 @@
     align-content: center;
     justify-content: center;
     align-items: center;
-    margin-left: 7%;
+    margin-left: 0;
 }
 
 .banner_content h1 {
@@ -64,19 +64,20 @@
     font-weight: 900;
     color: #FFFF;
     line-height: 1.2;
+
 }
 
 .banner_title h1 span {
     color: #E30613;
 }
 
-
-/* Conteúdo do Banner */
-
 .banner_text {
     width: 78%;
-    height: 100%;
+    height: auto;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -85,7 +86,8 @@
     font-size: 1rem;
     font-weight: 450;
     color: #FFFF;
-    margin-top: 3%;
+    margin-top: 1rem;
+    margin-left: 3rem;
 }
 
 
@@ -135,7 +137,6 @@
     display: flex;
 }
 
-/* Barra de Navegação */
 
 .nav-content{
     display: flex;
@@ -143,22 +144,22 @@
     align-items: center;
     list-style-type: none;
     padding: 1.5%;
-}
-
-.nav-content ul {
+  }
+  
+  /* '.nav-content ul {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
     gap: 1rem;
-}
-
-.nav-content ul li a {
+  }' */
+  
+  .nav-content ul li a {
     width: 15rem;
     height: 3rem;
     font-family:"Montserrat", sans-serif ;
     align-items: center;
     justify-content: center;
-
+  
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -171,7 +172,8 @@
     background-color: #D9D9D9;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
-}
+  }
+
 
 /* Botão */
 .nav-content ul li a.botao-sobre {
@@ -205,8 +207,6 @@
     box-sizing: border-box; 
 }
 
-
-
 body{
     background-image: linear-gradient(to right, #ffffff, #f7f7f7);
 }
@@ -219,9 +219,9 @@ body{
     margin: 2rem;
 }
 
-.custom-card{
-    width: 20rem;
-    margin: 1rem;
+.custom-card {
+    background-color: #fff;
+    margin: 2rem;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -229,7 +229,9 @@ body{
     min-height: 40rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
 }
 
 
@@ -275,7 +277,6 @@ body{
   .card-footer i:hover {
     color: #333333;
   }
-
   
 /* Footer */
 
@@ -355,98 +356,168 @@ footer {
 
 
 /* Responsividade */
-
-@media (max-width: 768px) {
-
-    .container_header {
-        flex-direction: column;
+@media (max-width: 1024px) {
+    .container_banner {
         height: auto;
-        /* padding: 1rem; */
-        align-items: center;
-        justify-content: center;
+        padding: 2rem 1rem;
+        flex-direction: column; 
+        text-align: center;
+    }
+    
+
+    .banner_content {
+        padding: 0 1rem; 
     }
 
-    .img_header {
-        width: 70%;
-        height: auto;
+    .banner_content h1 {
+        font-size: 4rem;
         margin-bottom: 1rem;
     }
 
-    .division_header {
-        display: none;
+    .banner_text {
+        width: 90%; 
+        margin: 0 auto;
     }
 
-    .nav_header {
+    .banner_text p {
+        font-size: 1.1rem;
+        margin-left: 2rem;
+        margin-right: 2rem; 
+        line-height: 1.6; 
+    }
+
+    .banner_btn a {
+        padding: 0.6rem 0.9rem;
+        font-size: 1rem; 
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .banner_image img {
+        display: none !important; 
+    }
+
+    .nav-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-content ul {
         flex-direction: column;
         gap: 1rem;
-        width: 100%;
+    }
+
+    .nav-content ul li a {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+
+    .container {
+        flex-direction: column;
         align-items: center;
-        padding: 2rem;
     }
 
-    .nav_header a {
-        font-size: 1.3rem;
+    .custom-card {
+        width: 100%;
+        padding: 1rem;
     }
 
-    /* Spbre Nós  */
+    .col-12 {
+        flex: 0 0 100%; 
+        max-width: 100%;
+    }
+}
 
-    .container_banner {
-        height: 50rem;
+@media (max-width: 768px) {
+    .nav-content {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .alunos-sobre {
-        display: none;
+    .nav-content ul {
+        flex-direction: column;
+        gap: 1rem;
     }
 
-    .content_img img {
-        background-image: none;
+    .nav-content ul li a {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
     }
 
-    .banner_content h1 {
-        margin-left: 2%;
-        font-size: 5rem;
+    .container {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .banner_content h1 {
-        font-size: 3rem;
-        justify-content: justify;
+    .custom-card{
+        width: 100%;
+    }
+
+    .container_banner{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner_content h1{
+        font-size: 3.5rem;
     }
 
     .banner_text p {
         font-size: 1rem;
-        justify-content: justify;
+        margin-left: 1rem;
     }
 
-    .banner_btn {
-        margin-left: 0;
-        width: 70%;
+    .banner_btn a{
+        padding: 0.5rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .col-12 {
+        flex: 0 0 100%; 
+        max-width: 100%;
+    }
+    .addresses {
+        flex-direction: column; 
+        gap: 10px;
+        text-align: center;
+    }
+
+    .address {
+        max-width: 100%; 
+    }
+
+    .divider {
+        display: none; 
+    }
+
+}
+
+@media (max-width: 500px){
+    .nav-content ul {
+        gap: 0.5rem;
+    }
+
+    .nav-content ul li a{
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .custom-card{
+        padding: 1rem;
+    }
+    .banner_content h1{
+        font-size: 2.8rem;
+    }
+
+    .banner_text p {
+        font-size: 0.9rem;
+        margin-left: 0.5rem;
     }
 
     .banner_btn a {
-        padding: 0.5rem 1rem;
-    }
-
-    .menu-list {
-        flex-direction: column;
-    }
-
-    .nav-content ul li a {
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
-
-    } 
-}
-
-@media (max-width: 1100px) {
-    .menu-list {
-        flex-direction: column;
-    }
-    .homem-carreira {
-        display: none;
+        font-size: 0.4rem 0.7rem;
+        padding: 0.8rem;
     }
 }
-
-@media (max-width: 780px) {
-    .hide{
-        display: none;
-    }                   }
