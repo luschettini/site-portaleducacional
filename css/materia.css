@@ -170,7 +170,7 @@
 }
 
 /* Botão */
-.nav-content ul li a.botao-sobre {
+.nav-content ul li a.botao-materia {
     background-color: #b61818;
     color: #fff;
     height: 2rem;
@@ -669,6 +669,20 @@ footer {
       .banner_image {
         display: none; /* Oculta a imagem do banner em telas menores */
       }
+      .nav-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-content ul {
+        flex-direction: column;
+        gap: 1rem;
+        
+    }
+
+    .nav-content ul li a {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    } 
 }
 
 /* Para telas menores que 768px (celulares e tablets pequenos) */
