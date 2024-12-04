@@ -417,20 +417,18 @@ footer {
 .banner_title p{
     color: #E30613;
 }
-@media (max-width: 780px) {
-    .container_header {
-        flex-direction: column;
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .container_banner {
         height: auto;
         padding: 2rem 1rem;
         flex-direction: column; 
         text-align: center;
     }
-    
-
     .banner_content {
         padding: 0 1rem; 
     }
-
     .banner_content h1 {
         font-size: 4rem;
         margin-bottom: 1rem;
@@ -440,21 +438,18 @@ footer {
         width: 90%; 
         margin: 0 auto;
     }
-
     .banner_text p {
         font-size: 1.1rem;
         margin-left: 2rem;
         margin-right: 2rem; 
         line-height: 1.6; 
     }
-
     .banner_btn a {
         padding: 0.6rem 0.9rem;
         font-size: 1rem; 
         margin-top: 1rem;
         text-align: center;
     }
-
     .banner_image img {
         display: none !important; 
     }
@@ -463,28 +458,25 @@ footer {
         flex-direction: column;
         text-align: center;
     }
-
     .nav-content ul {
         flex-direction: column;
         gap: 1rem;
+        
     }
 
     .nav-content ul li a {
         font-size: 1rem;
         padding: 0.5rem 1rem;
-    }
-
-
+    } 
     .container {
         flex-direction: column;
         align-items: center;
     }
-
     .custom-card {
         width: 100%;
         padding: 1rem;
     }
-
+    
     .col-12 {
         flex: 0 0 100%; 
         max-width: 100%;
