@@ -179,7 +179,7 @@
     }
   }
   
-  @media(max-width: 800px) {
+  @media(max-width: 1024px), (max-width: 768px) {
     .container_header {
       flex-direction: column;
       height: auto;

@@ -560,7 +560,7 @@ footer {
 
 /* media queries*/
 
-/* Media Query para Laptops */
+/* Media Query nav para Laptops */
 @media screen and (min-width: 768px) and (max-width: 1200px) {
     .nav-content ul li a {
         width: 8rem; /* Botões mais compactos */
@@ -573,8 +573,8 @@ footer {
     }
 }
 
-/* para telas menores que 1024px
-(tablets e laptops pequenos)*/
+/* para telas menores que 1920px
+(laptops)*/
 @media (max-width:1920px) {
     .container_banner {
         height: 35rem; /* Reduz a altura do banner */
@@ -594,6 +594,10 @@ footer {
       .banner_text p {
         font-size: 1rem; /* Ajusta o tamanho do texto */
         margin-top: 1.5rem; /* Espaçamento entre o título e o texto */
+      }
+
+      .banner_image {
+        margin-top: 5rem; /* Ajusta a margem inferior */
       }
 
       .nav-content ul li a {
@@ -618,27 +622,86 @@ footer {
     }
 }
 
+/* Para telas menores que 1024px (tablets) */
+@media (max-width: 1024px) {
+    .container_banner {
+        height: 40rem; 
+        padding: 0.5rem;
+        gap: 0.8rem; 
+        flex-direction: column; 
+        background-size: contain; 
+        background-position: center; 
+      }
+    
+      /* Conteúdo do Banner */
+      .banner_content {
+        width: 90%; 
+        margin-left: 5%; 
+        align-items: center; 
+        text-align: center; 
+      }
+    
+      .banner_content h1 {
+        font-size: 3.5rem; 
+        line-height: 1.3; 
+      }
+    
+      .banner_title h1 {
+        font-size: 3.8rem; 
+      }
+    
+      .banner_title h1 span {
+        font-size: 4rem; 
+      }
+    
+      /* Texto do Banner */
+      .banner_text {
+        width: 85%; 
+        margin-top: 2%; 
+      }
+    
+      .banner_text p {
+        font-size: 0.9rem; 
+        line-height: 1.5; 
+      }
+    
+      /* Imagem do Banner */
+      .banner_image {
+        display: none; /* Oculta a imagem do banner em telas menores */
+      }
+}
+
 /* Para telas menores que 768px (celulares e tablets pequenos) */
 @media (max-width: 768px) {
    
     .container_banner {
         height: 25rem;
+        background-size: cover;
     }
 
     .banner_image {
         display: none;
     }
 
-    .banner_content h1 {
+    .banner_content {
+        margin-top: 7%;
         margin-left: 2%;
-        font-size: 3rem;
+    }
+
+    .banner_content h1 {
+        font-size: 2rem;
         justify-content: justify;
+    }
+
+    .banner_title h1 span {
+        font-size: 2.5rem;
     }
 
     .banner_text p {
         font-size: 1rem;
         justify-content: justify;
-        margin-top: 3rem;
+        margin-top: 1rem;
+        align-items: center;
     }
     .menu-list {
         flex-direction: column;
