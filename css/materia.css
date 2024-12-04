@@ -154,8 +154,11 @@
     font-family:"Montserrat", sans-serif ;
     align-items: center;
     justify-content: center;
+
     display: flex;
+    flex-direction: column;
     gap: 10px;
+    
     padding: 13% 40%;
     font-size: 1.3rem;
     font-weight: 800;
@@ -167,9 +170,11 @@
 }
 
 /* Botão */
-.nav-content ul li a.botao-materias {
+.nav-content ul li a.botao-sobre {
     background-color: #b61818;
     color: #fff;
+    height: 2rem;
+    padding: 0.8rem 2 rem;
 }
 
 .nav-content ul li a:hover {
@@ -179,7 +184,7 @@
 
 
 /* Linha vermelha abaixo dos botões ativos */
-.linha-division {
+.nav-division {
     margin-top: 1.5%;
     height: 4px;
     background-color: #b61818;
@@ -555,25 +560,52 @@ footer {
 
 /* media queries*/
 
+/* Media Query para Laptops */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .nav-content ul li a {
+        width: 8rem; /* Botões mais compactos */
+        font-size: 0.9rem; /* Reduz a fonte */
+        height: 2.5rem;
+    }
+
+    .nav-division {
+        width: 25%; /* Ajusta a linha vermelha */
+    }
+}
+
 /* para telas menores que 1024px
 (tablets e laptops pequenos)*/
-@media (max-width:1024px) {
-    .banner_content {
-    margin-top: 15%;
-    margin-left: 5%;
-    }
-    .banner_content h1 {
-        font-size: 3rem;
-    }
-    .menu-list {
-        flex-direction: column;
+@media (max-width:1920px) {
+    .container_banner {
+        height: 35rem; /* Reduz a altura do banner */
+        padding: 2rem; /* Adiciona espaçamento interno */
+      }
+    
+      .banner_content {
+        margin-left: 5%; /* Diminui a margem lateral */
+        padding-top: 1rem; /* Ajusta o espaçamento superior */
+      }
+    
+      .banner_title h1 {
+        font-size: 3.5rem; /* Reduz o tamanho do título */
+        line-height: 1.1; /* Ajusta o espaçamento entre linhas */
+      }
+    
+      .banner_text p {
+        font-size: 1rem; /* Ajusta o tamanho do texto */
+        margin-top: 1.5rem; /* Espaçamento entre o título e o texto */
+      }
+
+      .nav-content ul li a {
+        width: 8rem; /* Botões mais compactos */
+        font-size: 0.9rem; /* Reduz a fonte */
+        height: 2.5rem;
     }
 
-    .nav-content ul li a {
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
-
+    .nav-division {
+        width: 25%; /* Ajusta a linha vermelha */
     }
+    
     .materia-start,
     .materia-middle,
     .materia-end {
@@ -608,15 +640,14 @@ footer {
         justify-content: justify;
         margin-top: 3rem;
     }
-    .nav-content ul {
+    .menu-list {
         flex-direction: column;
-        gap: 1rem;
     }
+
     .nav-content ul li a {
-        width: auto;
-        font-size: 0.9rem;
-        padding: 5% 10%;
-    }
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    } 
     .materia-start,
     .materia-middle,
     .materia-end {
@@ -641,6 +672,13 @@ footer {
     }
     .banner_content h1 {
         font-size: 2rem;
+    }
+
+    .banner_image {
+        display: none;
+    }
+    .menu-list {
+        flex-direction: column;
     }
     .nav-content ul li a {
         font-size: 0.8rem;
