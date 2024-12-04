@@ -32,6 +32,51 @@
     --p-font: 1rem;
 }
 
+.container_banner {
+    background-color: var(--bg-color);
+    height: 50rem;
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.3rem;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to Left, rgba(0, 0, 0, 0.848), rgba(0, 0, 0, 0.634)), url('../media/img/disciplinas-banner.png');
+    background-size: cover;
+    background-position: bottom center;
+  }
+  
+  /* Conteúdo do Banner */
+  .banner_content {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+  
+    align-items: left;
+    margin-left: 7%;
+  }
+  
+  .banner_content h1 {
+    justify-content: justify;
+    font-size: 5.1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    color: #FFFF;
+    line-height: 1.2;
+  }
+  
+  .banner_title h1 {
+    text-transform: uppercase;
+    font-size: 5rem;
+  }
+  
+  .banner_title h1 span {
+    color: #E30613;
+    text-transform: uppercase;
+  }
 
 /* Conteúdo do Banner */
 
@@ -134,7 +179,7 @@
 
 
 /* Linha vermelha abaixo dos botões ativos */
-.nav-division {
+.linha-division {
     margin-top: 1.5%;
     height: 4px;
     background-color: #b61818;
@@ -220,13 +265,6 @@
 
 h2 {
     font-weight: bold;
-}
-
-hr {
-    width: 800px;
-    border: 2px solid #8B0000;
-    /* cor da linha */
-    margin: 10px auto;
 }
 
 .image-grid div {
@@ -434,6 +472,7 @@ footer {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
+  }
 
     .social-media-container {
         background-color: #D71920;
@@ -480,7 +519,7 @@ footer {
         margin-left: 10px;
         margin-right: 10px;
     }
-}
+
 
 /* Conteúdo do Banner */
 .banner_content {
@@ -526,9 +565,14 @@ footer {
     .banner_content h1 {
         font-size: 3rem;
     }
-    .nav-content ul li a{
+    .menu-list {
+        flex-direction: column;
+    }
+
+    .nav-content ul li a {
+        padding: 0.5rem 1rem;
         font-size: 1rem;
-        padding: 10% 20%;
+
     }
     .materia-start,
     .materia-middle,
@@ -544,13 +588,25 @@ footer {
 
 /* Para telas menores que 768px (celulares e tablets pequenos) */
 @media (max-width: 768px) {
-    .banner_content {
-        margin-top: 10%;
-        margin-left: 3%;
+   
+    .container_banner {
+        height: 25rem;
     }
+
+    .banner_image {
+        display: none;
+    }
+
     .banner_content h1 {
-        font-size: 2.5rem;
-        line-height: 1.5;
+        margin-left: 2%;
+        font-size: 3rem;
+        justify-content: justify;
+    }
+
+    .banner_text p {
+        font-size: 1rem;
+        justify-content: justify;
+        margin-top: 3rem;
     }
     .nav-content ul {
         flex-direction: column;
@@ -565,7 +621,11 @@ footer {
     .materia-middle,
     .materia-end {
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 5rem;
+    }
+    .materia-text{
+        margin-left: 20px;
+        margin-top: 15px;
     }
     .image-grid {
         grid-template-columns: 1fr;
@@ -596,4 +656,12 @@ footer {
     .icon-item a {
         font-size: 0.8rem;
     }
+    .menu-list {
+        flex-direction: column;
 }
+.nav-content ul li a {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+}
+}
+
