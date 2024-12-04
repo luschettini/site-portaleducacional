@@ -174,7 +174,7 @@
     background-color: #b61818;
     color: #fff;
     height: 2rem;
-    padding: 0.8rem 2 rem;
+    padding: 0.8rem 2rem;
 }
 
 .nav-content ul li a:hover {
@@ -655,15 +655,12 @@ footer {
       }
     
       /* Texto do Banner */
-      .banner_text {
-        width: 85%; 
-        margin-top: 2%; 
-      }
-    
-      .banner_text p {
+      .banner_text p{
+        margin-top: 2%;  
         font-size: 0.9rem; 
         line-height: 1.5; 
       }
+    
     
       /* Imagem do Banner */
       .banner_image {
