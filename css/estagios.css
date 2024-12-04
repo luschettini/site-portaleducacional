@@ -51,16 +51,14 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0;
-    margin-top: 24rem;
+    justify-content: flex-start;
+    margin-left: 7%;
+    margin-top: 20%;
 }
 .banner_content h1{
-    justify-content: justify;
     font-size: 5.1rem;
     font-family: "Montserrat", sans-serif;
+    justify-content: flex-start;
     font-weight: 900;
     color: #FFFF;
     line-height: 1.2;
@@ -75,40 +73,37 @@
 
 .banner_text{
     width: 78%;
-    height: auto;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
 }
 .banner_text p{
     font-family:"Montserrat", sans-serif ;
     font-size:1rem;
     font-weight: 450;
     color: #FFFF;
-    margin-top: 1rem;
-    margin-left: 3rem;
+    margin-top: 3%;
+    align-items: center;
 }
 
-.banner_btn a {
-    padding: 0.7rem 1rem;
+/* Botão se inscrever */
+.banner_btn{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 5%;
+    margin-top: 3%;
+}
+
+.banner_btn a{
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
     font-size: var(--p-font);
+    text-transform: uppercase;
     font-weight: 800;
+    background-color: #E30613;
+    border-radius: 0.5rem;
     color: #ffff;
-}
-
-/* Imagem do Banner */
-
-.banner_image {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    margin-bottom: -1rem;
 }
 
 /* Division content  */
@@ -146,7 +141,7 @@
     justify-content: space-between;
     list-style-type: none;
     gap: 1rem;
-    
+
     /* padding: 1.5%; */
     /* align-items: center; */
 }
@@ -162,7 +157,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    
+
     padding: 13% 40%;
     font-size: 1.3rem;
     font-weight: 800;
@@ -196,7 +191,80 @@
     border-radius: 10px;
     margin-bottom: 1.5%;
 }
+/* Division content */
 
+.division-phrase{
+    height: 4px;
+    background-color: #b61818;
+    width: 75%;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+h2 {
+    font-family:"Montserrat", sans-serif ;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.content_text{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 20px;
+}
+
+.content_title{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 20px;
+}
+
+.content_title p{
+    font-family:"Montserrat", sans-serif ;
+    font-size:1.8rem;
+    font-weight: 650;
+    color: #000000;
+    margin-bottom: 0.4rem;
+    text-align: justify;
+    font-style: uppercase;
+
+}
+
+
+.content_text p{
+    font-family:"Montserrat", sans-serif ;
+    font-size:1.5rem;
+    line-height: 0.5rem;
+    text-align: center;
+    font-weight: 450;
+    color: #000000;
+    margin-bottom: 3rem;
+    text-align: justify;
+    margin-bottom: 3rem;
+    line-height: 1.6rem;
+}
+
+/* Imagem do Banner */
+
+.content_img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+}
+
+.content_img img{
+    border-radius: 2rem;
+    width: 70%;
+}
 
 /*Footer */
 footer {
@@ -208,14 +276,14 @@ footer {
     font-family: "Montserrat", sans-serif;
     position: relative; 
   }
-  
+
   .social-media-container {
     background-color: #D71920; 
     padding: 10px; 
     border-radius: 5px;
     margin-bottom: -5px; 
   }
-  
+
   .social-media {
     display: flex;
     justify-content: center;
@@ -226,7 +294,7 @@ footer {
     width: calc(100% + 20px);
     margin: 0 -10px;     box-sizing: border-box; 
   }
-  
+
   .social-icon {
     width: 50px; 
     height: 50px; 
@@ -234,7 +302,7 @@ footer {
     align-items: center;
     justify-content: center;
   }
-  
+
   .social-icon img {
     width: 100%; 
     height: 100%; 
@@ -248,177 +316,107 @@ footer {
     gap: 20px; 
     padding: 20px 0; 
   }
-  
+
   .address {
     flex: 1;
     max-width: 300px; 
     text-align: center;
     padding: 10px; 
   }
-  
+
   .divider {
     width: 2px;
     height: 60px;
     background-color: white;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 10px;
   }
 
-
-/* Responsividade */
-@media (max-width: 1024px) {
-    .container_banner {
-        height: auto;
-        padding: 2rem 1rem;
-        flex-direction: column; 
-        text-align: center;
-    }
-    .banner_content {
-        padding: 0 1rem; 
-    }
-    .banner_content h1 {
-        font-size: 4rem;
-        margin-bottom: 1rem;
-    }
-
-    .banner_text {
-        width: 90%; 
-        margin: 0 auto;
-    }
-    .banner_text p {
-        font-size: 1.1rem;
-        margin-left: 2rem;
-        margin-right: 2rem; 
-        line-height: 1.6; 
-    }
-    .banner_btn a {
-        padding: 0.6rem 0.9rem;
-        font-size: 1rem; 
-        margin-top: 1rem;
-        text-align: center;
-    }
-    .banner_image img {
-        display: none !important; 
-    }
-
-    .nav-content {
-        flex-direction: column;
-        text-align: center;
-    }
-    .nav-content ul {
-        flex-direction: column;
-        gap: 1rem;
-        
-    }
-
-    .nav-content ul li a {
-        font-size: 1rem;
-        padding: 0.5rem 1rem;
-    } 
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .custom-card {
-        width: 100%;
-        padding: 1rem;
-    }
-    
-    .col-12 {
-        flex: 0 0 100%; 
-        max-width: 100%;
-    }
+.div .content_text {
+    text-align: center;
 }
 
-@media (max-width: 768px) {
-    .nav-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .nav-content ul {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .nav-content ul li a {
-        font-size: 1rem;
-        padding: 0.5rem 1rem;
-    }
-
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .custom-card{
-        width: 100%;
-    }
-
-    .container_banner{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .banner_content h1{
-        font-size: 3.5rem;
-    }
-
-    .banner_text p {
-        font-size: 1rem;
-        margin-left: 1rem;
-    }
-
-    .banner_btn a{
-        padding: 0.5rem 0.8rem;
-        font-size: 0.9rem;
-    }
-
-    .col-12 {
-        flex: 0 0 100%; 
-        max-width: 100%;
-    }
-    .addresses {
-        flex-direction: column; 
-        gap: 10px;
-        text-align: center;
-    }
-
-    .address {
-        max-width: 100%; 
-    }
-
-    .divider {
-        display: none; 
-    }
-
+.banner_title{
+    text-align: left;
 }
 
-@media (max-width: 500px){
-    .nav-content ul {
-        gap: 0.5rem;
-    }
-
-    .nav-content ul li a{
-        font-size: 1rem;
-        padding: 0.5rem 1rem;
-    }
-
-    .custom-card{
-        padding: 1rem;
-    }
-    .banner_content h1{
-        font-size: 2.8rem;
-    }
-
-    .banner_text p {
-        font-size: 0.9rem;
-        margin-left: 0.5rem;
-    }
-
-    .banner_btn a {
-        font-size: 0.4rem 0.7rem;
-        padding: 0.8rem;
-    }
+.nav-bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
+.container_content {
+    text-align: center;
+}
+
+/* Conteúdo do Banner */
+.banner_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 7%;
+    margin-top: 20%;
+}
+
+.banner_content h1 {
+    justify-content: justify;
+    font-size: 4.1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    color: #FFFF;
+    line-height: 1.2;
+}
+
+.banner_title h1 span {
+    color: #E30613;
+}
+
+.banner_image{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -1rem;
+}
+
+/* Conteúdo do Banner */
+.banner_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 7%;
+    margin-top: 20%;
+}
+
+.banner_content h1 {
+    justify-content: justify;
+    font-size: 4.1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    color: #FFFF;
+    line-height: 1.2;
+}
+
+.banner_title h1 span {
+    color: #E30613;
+}
+
+.banner_image{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -1rem;
+}
+
+.banner_title p{
+    color: #E30613;
+}
+@media (max-width: 780px) {
+    .container_header {
+        flex-direction: column;
