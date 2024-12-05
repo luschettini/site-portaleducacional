@@ -420,6 +420,7 @@ footer {
 
 
 
+
 @media (max-width: 768px) {
     footer .addresses {
         flex-direction: column;
@@ -439,4 +440,14 @@ footer {
         width: 45px;
         height: 45px;
     }
+
+@media (max-width: 480px) {
+    .menu-list {
+        flex-direction: column;
+    }
+    .nav-content ul li a {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+}
+
 }
