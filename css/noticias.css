@@ -435,9 +435,9 @@ h2{
         max-width: 100%; 
     }
 
-    .divider {
-        display: none; 
-    }
+    .divider{
+        rotate: 90deg;
+      }
 
 }
 

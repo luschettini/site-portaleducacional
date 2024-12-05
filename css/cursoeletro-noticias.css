@@ -299,6 +299,10 @@ footer {
         padding: 1rem;
     }
 
+    .divider{
+        rotate: 90deg;
+      }
+
     .social-media {
         flex-direction: column;
         gap: 10px;

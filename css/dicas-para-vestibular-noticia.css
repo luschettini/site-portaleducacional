@@ -98,42 +98,92 @@ main {
 }
 
 /* Footer */
+
 footer {
-    background-color: #a12720;
-    padding: 0;
-    margin: 0;
+    background-color: #a12720; 
+    padding: 0; 
+    margin: 0; 
     text-align: center;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-}
-
-.social-media-container {
+    font-family: "Montserrat", sans-serif;
+    position: relative; 
+  }
+  
+  .social-media-container {
+    background-color: #D71920; 
+    padding: 0.6rem; 
+    border-radius: 0.3rem;
+    margin-bottom: -0.3rem; 
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
     background-color: #D71920;
     padding: 10px;
     border-radius: 5px;
-    margin-bottom: -5px;
-}
-
-.social-media {
+    width: calc(100% + 20px);
+    margin: 0 -10px;     box-sizing: border-box; 
+  }
+  
+  .social-icon {
+    width: 50px; 
+    height: 50px; 
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
-    padding: 10px;
-}
-
-.addresses {
+  }
+  
+  .social-icon img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+  }
+  .addresses {
     display: flex;
     justify-content: space-around;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px 0;
-}
-
-.address {
+    gap: 20px; 
+    padding: 20px 0; 
+    background-color: #b61818;
+  }
+  
+  .address {
     flex: 1;
-    max-width: 300px;
+    max-width: 300px; 
     text-align: center;
-    padding: 10px;
+    padding: 0.6rem; 
+  }
+  
+  .divider {
+    width: 2px;
+    height: 60px;
+    background-color: white;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+  }
+
+  
+@media (max-width: 768px) {
+    footer .addresses {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .divider{
+      rotate: 90deg;
+    }
+    
+    .social-media {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .social-icon {
+        width: 45px;
+        height: 45px;
+    }
 }

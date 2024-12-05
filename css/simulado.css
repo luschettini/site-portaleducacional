@@ -615,22 +615,26 @@ footer {
         margin-left: 4%;
         margin-bottom: 1rem;
     }
-
-    footer{
-        padding: 1rem;
-    }
-
-    .social-media-container {
-        padding: 1rem;
-    }
-
-    .addresses {
+footer {
+    margin-top: 12rem;
+}
+    footer .addresses {
         flex-direction: column;
         gap: 1rem;
     }
-
-    .address {
-        max-width: 100%;
+    
+    .divider{
+      rotate: 90deg;
+    }
+    
+    .social-media {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .social-icon {
+        width: 45px;
+        height: 45px;
     }
 }
 
