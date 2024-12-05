@@ -171,12 +171,6 @@
 }
 
 /* Botão */
-.nav-content ul li a.botao-materia {
-    background-color: #b61818;
-    color: #fff;
-    height: 2rem;
-    padding: 0.8rem 2rem;
-}
 
 .nav-content ul li a:hover {
     background-color: #868686;
