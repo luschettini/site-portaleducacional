@@ -419,6 +419,7 @@ footer {
 }
 
 
+
 @media (max-width: 768px) {
     footer .addresses {
         flex-direction: column;

@@ -166,6 +166,7 @@ footer {
     margin-right: 0.6rem;
   }
 
+  
 @media (max-width: 768px) {
     footer .addresses {
         flex-direction: column;
