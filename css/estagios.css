@@ -417,3 +417,25 @@ footer {
 .banner_title p{
     color: #E30613;
 }
+
+
+@media (max-width: 768px) {
+    footer .addresses {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .divider{
+      rotate: 90deg;
+    }
+    
+    .social-media {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .social-icon {
+        width: 45px;
+        height: 45px;
+    }
+}
