@@ -401,18 +401,23 @@ h2 {
         flex: 0 0 100%; 
         max-width: 100%;
     }
-    .addresses {
-        flex-direction: column; 
-        gap: 10px;
-        text-align: center;
+    footer .addresses {
+        flex-direction: column;
+        gap: 1rem;
     }
-
-    .address {
-        max-width: 100%; 
+    
+    .divider{
+      rotate: 90deg;
     }
-
-    .divider {
-        display: none; 
+    
+    .social-media {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .social-icon {
+        width: 45px;
+        height: 45px;
     }
 
 }
